@@ -1,0 +1,45 @@
+html
+  font: 1em/1.5 Palatino, Georgia, serif 
+
+body
+  min-height: 100%
+  color: $base_font_color
+  word-wrap: break-word
+  @extend %extra-large-type
+  -webkit-font-smoothing: antialiased
+  .wf-loading &
+    +font-size(18)
+p
+  @extend %margin-bottom-small
+  +hyphens()
+  margin-top: 0
+
+a
+  @extend %blue-text
+  cursor: pointer
+  text-decoration: none
+  &:hover
+    +transition()
+    @extend %red-text
+    text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+  @extend %blue-text
+  @extend %no-margin-or-padding
+  font-weight: normal
+  line-height: 1.2
+
+blockquote
+  font-style: italic
+  -webkit-font-smoothing: antialiased
+  color: $maroon
+
+pre, code
+  padding: 0
+  font-size: 16px
+
+pre
+  margin: 1em 0 2em
+  word-wrap: normal
+
+  

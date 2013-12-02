@@ -1,0 +1,88 @@
+.blog-post
+  @extend %margin-bottom-mid
+  padding-bottom: $small-spacing
+  min-height: 400px
+  .blog-index &
+    border-bottom: 1px dashed $light-blue
+  h2, h3
+    @extend %margin-bottom-small
+    margin-top: 1.3em
+  ol
+    padding-left: 0
+  figure
+    margin: $small-spacing 0
+  .index-view &
+    min-height: 0
+
+.blog-grid
+  .column
+    width: 100%
+    +at(800)
+      float: left
+      width: 50%
+  img
+    padding: 10px
+    border: 1px solid #c6daed
+
+
+.blog-intro
+  +at(800)
+    +columns(2)
+
+.blog-title
+  +font-size(60)
+  margin-bottom: 0
+  line-height: 1.1
+  +at(450)
+    +font-size(80)
+  a
+    @extend %blue-text
+  .wf-loading &
+    line-height: 1.3
+    +font-size(50)
+    +at(450)
+      +font-size(70)
+
+  .index-view &
+    +at(450)
+      +font-size(50)
+
+
+
+.blog-subtitle
+  @extend %huge-type
+  @extend %margin-bottom-small
+  color: $maroon
+  margin-top: 0
+  line-height: 1.5
+  .blog-archives &
+    @extend %margin-bottom-mid
+    margin-top: $mid-spacing
+
+.blog-headings
+  @extend %margin-bottom-mid
+
+.pull-quote
+  margin: 50px 10px
+  font-weight: bold
+
+.post-date
+  @extend %large-type
+  color: $subdued
+  @extend %margin-bottom-small
+  .wf-loading &
+    +font-size(16)
+
+.blog-archive-entry
+  @extend %margin-bottom-small
+
+.image--right
+  margin: 20px auto
+  display: block
+  +at(800)
+    margin: 0 0 20px 40px
+  +at(1000)
+    margin: 0 0 20px 60px
+
+.image--left
+  margin-right: 40px
