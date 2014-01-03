@@ -1,2 +1,5 @@
 _package-to-deploy/
 blog/site
+blog/.sass-cache/
+.sass-cache/
+blog/source/videos/
