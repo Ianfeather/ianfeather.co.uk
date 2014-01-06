@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-If you need to create a comparison of two other videos ffmpeg could come quickly to you rescue.
+If you need to create a comparison of two other videos you can do so easily with ffmpeg.
 
 Recently I needed to compare two WebPagetest videos but couldn't find the original test results. Fortunately I had the videos stored locally so I just needed a way to recreate their video comparison feature offline.
 
