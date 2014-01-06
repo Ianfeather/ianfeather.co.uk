@@ -1,18 +1,16 @@
 ---
 layout: post
-title: "Compare two WebPagetest videos using ffmpeg"
+title: "Compare two videos side by side using ffmpeg"
 date: 2014-01-02 23:52
 comments: true
 categories: 
 ---
 
-Using WebPagetest you can create visual comparisons of different sites&apos; loading speeds. This is a really useful tool for showing product owners how performance can make a difference to the user&apos;s perception of a website.
+If you need to create a comparison of two other videos ffmpeg could come quickly to you rescue.
 
-Whilst WebPagetest has a huge amount of features hidden away, one feature which doesn&apos;t exist (I don&apos;t believe, but will probably be proved wrong) is the ability to visually compare the same page at different historical points: before and after optimisation, for example.
+Recently I needed to compare two WebPagetest videos but couldn't find the original test results. Fortunately I had the videos stored locally so I just needed a way to recreate their video comparison feature offline.
 
-It is possible to acheive this yourself though as you can access all your previous test runs as well as download the videos and modify them. You could almost certainly place them side by side using a video editor but it can also be done very quickly and simply using ffmpeg (~5s to generate the below video).
-
-
+You could almost certainly place them side by side using a video editor but it can also be done very quickly and simply using ffmpeg (~5s to generate the below video).
 
 <pre class="language-bash"><code>
   # Firstly install ffmpeg (using brew or from binary)
