@@ -3,3 +3,4 @@ blog/site
 blog/.sass-cache/
 .sass-cache/
 blog/source/videos/
+blog/source/javascripts/ianf.min.js

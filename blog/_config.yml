@@ -4,7 +4,7 @@
 
 url: http://Ianfeather.github.com/ianfeatherV3
 title: Ian Feather
-subtitle: Front End Developer at Lonely Planet
+subtitle: Client-side Technical Lead at Lonely Planet
 author: Ian Feather
 simple_search: http://google.com/search
 description:
@@ -43,3 +43,7 @@ default_asides: [asides/recent_posts.html]
 
 # Google Analytics
 google_analytics_tracking_id: UA-18556757-8
+
+# Disqus
+disqus_short_name: ianfeather
+disqus_show_comment_count: true
