@@ -4,20 +4,28 @@
  * @author Lea Verou
  */
 
+$background: #353555;
+$default: #C6CEE5;
+$orange: #FA9F47;
+$green: #99FF00;
+$red: #FA4CBB;
+$punctuation: #fff;
+$comment: #A9AEB4;
+$blue: #3E8BF2;
+
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
-	text-shadow: 0 1px white;
+	color: $default;
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
-	
+
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
-	
+
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
@@ -34,12 +42,12 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	overflow: auto;	
+	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f2f0;
+	background: $background;
 }
 
 /* Inline code */
@@ -52,11 +60,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	color: $comment;
 }
 
 .token.punctuation {
-	color: #999;
+	color: $punctuation;
 }
 
 .namespace {
@@ -67,28 +75,26 @@ pre[class*="language-"] {
 .token.tag,
 .token.boolean,
 .token.number {
-	color: #905;
+	color: $red;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string {
-	color: #690;
+	color: $green;
 }
 
-.token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #a67f59;
-	background: hsla(0,0%,100%,.5);
+	color: $orange;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
+	color: $blue;
 }
 
 

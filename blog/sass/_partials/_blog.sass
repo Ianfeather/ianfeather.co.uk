@@ -24,16 +24,19 @@
     padding: 10px
     border: 1px solid #c6daed
 
-
 .blog-intro
   +at(800)
     +columns(2)
 
 .blog-title
-  +font-size(60)
+  +font-size(55)
   margin-bottom: 0
   line-height: 1.1
   +at(450)
+    +font-size(80)
+  +at(800)
+    +font-size(70)
+  +at(1000)
     +font-size(80)
   a
     @extend %blue-text
@@ -106,3 +109,6 @@
     max-width: 300px
   +at(800)
     max-width: 200px
+
+.comments-area
+  margin-top: 70px

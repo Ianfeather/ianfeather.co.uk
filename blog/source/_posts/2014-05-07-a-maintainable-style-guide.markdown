@@ -6,19 +6,19 @@ comments: true
 categories:
 ---
 
-Maintaining a Style Guide over a long period of time is very difficult. Even with best intentions the maintenance of any project is difficult when matched against the expectation of creating new features. Style Guides, most often prioritised below the maintenance of your applications themselves, are likely the first candidates to fall behind and the last to be brought out of tech debt.
+Maintaining a UI Style Guide over a long period of time is very difficult. Even with best intentions the maintenance of any project can be hard when matched against the expectation of creating new features. Style Guides, most often prioritised below the maintenance of your applications themselves, are likely the first candidates to fall behind and the last to be brought out of tech debt.
 
 This is bad because once your Style Guide falls out of sync with your application(s) it has entirely lost its purpose. It is no longer a trustworthy representation of the state of your UI and will quickly fall out of favour with the design and development team.
 
 This is bad because Style Guides are more than a nicety for developers to show off their style. Done properly, they can be a collaboration tool bridging design and development teams as well as a tool to break down the user interface into its component parts rather than than thinking about it as a whole or as a series of pages. They also serve as a resource for new designers and developers to locate existing patterns and ready-made code blocks for further use, but this only serves a purpose if they reflect the current state of your UI.
 
-All of these benefits should be sought regardless of the size or scope of your project though they shouldn't come at a cost to delivering features. If they do, they will inevitably be neglected. Prioritising work on a Style Guide, alongside user-facing features, is more of a cultural and organisational challenge but I'd like to share how we achieved this at Lonely Planet by making it an integral part of our development methodology.
+All of these benefits should be sought regardless of the size or scope of your project though they shouldn't come at a cost to delivering features. If they do, they will inevitably be neglected. Prioritising work on a Style Guide, rather than user-facing features, is more of a cultural and organisational challenge but I'd like to share how we achieved this at Lonely Planet by making it an integral part of our development methodology.
 
 Before that, it's worth explaining how we tried and why we failed with the traditional types of Style Guide.
 
-<h2 class="blog-subtitle">The problem with current Style Guides</h2>
+<h2 id="the-problem-with-current-style-guides" class="blog-subtitle">The problem with current Style Guides</h2>
 
-We have tried and failed with two different approaches.
+At Lonely Planet, we have tried and failed with two different approaches.
 
 ### A Static HTML Style Guide
 
@@ -75,7 +75,7 @@ There is also the problem of the output. Typically you would get some output lik
 
 <figure>
   <img src="/images/styleguide-output.png" alt="Markup commented within the css" />
-  <figcaption>(taken from the codeforamerica.com Style Guide)</figcaption>
+  <figcaption>(taken from the very nice <a href="https://ux.mailchimp.com/patterns/">Mailchimp Style Guide</a>)</figcaption>
 </figure>
 
 The idea here is that a developer can simply copy and paste this markup into their application and very quickly and easily build up their page.
@@ -89,7 +89,7 @@ This is a huge cause for Technical Debt build up at Lonely Planet. As the entire
 But I don't believe this is an issue scoped only to Lonely Planet or even limited to just large websites. If we can promote risk-free refactoring on small sites, why wouldn't we? Would you rather change one template or search through your code base changing them all?
 
 
-<h2 class="blog-subtitle">How should Style Guides work?</h2>
+<h2 id="how-should-style-guides-work" class="blog-subtitle">How should Style Guides work?</h2>
 
 Style Guides should focus on templates rather than CSS. Crucially, if you're rendering templates to a Style Guide and you want it to be maintainable then they can't just be identical to your application templates, they need to be the exact same templates.
 
@@ -98,11 +98,16 @@ Why don't they work like this now? Well it's very difficult. Templates within an
 This doesn't mean it's impossible though, in fact the process of restructuring your application into a component based architecture can be the mechanism to simplify and normalise your user interface. This is the process we have taken at Lonely Planet, creating a component layer which both our applications and Style Guide can work from.
 
 
-<h2 class="blog-subtitle">Building a Component API</h2>
+<h2 id="building-a-component-api" class="blog-subtitle">Building a Component API</h2>
 
-The goals and benefits of a Style Guide were exactly what we wanted but, not knowing how to achieve that, we started by extracting as much of our UI into components and moving them outside of the applications. I talk quite a lot about this process in my Front End Ops talk on the subject so I won't go into too much detail, but this process of decoupling the UI pieces from the application and componentising them had a lot of positive effects on the way that we created the User Interface.
+<div class="video-embed">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/XNoX1FRZ8kE" frameborder="0"> </iframe>
+</div>
+[Slides from "Reducing Complexity with a Component API"](http://www.slideshare.net/ianfeather/reducing-comlexity-with-a-component-api)
 
-Once we had extracted them from the applications and into the component layer we created a very simple api in which to fetch them. Having the api for us was crucial because we wanted to maintain the mapping between the latest version of the the component and the application, and not have developers copy and paste component code.
+I talk quite a lot about this process in my Front End Ops talk on the subject so I won't go into too much detail, but this process of decoupling the UI pieces from the application and componentising them had a lot of positive effects on the way that we created the User Interface.
+
+The goals and benefits of a Style Guide were exactly what we wanted but, not knowing how to achieve that, we started by extracting as much of our UI into components and moving them outside of the applications. Once we had extracted them from the applications and into the component layer we created a very simple api in which to fetch them. Having the api for us was crucial because we wanted to maintain the mapping between the latest version of the the component and the application, and not have developers copy and paste component code.
 
 Having a single version of the component, accessible via an api, worked perfectly with unit testing too so we could ensure that the contract between the API parameters and the returned template was solid. We could modify and extend the component based on the data we passed it and assert on the returned result. This also allowed us to add accessibility helpers and microformat attributes as standard and ensure that they weren't forgotten when used in new applications.
 
@@ -140,7 +145,7 @@ The developer can modify and extend the component by manipulating the input data
 </code>
 </pre>
 
-<h2 class="blog-subtitle">Style Guide Driven Development</h2>
+<h2 id="style-guide-driven-development" class="blog-subtitle">Style Guide Driven Development</h2>
 
 Once the applications are all using the API to fetch components, all that we really have inside the app is data representations of the components. It's therefore pretty simple to scaffold a quick app that requests every component, multiple times, with differing data. This is our Style Guide. It's essentially a YAML file and a lot of requests to the Component API.
 
@@ -150,10 +155,10 @@ In fact, it has become the arena for development. Once you have this concept of 
 
 An example component in our Style Guide would showcase the component and the API call/data.
 
-<img src="/images/styleguide-output.png" alt="Markup commented within the css" />
+<img src="/images/rizzo-output.png" alt="An example of our Style Guide output" />
 
 
-<h2 class="blog-subtitle">How it all works</h2>
+<h2 id="how-it-all-works" class="blog-subtitle">How it all works</h2>
 
 One thing I really didn't cover in my talk was the implementation side of Rizzo and I've had a lot of questions around it since.
 
@@ -178,9 +183,9 @@ There is a little bit more to it but that covers most of how it works. Very, ver
 
 ### Other Apps
 
-Other apps don't have the luxury of including Rizzo as a Gem though we may look into using it with other package managers. For now, we host Rizzo as a service and expose http endpoints to return the templates. For example, hitting [http://rizzo.lonelyplanet.com/global-body-header](http://rizzo.lonelyplanet.com/global-body-header) will return the html for part of our header.
+Other apps don't have the luxury of including Rizzo as a Gem (though we may look into using it with other package managers). For now, we host Rizzo as a service and expose http endpoints to return the templates. For example, hitting [http://rizzo.lonelyplanet.com/global-body-header](http://rizzo.lonelyplanet.com/global-body-header) will return the html for part of our header.
 
-We are currently working on exposing all components as a service under <pre><code>http://rizzo.lonelyplanet.com/components/*</code></pre> and these routes will likely take Query Params in order to extend the returned component.
+We are currently working on exposing all components as a service under <pre>http://rizzo.lonelyplanet.com/components/*</pre> and these routes will likely take Query Params in order to extend the returned component.
 
 ### The Styleguide
 
@@ -202,16 +207,18 @@ With this approach we only have to modify the underlying data to add more compon
 
 ### Assets
 
-A common question has been how do we handle CSS and JS related to these components. Unfortunately I don't have a clever answer for this at the moment, it is a mostly manual process.
+A common question has been how do we handle CSS and JS related to these components. Unfortunately I don't have a clever answer for this at the moment, it's a mostly manual process.
 
 We split both our CSS and JS out into common and application files. Inside the common.css|js we load the base code as well as our most often used components (stored in /components/core). This is then cached across the entire suite of applications.
 
-I think there is definitely room to improve this process using tools like component or AssetGraph. This is definitely something we'll be looking into soon. For the moment, it is fairly trivial to handle manually.
+To use any non-core components within an application, you need to import the component's related CSS partial using Sass as well as possibly needing to add the component JS module to the application.js dependencies.
+
+I think there is definitely room to improve this process using tools like [Component](https://github.com/component/component) or [AssetGraph](https://github.com/assetgraph/assetgraph). This is definitely something we'll be looking into soon. For the moment, it is reasonably trivial to handle manually.
 
 
-<h2 class="blog-subtitle">Rizzo</h2>
+<h2 id="rizzo" class="blog-subtitle">Rizzo</h2>
 
-The Style Guide is available at [rizzo.lonelyplanet.com](http://rizzo.lonelyplanet.com) and the source code is public at [github.com/lonelyplanet/rizzo](github.com/lonelyplanet/rizzo). The implementation is very bespoke to Lonely Planet but should give some indication of how it works if you are interested:
+The Style Guide is available at [rizzo.lonelyplanet.com](http://rizzo.lonelyplanet.com) and the source code is now public at [github.com/lonelyplanet/rizzo](github.com/lonelyplanet/rizzo). The implementation is very bespoke to Lonely Planet but should give some indication of how it works if you are interested. Here are a few example pieces that make up Rizzo:
 
 [A component template](https://github.com/lonelyplanet/rizzo/blob/master/app/views/components/cards/_blog_card.html.haml)
 
@@ -224,5 +231,11 @@ The Style Guide is available at [rizzo.lonelyplanet.com](http://rizzo.lonelyplan
 [Style Guide View](https://github.com/lonelyplanet/rizzo/blob/master/app/views/styleguide/ui-components/cards.html.haml)
 
 
-<h2 class="blog-subtitle">Will this process work for you?</h2>
+<h2 id="conclusion" class="blog-subtitle">Conclusion</h2>
+
+The difference between Rizzo and our previous two Style Guides is that this time we didn't focus on the Style Guide as the deliverable, we focused on reducing complexity and increasing reusability. The Style Guide was then simple to add on at the end but, had it not been, we would still have been in a better place regardless.
+
+To achieve this you're never going to be able to just run a grunt task. Unfortunately it's not something you can add on at the end, although nor should it be. It requires you to contemplate your site architecture and structure as the main focus and the benefits of that extend beyond a Style Guide.
+
+At Lonely Planet we have a long way to go to create a solid, consistent platform, but this has certainly been proven as a step in the right direction. If you are starting a new project, or you have the means to invest some time in maintainability, I would thoroughly recommend a component based architecture.
 
