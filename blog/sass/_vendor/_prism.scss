@@ -56,6 +56,14 @@ pre[class*="language-"] {
 	border-radius: .3em;
 }
 
+
+.language-custom {
+  color: #7D7D9B;
+  .highlight {
+  	color: $green;
+  }
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,

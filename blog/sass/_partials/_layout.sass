@@ -15,6 +15,13 @@ body
 img, video
   @extend %margin-bottom-small
   max-width: 100%
+  figure > &
+    margin-bottom: 0
+
+.fig-caption
+  +font-size(18)
+  text-align: center
+  font-style: italic
 
 .main-content
   +transition(all, 0.5s, ease)
