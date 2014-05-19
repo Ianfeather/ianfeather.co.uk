@@ -36,7 +36,7 @@ It's worth mentioning that as a design tool, or as a deliverable to a client who
 
 Living Style Guides should be the answer to these problems. They autogenerate Style Guides when changes are made to the codebase so in theory they shouldn't be able to fall behind. There are a whole host to choose from and many can be set up with fairly minimal effort.
 
-Back in 2012 we implemented KSS: a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
+Back in 2012 we implemented [http://github.com/kneath/kss](KSS)0: a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
 
 So, given it's &ldquo;living&rdquo;, why did it fall behind?
 
@@ -153,7 +153,7 @@ The developer can modify and extend the component by manipulating the input data
 
 Once the API is being used to fetch components, all that we really have inside any application are data representations of the components. It's therefore pretty simple to scaffold a quick application that requests every component, multiple times, with differing data. This becomes our Style Guide. Where a regular application might request a handful of components, the Style Guide requests every component, again and again.
 
-It's always up to date with the rest of lonelyplanet.com because it uses the exact same templates and CSS. As we're not just doing static analysis of the CSS we are also able to showcase components that require JS too. It becomes a risk free environment where developers can build and tweak components and then allow them to propagate out to the rest of the applications.
+It's always up to date with the rest of lonelyplanet.com because it uses the exact same templates and CSS. As we're not just performing static analysis of the CSS we are also able to showcase components that require JS too. It becomes a risk free environment where developers can build and tweak components and then allow them to propagate out to the rest of the applications.
 
 In fact, it has become the primary arena for development. Once you have this concept of a component layer it is irrelevant to a developer where they render it for testing. What we have seen is an organic move towards Style Guide Driven Development where developers are using it to build and iterate on components long before they reach any application. This is not something we expected but is certainly a validation of the approach and a polar opposite to our previous attempts where the Style Guide was seen as a blocker to quick feature development.
 
@@ -190,7 +190,7 @@ There is a little bit more to it but that covers most of how it works. Very, ver
 
 ### Other Apps
 
-Non-ruby apps don't have the luxury of including Rizzo as a Gem (though we may look into using it with other package managers). For now, we host Rizzo as a service and expose http endpoints to return the templates. For example, hitting [http://rizzo.lonelyplanet.com/global-body-header](http://rizzo.lonelyplanet.com/global-body-header) will return the html for part of our header.
+Non-ruby apps don't have the luxury of including Rizzo as a Gem (though we may look into using it with other package managers). For now, we host Rizzo as a service and expose HTTP endpoints to return the templates. For example, hitting [http://rizzo.lonelyplanet.com/global-body-header](http://rizzo.lonelyplanet.com/global-body-header) will return the html for part of our header.
 
 This adds an extra layer of complexity for these applications as they then have to implement a caching layer for Rizzo components. We cache these templates when the application boots. It's not perfect but given our primary stack is Rails it's not something we have spent too much time on yet.
 
