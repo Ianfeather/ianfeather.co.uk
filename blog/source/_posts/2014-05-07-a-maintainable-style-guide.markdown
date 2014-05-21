@@ -36,7 +36,7 @@ It's worth mentioning that as a design tool, or as a deliverable to a client who
 
 Living Style Guides should be the answer to these problems. They autogenerate Style Guides when changes are made to the codebase so in theory they shouldn't be able to fall behind. There are a whole host to choose from and many can be set up with fairly minimal effort.
 
-Back in 2012 we implemented [http://github.com/kneath/kss](KSS)0: a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
+Back in 2012 we implemented [http://github.com/kneath/kss](KSS) a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
 
 So, given it's &ldquo;living&rdquo;, why did it fall behind?
 
@@ -66,7 +66,7 @@ Here we have a couple of buttons referenced in the CSS which are rendered in the
 
 The problem here is that the template we render in the Style Guide isn't the template we use in our applications. At best it is a direct copy; more likely it is a slimmed down, and perhaps out of date, copy.
 
-As soon as you introduce template duplication like this you have twice as much to maintain. As time goes on the probability of one of them falling behind tends towards 1.
+As soon as you introduce template duplication like this you have twice as much to maintain. Inevitably, for a project spanning even just a short time, one of them is going to falling behind.
 
 Now this is easy to overlook when you're talking about single element components like buttons where the effort is fairly minimal to maintain but in reality a lot of components are more complex: requiring multiple elements, classes and often Javascript. We should be striving for a solution which sticks as close as possible to production.
 
@@ -84,7 +84,7 @@ The idea here is that a developer can simply copy and paste this markup into the
 
 Whilst this is an excellent goal, the problem in this case is the distribution of templates. Even if we presume that the rendered markup is absolutely up to date, once they copy that code they are essentially cutting a version which needs to be maintained indefinitely. When they copied the markup for a working component it had an implicit link to a snapshot of the CSS at that point. If you then update the template or refactor the CSS, you need to update all versions of the template scattered around your site.
 
-This posed a huge problem for us because as an author of a component I had no idea of where it was being used. I may not even have heard of the application that it was being used in. That leaves the next developer in a difficult position: risk releasing a breaking change or avoid changing the component at all.
+This posed a huge problem for us because authors of components had no idea of where they were being used. They may not even have heard of the application that is now using it. That increases the risk of releasing a breaking which makes it more likely that future developers will avoid updating and reusing the component at all.
 
 This is a huge cause for Technical Debt build up at Lonely Planet. As the entire infrastructure is too large to completely hold inside your head, authors were being forced to build defensively. As there was no mechanism for encouraging risk-free reuse of components, they simply weren't being reused and we instead ended up with duplicated components and bloated code.
 
@@ -95,9 +95,11 @@ I don't believe this is an issue scoped only to Lonely Planet or even limited to
 
 They should focus on the templates. Crucially, if you're rendering templates to a Style Guide and you want it to be maintainable then they can't just be identical to your application templates, they need to be the exact same templates. This is easier said than done.
 
-Templates within an application can be written in many different languages and are generally coupled to a data layer, embedded deep into an application and hard to get to. This makes it very hard for a single Open Source tool to parse your templates. It would have to work across a multitude of technologies and disparate application architectures. It's therefore unsurprising that most Style Guide generators use some form of static analysis to render components.
+Templates within an application can be written in many different languages and are generally coupled to a data layer, embedded deep into an application and hard to get to. This makes it very hard for a single Open Source tool to parse your templates. It would have to work across a multitude of technologies and disparate application architectures.
 
-This doesn't mean it's impossible to achieve. It does require your application to be built at a component level in order for the Style Guide to reach the same components without understanding your entire application. This can involve a decent chunk of work although the process of restructuring your application into a component based architecture can be the mechanism to simplify and normalise the UI: bringing benefits far beyond the Style Guide itself.
+This doesn't mean it's impossible to achieve. It does require your application to be built in a modular, [component driven](http://nicolasgallagher.com/about-html-semantics-front-end-architecture#front-end-architecture) way though. Isolating parts of your UI into small components allows you to reuse them around the site as well as compose them to create greater functionality.
+
+Within this type of architecture the Style Guide is able to reach the same components without understanding your entire application. To achieve this can involve a decent chunk of work although the process of restructuring your application into a component based architecture can be the mechanism to simplify and normalise the UI: bringing benefits far beyond the Style Guide itself.
 
 This is the process we have taken at Lonely Planet, creating a component layer which both our user-facing applications and our Style Guide can work from.
 
@@ -165,9 +167,9 @@ In fact, it has become the primary arena for development. Once you have this con
 
 <h2 id="how-it-all-works" class="blog-subtitle">How it all works</h2>
 
-One thing I really didn't cover in my talk was the implementation side of Rizzo and I've had a lot of questions around it since.
+Our Component Layer, API and Style Guide are combined into an application called Rizzo. The Style Guide is available at [rizzo.lonelyplanet.com](http://rizzo.lonelyplanet.com/styleguide/ui-components/cards). One thing I really didn't cover in my talk at Front End Ops Conf was the implementation side of Rizzo and I've had a lot of questions around it since.
 
-We have two different buckets of apps that integrate with Rizzo at LP: Rails Apps and All Other Apps.
+We have two different categories of apps that integrate with Rizzo at LP: Rails Apps and Other Apps.
 
 ### Rails Apps
 
@@ -225,15 +227,15 @@ To use any non-core components within an application the developer would need to
 I think there is definitely room to improve this process using tools like [Component](https://github.com/component/component) or [AssetGraph](https://github.com/assetgraph/assetgraph) and it's something we'll be looking into soon. For the moment, it is reasonably trivial to handle manually.
 
 
-<h2 id="rizzo" class="blog-subtitle">Rizzo</h2>
+<h2 id="rizzo" class="blog-subtitle">Rizzo on GitHub</h2>
 
-Our Style Guide is named Rizzo and is available at [rizzo.lonelyplanet.com](http://rizzo.lonelyplanet.com/styleguide/ui-components/cards). The source code is also now public at [github.com/lonelyplanet/rizzo](github.com/lonelyplanet/rizzo). The implementation is very bespoke to Lonely Planet but should give some indication of how it works if you are interested in taking a similar approach. Here are a few example pieces that make up Rizzo:
+The source code behind Lonely Planet's components is now public at [https://github.com/lonelyplanet/rizzo](https://github.com/lonelyplanet/rizzo). The implementation is very bespoke to Lonely Planet but should give some indication of how our architecture works if you are interested in taking a similar approach. Here are a few example pieces that make up Rizzo:
 
 [A component template](https://github.com/lonelyplanet/rizzo/blob/master/app/views/components/cards/_blog_card.html.haml)
 
 [A component Stylesheet](https://github.com/lonelyplanet/rizzo/blob/master/app/assets/stylesheets/core/core_components/cards/_card_appearance.sass)
 
-[API Helper](https://github.com/lonelyplanet/rizzo/blob/master/app/helpers/styleguide_helper.rb#L341)
+[API Helper](https://github.com/lonelyplanet/rizzo/blob/master/app/helpers/styleguide_helper.rb#L3)
 
 [Style Guide Data](https://github.com/lonelyplanet/rizzo/tree/master/app/data/styleguide)
 
