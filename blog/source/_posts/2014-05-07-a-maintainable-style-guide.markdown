@@ -36,7 +36,7 @@ It's worth mentioning that as a design tool, or as a deliverable to a client who
 
 Living Style Guides should be the answer to these problems. They autogenerate Style Guides when changes are made to the codebase so in theory they shouldn't be able to fall behind. There are a whole host to choose from and many can be set up with fairly minimal effort.
 
-Back in 2012 we implemented [http://github.com/kneath/kss](KSS) a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
+Back in 2012 we implemented [KSS](http://github.com/kneath/kss) a fairly popular tool for generating living Style Guides developed by Kyle Neath and used at Github. Unfortunately, it only lasted 2-3 months before it was clear it had diverged from the components within our application.
 
 So, given it's &ldquo;living&rdquo;, why did it fall behind?
 
@@ -76,7 +76,7 @@ Now this is easy to overlook when you're talking about single element components
 There is also the problem of the output. Typically you would feature the component alongside the markup required to render it:
 
 <figure>
-  <img src="/images/styleguide-output.jpg" alt="Markup commented within the CSS" />
+  <img src="/images/styleguide-output.png" alt="Markup commented within the CSS" />
   <figcaption class="fig-caption">(taken from the excellent <a href="https://ux.mailchimp.com/patterns/">Mailchimp Style Guide</a>)</figcaption>
 </figure>
 
