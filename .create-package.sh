@@ -24,22 +24,19 @@ echo ""
 echo -e "${blue}Compile the blog with jekyll${none}"
 cd blog
 jekyll build
+cd ..
 
 echo ""
-echo -e "${blue}Compile our stylesheet${none}"
-sass -t compressed sass/screen.sass:stylesheets/screen.css
-cp -r stylesheets site/
+echo -e "${blue}Copy across the stylesheet for older pages${none}"
+cp -r blog/stylesheets blog/site/
 
 echo ""
 echo -e "${blue}Copy across the blog package${none}"
-cd ..
 cp -r blog/site/ ./_package-to-deploy/
 
 echo ""
 echo -e "${blue}Compile presentation stylesheet${none}"
-cd presentations/front-end-ops
-sass sass/style.sass:css/style.css
-cd ../..
+sass -t compressed presentations/front-end-ops/sass/style.sass:presentations/front-end-ops/css/style.css
 
 echo ""
 echo -e "${blue}Copy across the presentations package${none}"
