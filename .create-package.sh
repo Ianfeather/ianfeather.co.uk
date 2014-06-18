@@ -53,8 +53,3 @@ cp -r presentations _package-to-deploy/
 echo ""
 echo -e "${blue}Clean up JS${none}"
 rm blog/source/javascripts/ianf.min.js
-
-
-# TODO
-# Configure scp access and write a deploy job
-# For the moment - I'm just using FTP to deploy this package
