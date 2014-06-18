@@ -21,6 +21,14 @@ cat blog/source/javascripts/ianf.js blog/source/javascripts/prism.js > blog/sour
 uglifyjs blog/source/javascripts/ianf.min.js -o blog/source/javascripts/ianf.min.js
 
 echo ""
+echo -e "${blue}Compile our stylesheet${none}"
+sass -t compressed blog/sass/screen.sass:blog/stylesheets/screen.css
+
+echo ""
+echo -e "${blue}Insert the sass into the head"
+cat blog/stylesheets/screen.css > blog/source/_includes/styles.html
+
+echo ""
 echo -e "${blue}Compile the blog with jekyll${none}"
 cd blog
 jekyll build
