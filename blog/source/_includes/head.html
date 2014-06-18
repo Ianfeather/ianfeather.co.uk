@@ -16,15 +16,15 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="{{ root_url }}/images/apple-touch-icon-iphone.png" /> 
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ root_url }}/images/apple-touch-icon-ipad.png" /> 
+  <link rel="apple-touch-icon" href="{{ root_url }}/images/apple-touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ root_url }}/images/apple-touch-icon-ipad.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="{{ root_url }}/images/apple-touch-icon-iphone4.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="{{ root_url }}/images/apple-touch-icon-ipad3.png" />
 
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">
   <link href="{{ root_url }}/favicon.png" rel="icon">
-  <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
   <script type="text/javascript">
     (function() {
       var config = {
@@ -36,4 +36,7 @@
   </script>
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   {% include google_analytics.html %}
+  <style>
+    {% include styles.html %}
+  </style>
 </head>

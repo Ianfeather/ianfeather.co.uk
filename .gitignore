@@ -2,5 +2,6 @@ _package-to-deploy/
 blog/site
 blog/.sass-cache/
 .sass-cache/
+npm-debug.log
 blog/source/videos/
 blog/source/javascripts/ianf.min.js
