@@ -65,7 +65,11 @@ Application.css will include styles distinct to the specific application, as wel
 
 The above bundling is key to our CSS performance as is keeping the files small themselves. We have a <a href="http://rizzo.lonelyplanet.com/performance/css-analysis">performance monitoring section</a> in Rizzo which trends file size changes. Currently it only trends for seven days as this is a new edition to Rizzo and we are still collecting data.
 
+<img src="/images/css-analysis.png" alt="CSS Performance Trending" />
+
 We collect this data every few hours using a few <a href="https://github.com/lonelyplanet/perf/tree/master/css-analysis">simple scripts</a> which also allows us to run analysis on the stylesheets. We do this with <a href="https://github.com/t32k/stylestats">Stylestats</a> and again <a href="http://rizzo.lonelyplanet.com/performance/css-analysis/waldorf">render the breakdown</a> in Rizzo.
+
+<img src="/images/css-analysis-2.png" alt="CSS Analysis" />
 
 <h2 id="documentation" class="blog-subtitle">Documentation</h2>
 
@@ -73,6 +77,12 @@ I&apos;ve written previously about our <a href="http://ianfeather.co.uk/a-mainta
 
 We also self document our Sass by wrapping it in <code>[doc]..[/doc]</code> tags, and then statically analysing it. For example, this <a href="https://github.com/lonelyplanet/rizzo/blob/master/app/assets/stylesheets/core/utilities/_utility_classes.sass">utility_classes.sass</a> file creates this <a href="http://rizzo.lonelyplanet.com/styleguide/css-utilities/utility-classes">documentation in Rizzo</a>.
 
+<img src="/images/css-documentation.png" alt="CSS Documentation" />
+
 <h2 id="refactoring" class="blog-subtitle">Refactoring</h2>
 
 Similarly to github, we like to get rid of as much code as we can and we're not precious about keeping things around in case it might be needed. Refactoring is a part of our daily work though and we very rarely have specific refactoring tasks.
+
+<h2 id="other-css" class="blog-subtitle">Other CSS Files</h2>
+
+<a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">Our SVG icons</a> and fonts are both loaded within CSS files, but these are deferred and not grouped with the rest of the styles.

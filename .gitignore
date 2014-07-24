@@ -1,3 +1,4 @@
+.DS_Store
 _package-to-deploy/
 blog/site
 blog/.sass-cache/
