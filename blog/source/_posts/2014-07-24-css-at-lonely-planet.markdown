@@ -63,7 +63,7 @@ Application.css will include styles distinct to the specific application, as wel
 
 <h2 id="performance" class="blog-subtitle">Performance</h2>
 
-The above bundling is key to our CSS performance as is keeping the files small themselves. We have a <a href="http://rizzo.lonelyplanet.com/performance/css-analysis">performance monitoring section</a> in Rizzo which trends file size changes. Currently it only trends for seven days as this is a new edition to Rizzo and we are still collecting data.
+The above bundling is key to our CSS performance as is keeping the files small themselves. We have a <a href="http://rizzo.lonelyplanet.com/performance/css-analysis">performance monitoring section</a> in Rizzo which trends file size changes. Currently it only trends for seven days as this is a new addition to Rizzo and we are still collecting data.
 
 <img src="/images/css-analysis.png" alt="CSS Performance Trending" />
 

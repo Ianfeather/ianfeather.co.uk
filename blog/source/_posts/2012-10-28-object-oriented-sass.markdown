@@ -5,8 +5,14 @@ subtitle: "A study into performance implications"
 written: "for the <a href='http://devops.lonelyplanet.com/oosass'>Lonely Planet DevOps blog</a>"
 date: 2012-7-30 13:51
 comments: true
-categories: 
+categories:
 ---
+
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">28 September 2014</span></h5>
+  <p>Whilst the performance results of this post still stand true, I wouldn't advise using this technique. It became unmanageable for use on lonelyplanet.com and we have almost completely phased out the use of placeholders in favour of explicit classes in the dom.</p>
+</div>
+
 
 I’ve been re-examining how we declare and manage CSS objects at LP, recently using the placeholder syntax (%) in Sass over a class directly in the markup. I had a couple of reservations around this, partly because it’s a leap away from the traditional OOCSS method of using multiple classes as building blocks but also in its usability and impact on performance.
 

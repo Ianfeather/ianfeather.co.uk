@@ -3,7 +3,7 @@ layout: post
 title: "Ten reasons we switched from an icon font to SVG"
 date: 2014-01-03 23:52
 comments: true
-categories: 
+categories:
 ---
 
 We use *a lot* of icons on [lonelyplanet.com](http://www.lonelyplanet.com/france/paris) and recently went through the task of transferring them from an icon font to SVG files. I wanted to share why we did this along with some of the drawbacks to SVG and how we got around them.
@@ -30,6 +30,11 @@ I'd heard rumours about devices overriding glyphs in the private unicode area an
 
 I can't remember which device I was testing on but I saw one of our tick icons replaced with a multi-colour printer. The page looked amateurish and broken and certainly gave us impetus to make this transition.
 
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">28 September 2014</span></h5>
+  <p>There is an example of this, alongside some other excellent points, over at <a href="http://css-tricks.com/svg-sprites-use-better-icon-fonts/">css-tricks</a>.</p>
+  <p>Chris Coyier also collated an incredible compendium of SVG knowledge, <a href="http://css-tricks.com/mega-list-svg-information/">A Compendium of SVG Information</a> which should be the default place to go for svg information.</p>
+</div>
 
 ## 3. Black squares and crosses on opera mini
 
@@ -48,21 +53,30 @@ Chrome Canary and Beta were hit with a fairly horrible [font bug](https://code.g
 
 When a font unloads and you're left with the text served as Georgia it can be a little annoying. The page is still very usable though. If the same font is responsible for serving the icons then suddenly the page is littered with black squares and looks broken.
 
-This bug was introduced during our transition to SVG. It was a relief to cut over just as we were starting to get our first bug reports about it. 
+This bug was introduced during our transition to SVG. It was a relief to cut over just as we were starting to get our first bug reports about it.
 
 ### Counter argument
 
 Those bugs haven't made it to a stable build of Chrome.
+
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">28 September 2014</span></h5>
+  <p>These bugs did make it to stable, but have long since been fixed.</p>
+</div>
 
 
 ## 5. Crisper icons in Firefox
 
 We've found that our font renders at a slightly stronger weight in Firefox than in other browsers. This is ok for text (although not great) but for icons it can make the entire page look a bit unloved and clumsy. By using SVG we are able to normalise the look and feel of our icons cross browser.
 
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">28 September 2014</span></h5>
+  <p>Font weights can be normalised by applying <code>-moz-osx-font-smoothing: grayscale;</code></p>
+</div>
 
 ## 6. You don't always have to use generated content.
 
-If you want to use font-icons in css you need to declare them using the content property in generated content. Sometimes you might find yourself having to complicate your code to make this possible i.e. because you are already using the :before and :after pseudo elements on the element or because the element doesn't support generated content. 
+If you want to use font-icons in css you need to declare them using the content property in generated content. Sometimes you might find yourself having to complicate your code to make this possible i.e. because you are already using the :before and :after pseudo elements on the element or because the element doesn't support generated content.
 
 In that case you could choose to render it inline but you then end up with html entities scattered through your markup which can easily be lost or forgotten about within a large application.
 
@@ -84,9 +98,14 @@ We have always had to support multi-colour map icons and had previously used an 
 
 ### Counter argument
 
-This can be accomplished using icon layering. 
+This can be accomplished using icon layering.
 
 It is significantly more challenging to do so successfully though: if positioning one glyph correctly cross-browser is tricky, it won't get easier with two.
+
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">28 September 2014</span></h5>
+  <p>If you can handle the more limited browser support associated with inline svg, you could have multiple colour control alongside a strong architecture by using the <a href="http://css-tricks.com/svg-use-external-source/"><code>&lt;use&gt;</code> element approach</a>.</p>
+</div>
 
 
 ## 9. SVGs allow us to use animation within our icons.
@@ -106,7 +125,7 @@ Serving icons through font-face does have some benefits over SVG and we had to c
 
 ## Colour variations
 
-The *huge* benefit to using an icon font is its flexibility. You have no limitation to the amount of colour variations and can easily switch it depending on the current state (:hover, :focus, .is-active etc.). This is a huge luxury and very useful for quick development. It was also the reason we resisted making the leap to SVG for so long. 
+The *huge* benefit to using an icon font is its flexibility. You have no limitation to the amount of colour variations and can easily switch it depending on the current state (:hover, :focus, .is-active etc.). This is a huge luxury and very useful for quick development. It was also the reason we resisted making the leap to SVG for so long.
 
 ### Our solution
 
