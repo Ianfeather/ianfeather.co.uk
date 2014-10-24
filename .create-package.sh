@@ -51,5 +51,9 @@ echo -e "${blue}Copy across the presentations package${none}"
 cp -r presentations _package-to-deploy/
 
 echo ""
+echo -e "${blue}Copy across the test-cases package${none}"
+cp -r testcases _package-to-deploy/
+
+echo ""
 echo -e "${blue}Clean up JS${none}"
 rm blog/source/javascripts/ianf.min.js
