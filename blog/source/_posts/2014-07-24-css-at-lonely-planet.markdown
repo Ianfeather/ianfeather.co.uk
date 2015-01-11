@@ -75,7 +75,7 @@ We collect this data every few hours using a few <a href="https://github.com/lon
 
 I&apos;ve written previously about our <a href="http://ianfeather.co.uk/a-maintainable-style-guide/">Maintainable Style Guide</a>, <a href="http://rizzo.lonelyplanet.com/styleguide/ui-components/cards">Rizzo</a> and it works very successfully.
 
-We also self document our Sass by wrapping it in <code>[doc]..[/doc]</code> tags, and then statically analysing it. For example, this <a href="https://github.com/lonelyplanet/rizzo/blob/master/app/assets/stylesheets/core/utilities/_utility_classes.sass">utility_classes.sass</a> file creates this <a href="http://rizzo.lonelyplanet.com/styleguide/css-utilities/utility-classes">documentation in Rizzo</a>.
+We also self document our Sass by wrapping it in <code>\[doc\]..\[/doc\]</code> tags, and then statically analysing it. For example, this <a href="https://github.com/lonelyplanet/rizzo/blob/master/app/assets/stylesheets/core/utilities/_utility_classes.sass">utility_classes.sass</a> file creates this <a href="http://rizzo.lonelyplanet.com/styleguide/css-utilities/utility-classes">documentation in Rizzo</a>.
 
 <img src="/images/css-documentation.png" alt="CSS Documentation" />
 

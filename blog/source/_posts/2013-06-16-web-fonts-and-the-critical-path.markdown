@@ -4,7 +4,7 @@ title: "Web Fonts and the Critical Path"
 date: 2013-06-06 08:52
 written: "on a plane to Velocity Conf"
 comments: true
-categories: 
+categories:
 ---
 
 This blog corresponds to my May 2013 talk [@frontendlondon](http://twitter.com/frontendlondon). The slides for that talk can be found on [slideshare](http://www.slideshare.net/ianfeather/fel-presentation).
@@ -13,7 +13,7 @@ This blog corresponds to my May 2013 talk [@frontendlondon](http://twitter.com/f
 
 CSS is justified critical due to the flash of unstyled content which would ensue if we deferred it. This is the main reason why web fonts are deemed critical to web pages: to avoid the flash of unstyled text which is then later repainted.
 
-When font-face landed we had this new tool at our disposal. It was shiny, fancy and it brought with it its own challenges: namely that in certain browsers there would be a flash of the fallback font until the browser had finished downloading the resource. We had a problem and, as front end developers love to do, we set about to race to be the fastest to fix it. 
+When font-face landed we had this new tool at our disposal. It was shiny, fancy and it brought with it its own challenges: namely that in certain browsers there would be a flash of the fallback font until the browser had finished downloading the resource. We had a problem and, as front end developers love to do, we set about to race to be the fastest to fix it.
 
 Somewhere along that path it became a best practice to place web fonts on the critical path. If your site had a Flash of Unstyled Text it was considered a poor implementation of font-face. It still is, for that matter.
 
@@ -25,7 +25,7 @@ You're on the london underground (we have free wifi at stations now) and you com
 
 Another example, and one closer to home for me and the team at Lonely Planet, is that of internet cafes. You might be in Thailand trying to book a boat, transfer money, find a place to stay that night, and you're sitting in an internet cafe sharing one DSL line with 50 other kids all playing online multiplayer games. You're staring at white screens and invisible text. We're forcing a design luxury on a user who just wants the content.
 
-And those are just the *first* world problems. 
+And those are just the *first* world problems.
 
 ## The browser and the spec
 
@@ -41,8 +41,8 @@ As you would imagine, from a wide open spec like this, implementation is very va
 
 <table class="table--left">
   <thead class="table-header">
-     <th>IE</th> 
-     <th>Firefox</th> 
+     <th>IE</th>
+     <th>Firefox</th>
      <th>Webkit</th>
   </thead>
   <tbody>
@@ -53,6 +53,11 @@ As you would imagine, from a wide open spec like this, implementation is very va
     </tr>
   </tbody>
 </table>
+
+<div class="edit">
+  <h5 class="edit__title type--quatro">Edit <span class="edit__date">12 January 2015</span></h5>
+  <p>Since Chrome moved to Blink they adopted the Firefox model.</p>
+</div>
 
 Out of these, webkit is the only current implementation which is non-conformant. Firefox tries to hedge their bets with a clever timeout implementation but 3s is still  a somewhat arbitrary number which is easily hit if you throttle your bandwidth even slightly. When that happens you're hitting your users twice as hard with slower perceived speed *and* a flash of unstyled text. But at least the users will see the content eventually&hellip;
 
@@ -95,7 +100,7 @@ The only downside to this approach I have found is it handcuffs you into couplin
 
 ## Font Loading solutions
 
-If you're loading web fonts via a third party using JS you should be loading it asynchronously. This should really be a default setting as otherwise you're creating a SPOF for your site. I would highly reccommend looking into the Google Web Font Loader and taking a look at these great slides by [Richard Rutter](http://www.slideshare.net/clagnut/responsive-web-fonts) on the subject. 
+If you're loading web fonts via a third party using JS you should be loading it asynchronously. This should really be a default setting as otherwise you're creating a SPOF for your site. I would highly reccommend looking into the Google Web Font Loader and taking a look at these great slides by [Richard Rutter](http://www.slideshare.net/clagnut/responsive-web-fonts) on the subject.
 
 If you're self hosting there are a number of techniques available to your. Below are five different methods, the first two place the font on the critical path and block the rendering of the page whilst the latter ones showcase our options for deferring the font load.
 
@@ -150,7 +155,7 @@ The most important part of using this approach is ensuring that you don't serve 
   f.rel = "stylesheet";
 
   f.href = "#{asset_path("woff.css")}";
-  
+
   window.setTimeout(function(){
     x.parentNode.insertBefore(f, x);
   },0)
@@ -168,7 +173,7 @@ Essentially the technique is to check to see if the font is in Local Storage on 
 
 The only downside to this approach is the time taken to access Local Storage (minimal) and the fact that you are having to re-implement a browser feature. Still, it is a technique worth investigating if you have similar concerns.
 
-[https://github.com/guardian/frontend/blob/master/common/app/assets/javascripts/modules/fonts.js](https://github.com/guardian/frontend/blob/master/common/app/assets/javascripts/modules/fonts.js)
+[https://github.com/guardian/frontend/blob/9fc76eb9224c26031d265506de3b1e69bc06bb07/static/src/javascripts/projects/common/modules/ui/fonts.js](https://github.com/guardian/frontend/blob/9fc76eb9224c26031d265506de3b1e69bc06bb07/static/src/javascripts/projects/common/modules/ui/fonts.js)
 
 ### 5. Async & Defer
 
@@ -187,7 +192,7 @@ This is a neat solution proposed by Chris Coyier in his article on css-tricks ([
     &lt;script&gt;
       // Load in custom fonts
       $.ajax({
-        url: '#{asset_path("woff.css")}', 
+        url: '#{asset_path("woff.css")}',
         success: function () {
           // Set cookie
         }
@@ -208,13 +213,13 @@ It does raise the interesting question of how important a web font really is tho
 
 The issue of loading fonts really highlights the nuance of managing web performance. Rarely is there a holy grail solution to the problem; you need to balance the different performance costs and work out what is best for your user base. How much of your content is using fonts? How critical is that content? What’s the cost of a round trip?
 
-In my opinion we need to stop thinking of web fonts as critical to the page and serve them only to users for whom it will enrich  their experience. Making content unreadable for users on slow connections can't be the sacrifice for other users not seeing a repaint. In order to come up with a real solution we need to be able to differentiate between the two groups. 
+In my opinion we need to stop thinking of web fonts as critical to the page and serve them only to users for whom it will enrich  their experience. Making content unreadable for users on slow connections can't be the sacrifice for other users not seeing a repaint. In order to come up with a real solution we need to be able to differentiate between the two groups.
 
 At EdgeConf earlier this year there was a discussion around whether or not having access to the connection speed of the user would be beneficial, misused or even necessary. What would you use it for?
 
-It could certainly be valuable in this situation, allowing us to only load fonts when we feel it would be in the user's interest. Ideally this would not be a client-side solution. 
+It could certainly be valuable in this situation, allowing us to only load fonts when we feel it would be in the user's interest. Ideally this would not be a client-side solution.
 
-If Client Hints were able to expose this information we could decide whether or not to include the font on the server side. Even better, we could send that font with a header which told the browser if the font should block the render or not. These are all wishful solutions though. In the meantime we may have to roughly determine the connection speed of the browser using timing APIs. 
+If Client Hints were able to expose this information we could decide whether or not to include the font on the server side. Even better, we could send that font with a header which told the browser if the font should block the render or not. These are all wishful solutions though. In the meantime we may have to roughly determine the connection speed of the browser using timing APIs.
 
 Progressive enhancement for web fonts does not need to be limited to performance issues either. There are other features we could be testing upon to determine whether or not to serve fonts: sub-pixel font rendering support, for example.
 
