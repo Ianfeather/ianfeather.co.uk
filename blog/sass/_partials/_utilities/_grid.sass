@@ -27,3 +27,14 @@
   @extend %grid-column
   +at(800)
     width: 66.6666%
+
+
+.inner-content-grid
+  @extend %clearfix
+  margin-left: -$small-spacing
+
+  .col--half
+    padding-left: $small-spacing
+    +at(800)
+      float: left
+      width: 50%
