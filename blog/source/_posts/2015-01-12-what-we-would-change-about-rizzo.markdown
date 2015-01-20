@@ -85,4 +85,4 @@ My ideal process would be to have a post-deploy hook on Rizzo that triggers buil
 
 <h2 id="are-you-using-a-component-api-like-rizzo" class="blog-subtitle">Are you using a component API like Rizzo?</h2>
 
-If so I would love to hear about it! Have you made any changes similar to the above which others could learn from?
+If so I'd be keen to hear about it! Have you made any changes similar to the above which others could learn from?
