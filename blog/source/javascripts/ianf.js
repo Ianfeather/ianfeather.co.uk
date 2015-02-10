@@ -108,3 +108,9 @@ ICF.disqus = (function(){
 }());
 
 ICF.svgSprite = new ICF.Iconizer('#js-svg-sprite');
+
+(function enableEditingInDevMode(host) {
+
+  if (host.match(/(127|localhost)/)) document.body.setAttribute("contenteditable", "true");
+
+}(window.location.hostname));

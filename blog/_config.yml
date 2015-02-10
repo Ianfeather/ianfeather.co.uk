@@ -23,11 +23,11 @@ permalink: /:title/
 source: source
 destination: site
 include: ['.htaccess']
-markdown: maruku
+markdown: kramdown
 
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
 
 
 paginate: 3          # Posts per page on the blog index

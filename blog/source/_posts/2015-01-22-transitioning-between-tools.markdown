@@ -1,18 +1,21 @@
 ---
 layout: post
 title: "Transitioning between tools"
+subtitle: "When, how and how often?"
 date: 2015-01-22 03:30
 comments: true
 categories:
 ---
 
-Transitioning between tools is almost an inevitability in any long running project: new tools will become available, new knowledge acquired which highlight new opportunities, and products will morph, pivot and shoot off in tangents taking all earlier decision justifications with them. Transitioning is a necessity then but often very expensive. So, how do you know when the time has come to make a change worthwhile? And how often should you re-evaluate these earlier decisions?
+Having to re-assess your toolset is almost an inevitability in any long running project: new tools will become available, new knowledge will highlight new opportunities, and products will morph, pivot and shoot off in tangents taking all earlier design justifications with them. Transitioning should be encouraged over stagnation but it’s almost always a very expensive operation. There is a skill in knowing then the time is right to make it worth the expense: a skill that mostly comes with experience though I believe there are lessons which I have learnt over the last few years which can be shared.
 
-The cost of transitioning comes in a variety of forms: developer time spent introducing the new tool and removing the old, teams getting to understand the new tool and workflows, as well as the cognitive overhead of working with two tools at the same time if, as happens often in large systems, tools need to be transitioned gradually. Knowing when and why to transition typically requires nous and experience, a history of past mistakes and a good eye for balancing future benefits and complexities.
+The cost of transitioning is rarely limited to the time taken to replace the old tool with the new. There are a variety of ancillary costs such as teams getting to understand the new tool and, more prevalent in our large ecosystem, the cognitive overhead of working with two tools at the same time if, as happens often, the transition needs to happen gradually.
 
-There’s no simple answer to the above questions, however these decisions _have_ to be taken. Your tech stack can’t risk  becoming stagnant simply because you are afraid to make changes. Of course you can pre-empt this certainty by building your applications in a loosely coupled manner, giving yourself the best chance of replacing parts easily when necessary, but the time will still arise.
+*** It's worth mentioning that "tool" is a quite encompassing term within this article. I would consider moving from Fonts to SVG and from Grunt to Gulp to both be fitting in the discussion.
 
-It's true there is no replacement for experience though I believe there are good traits you can have as a developer to help you reason about these decisions. These are some of those I have picked up over the last couple of years whilst tech leading Lonely Planet.
+Regardless of the overhead there are some decisions which simply _have_ to be taken. Your tech stack can’t risk becoming stagnant simply because you are afraid to make changes. Of course you can pre-empt this certainty by building your applications in a loosely coupled manner, giving yourself the best chance of replacing parts easily when necessary, but the time will still arise.
+
+Knowing when and why to transition typically requires nous and experience, a history of past mistakes and a good eye for balancing future benefits and complexities. It's true there is no replacement for experience though I believe there are good traits you can have as a developer to help you reason about these decisions.
 
 
 <h2 id="be-t-shaped" class="blog-subtitle">1. Be T-Shaped</h2>
