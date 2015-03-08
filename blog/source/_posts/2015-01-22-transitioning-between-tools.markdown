@@ -11,18 +11,18 @@ Having to re-assess your toolset is almost an inevitability in any long running 
 
 The cost of transitioning is rarely limited to the time taken to replace the old tool with the new. There are a variety of ancillary costs such as teams getting to understand the new tool and, more prevalent in our large ecosystem, the cognitive overhead of working with two tools at the same time if, as happens often, the transition needs to happen gradually.
 
-*** It's worth mentioning that "tool" is a quite encompassing term within this article. I would consider moving from Fonts to SVG and from Grunt to Gulp to both be fitting in the discussion.
-
 Regardless of the overhead there are some decisions which simply _have_ to be taken. Your tech stack can’t risk becoming stagnant simply because you are afraid to make changes. Of course you can pre-empt this certainty by building your applications in a loosely coupled manner, giving yourself the best chance of replacing parts easily when necessary, but the time will still arise.
 
 Knowing when and why to transition typically requires nous and experience, a history of past mistakes and a good eye for balancing future benefits and complexities. It's true there is no replacement for experience though I believe there are good traits you can have as a developer to help you reason about these decisions.
 
+*** It's worth mentioning that "tool" is a quite encompassing term within this article. I would consider the move from Icon Fonts to SVG and from Grunt to Gulp to both be fitting in the discussion.
 
-<h2 id="be-t-shaped" class="blog-subtitle">1. Be T-Shaped</h2>
+
+<h2 id="be-t-shaped" class="blog-subtitle">1. Be a T-Shaped Developer</h2>
 
 To be able to make a confident decision you need to be aware of your available options. You also need to be aware of the established pros and cons of the options as well as how each option would fit in to your current stack.
 
-A T-Shaped Engineer is one that has a deep understanding of a certain subject (or subjects) and a broad understanding about many others. Being T-Shaped gives you the flexibility of knowing what to pay attention to but also knowing how deep you need to go on a particular topic.
+A T-Shaped developer is one that has a deep understanding of a certain subject (or subjects) and a broad understanding about many others. Being T-Shaped gives you the flexibility of knowing what to pay attention to but also knowing how deep you need to go on a particular topic.
 
 For example, as a JavaScript developer you should have a deep understanding of the core language features and a broad understanding of the merits of each JavaScript framework. You should be able to suggest that a certain project might lend itself better to Flight over Angular, or Ember over Backbone, depending on the application in question but be prepared to dig deeper on each before coming to a final choice.
 
