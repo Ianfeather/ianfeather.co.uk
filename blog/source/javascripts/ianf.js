@@ -111,6 +111,17 @@ ICF.svgSprite = new ICF.Iconizer('#js-svg-sprite');
 
 (function enableEditingInDevMode(host) {
 
-  if (host.match(/(127|localhost)/)) document.body.setAttribute("contenteditable", "true");
+  if (!host.match(/(127|localhost)/)) return;
+
+  var btn = document.createElement("button");
+  btn.innerText = "Toggle contenteditable";
+  btn.setAttribute("style", "position: absolute; top: 20px; left: 20px;");
+
+  btn.addEventListener("click", function(e) {
+    var state = !!!document.body.getAttribute("contenteditable");
+    document.body.setAttribute("contenteditable", state);
+  }, false);
+
+  document.body.appendChild(btn);
 
 }(window.location.hostname));
