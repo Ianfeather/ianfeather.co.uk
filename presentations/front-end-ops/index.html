@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=1024" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <title>Front End Ops - Ian Feather</title>
-      
+
       <meta name="description" content="A talk given at FrontEndLondon - built using impress.js" />
       <meta name="author" content="Ian Feather" />
       <link href="css/style.css" rel="stylesheet" />
@@ -25,14 +25,14 @@
         </script>
   </head>
 
-  <body class="impress-not-supported">
+  <body class="presentation-mode impress-not-supported">
 
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required</b> by impress.js, so the best I can do is a linear version of this Guide.</p>
         <p>If you can, check it out using a modern desktop browser.</p>
     </div>
 
-    <div class="helpful-message is-active">
+    <div class="helpful-message is-activ">
       <p>Press i at any point to get more information / helpful links.</p>
     </div>
 
@@ -42,7 +42,7 @@
         <div class="slide__content">
           <h1 class="slide__title">Front End Ops</h1>
           <a class="author-link" href="http://www.twitter.com/ianfeather">@ianfeather</a>
-          <a href="http://www.lonelyplanet.com" class="lp-logo">Lonely Planet</a>
+          <h2>Senior Software Engineer at Schibsted Media Group</a>
         </div>
         <div class="user-panel">
           <div class="user-panel__inner">
@@ -74,7 +74,8 @@
           <h1 class="slide__title substep is-active js-substep">Key Concepts</h1>
           <div class="substep js-substep">
             <blockquote><strong>&ldquo;The metric by which a front-end operations engineer would be judged is <em>speed</em>.</strong>&rdquo; - Alex Sexton, Smashing Magazine</blockquote>
-
+          </div>
+          <div class="substep js-substep">
             <ul>
               <li class="slide__item">Release (the best) code as fast as possible.</li>
               <li class="slide__item">Begin the User Experience as fast as possible.</li>
@@ -106,7 +107,7 @@
         <img src="images/html-css-js.png" />
       </div>
 
-      
+
 
       <div id="t0-overview-2" class="step" data-x="0" data-y="0" data-scale="7">
         <h2 class="title--huge title--cd icon--arrow-right--after">Fast and Safe <br />Code Delivery</h2>
@@ -130,7 +131,7 @@
         <div class="user-panel">
           <div class="user-panel__inner">
             <p>We need to enable quick and early feedback for each developer in order to ultimately make their code better. Having your files watched by JSHint is an example of immediate feedback, but with longer proesses we need to create more structured gateposts.</p>
-            
+
             <p>The real challenge here is to get developer investment in the process. Each developer is protective of their development environment and by integrating this process you are introducing unknows. You need to invest time to maintain the checks and keep them fast otherwise developers will find a way to bypass them.</p>
 
             <p>We need to manage the relationship between speed &amp; risk:</p>
@@ -141,7 +142,7 @@
           </div>
         </div>
       </div>
-      
+
       <div id="t1-commit" class="step slide hidden--overview-1" data-x="1250" data-y="2100">
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Save &amp; Pre-Commit</h1>
@@ -222,7 +223,8 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Code Review</h1>
           <div class="substep js-substep">
-            <p>Our last opportunity to sanity check before merging.</p>
+
+            <p>Our first asynchronous part of the pipeline.</p>
             <ul>
               <li>Thoroughness is more important here than speed.</li>
               <li>An opportunity to share knowledge.</li>
@@ -247,7 +249,7 @@
           </div>
         </div>
       </div>
-      
+
       <div id="t1-ci" class="step slide hidden--overview-1" data-x="3350" data-y="-300" data-scale="1">
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Continuous Integration</h1>
@@ -312,7 +314,7 @@
           <h1 class="slide__title is-active substep js-substep">Server</h1>
         </div>
       </div>
-      
+
 
       <div id="t1-overview-2" class="step" data-x="0" data-y="0" data-scale="7"></div>
       <div id="t2-overview-2" class="step" data-x="0" data-y="0" data-scale="7"></div>
@@ -395,6 +397,8 @@
               <li>Static Assets.</li>
               <li>The DNS lookup.</li>
             </ul>
+          </div>
+          <div class="substep js-substep">
             <h2 class="slide__subtitle">Uh oh, now everything is cached&hellip;</h2>
             <ul>
               <li>Cookies, Authentication, Localisation.</li>
@@ -426,6 +430,8 @@
               <li>Tweak asset config to increase cache hit rate.</li>
               <li>Serve everything from the edge.</li>
             </ul>
+          </div>
+          <div class="substep js-substep">
             <h2 class="slide__subtitle">And kick off client-side monitoring:</h2>
             <ul>
               <li>RUM Timings.</li>
@@ -505,10 +511,9 @@
             <ul>
               <li>To decide on the next features/bug-fixes.</li>
               <li>To improve your feedback loop.</li>
-              <li>To remove HIPPOs* from the equation.</li>
-              <li>Tom make the product better.</li>
+              <li>To remove HIPPOs from the equation.</li>
+              <li>To make the product better.</li>
             </ul>
-            <p>* Highest paid person's opinion</p>
           </div>
         </div>
       </div>
