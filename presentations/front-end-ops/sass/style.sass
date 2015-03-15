@@ -2,14 +2,24 @@
 @import "fonts"
 @import "svg"
 
+$background: #eef1f3
+$high-contrast-background: #82a6be
+$slide-color: #fff
+$title-color: #206FAC
+$subtitle-color: #206FAC
+$main-text-color: #000000
+$highlight: red
+$link-color: #288AD6
+
 body
+  color: $main-text-color
   font-family: freight
-  background: #eef1f3
+  background: $background
   font-size: 30px
   line-height: 1.3em
   -webkit-font-smoothing: antialiased
   &.high-contrast
-    background: #82a6be
+    background: $high-contrast-background
 
 p, li
   margin-bottom: 10px
@@ -18,7 +28,7 @@ blockquote
   margin-bottom: 0.8em
 
 a
-  color: #288AD6
+  color: $link-color
   text-decoration: none
 
 a:hover,
@@ -27,6 +37,19 @@ a:focus
 
 img
   max-width: 100%
+
+.img--regular-contrast
+  display: block
+  .high-contrast &
+    display: none
+
+.img--high-contrast
+  display: none
+  .high-contrast &
+    display: block
+
+.slide
+  background: $slide-color
 
 .slide--transparent
   width: 900px
@@ -49,7 +72,7 @@ img
   right: 0
   position: absolute
   overflow: hidden
-  background: #206FAC
+  background: $title-color
   color: white
   font-size: 20px
   line-height: 40px
@@ -106,7 +129,7 @@ p, ul
 
 .slide__title
   font-size: 80px
-  color: #206FAC
+  color: $title-color
   min-height: 100px
   line-height: 1.2em
   letter-spacing: 0.02em
@@ -155,7 +178,7 @@ p, ul
 .slide__subtitle
   font-size: 20px
   font-weight: bold
-  color: #206FAC
+  color: $subtitle-color
   text-transform: uppercase
   letter-spacing: 0.1em
   margin: 1em 0 0.9em
@@ -178,17 +201,6 @@ p, ul
 
 .showing-links .user-panel
   display: block
-
-.slide--server,
-.slide--server--alt,
-.slide--important
-  background: #508DBB
-  text-align: center
-  border-radius: 5%
-  .slide__title
-    color: #fff
-    font-size: 200px
-    margin-top: -100px
 
 #t0-overview-2
   width: 1000px
@@ -268,6 +280,12 @@ p, ul
     margin: 0 auto
     display: block
 
+#t2-user-p_0x
+  img
+    width: 100%
+    display: block
+    margin-top: 10%
+
 // Show and hide main tiers
 
 body[class*="t0"] .step[id*="t1"],
@@ -315,3 +333,30 @@ body[class*="thanks"] #t4-thanks
   #t0-editor,
   #t0-overview-2
     display: none!important
+
+
+#t0-editor,
+#t1-t2-server,
+#t2-user-p_0x
+  transition: margin 0.5s ease
+
+
+#t1-t2-server,
+  .impress-on-t0-overview-1 &,
+  .impress-on-t0-overview-2 &,
+  .impress-on-t0-overview-3 &,
+  .impress-on-t1-overview-3 &
+    margin-left: -300px
+
+#t0-editor
+  .impress-on-t0-overview-1 &,
+  .impress-on-t0-overview-2 &,
+  .impress-on-t0-overview-3 &
+    margin-top: -300px
+
+#t2-user-p_0x
+  .impress-on-t0-overview-1 &,
+  .impress-on-t0-overview-2 &,
+  .impress-on-t0-overview-3 &,
+  .impress-on-t1-overview-3 &
+    margin-right: -300px
