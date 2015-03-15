@@ -7,9 +7,9 @@ $high-contrast-background: #82a6be
 
 $slide-color: #322A42
 $title-color: #19B5A5
-$subtitle-color: #FF6933
+$subtitle-color: #DE1C69
 $main-text-color: #fff
-$highlight: #FFC219
+$highlight: #FF6933
 $link-color: #D80000
 
 body
@@ -35,6 +35,12 @@ a
 a:hover,
 a:focus
   text-decoration: underline
+
+.highlight
+  border-bottom: 2px solid $highlight
+
+.title--huge
+  color: #000
 
 img
   max-width: 100%
@@ -129,6 +135,7 @@ p, ul
   opacity: 0
 
 .slide__title
+  font-family: roboto_slabbold
   font-size: 80px
   color: $title-color
   min-height: 100px
