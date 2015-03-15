@@ -40,9 +40,8 @@
 
       <div id="t0-begin" class="step slide v-centered js-substeps title-slide" data-x="0" data-y="6500">
         <div class="slide__content">
-          <h1 class="slide__title">Front End Ops</h1>
-          <a class="author-link" href="http://www.twitter.com/ianfeather">@ianfeather</a>
-          <h2>Senior Software Engineer at Schibsted Media Group</a>
+          <h1 class="slide__title">Fundamentals of <br />Front End Ops</h1>
+          <!-- <h2>Senior Software Engineer at Schibsted Media Group</a> -->
         </div>
         <div class="user-panel">
           <div class="user-panel__inner">
@@ -53,35 +52,20 @@
         </div>
       </div>
 
-      <div id="t0-over-the-wall" class="step" data-x="0" data-y="5000">
-        <figure class="slide__content drawing">
-          <img src="images/dev.jpg" />
-          <figcaption class="drawing__caption">No more throwing code over the wall.</figcaption>
-        </figure>
-
-        <div class="user-panel">
-          <div class="user-panel__inner">
-            <p>Front end developers are probably the worst culprits of throwing code over the wall. The mentality of, &ldquo;I pushed it, now it&rsquo;s an Ops problem&rdquo; is becoming a dated paradigm, one which has so many drawbacks.</p>
-            <p>As front end developers we should be levelling up and taking ownership of our code working correctly locally and in production, as well as understanding all the variables that sit between our code and the user.</p>
-            <p>Plus you don&rsquo;t have to wait around for the ops guy any more&hellip; ;)</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="t0-key-concepts" class="step slide is-overview" data-x="0" data-y="3500">
+      <div id="t0-key-concepts" class="step slide is-overview" data-x="0" data-y="5000">
         <div class="slide__content">
-          <h1 class="slide__title substep is-active js-substep">Key Concepts</h1>
+          <h1 class="slide__title substep is-active js-substep">Key Concept 1</h1>
           <div class="substep js-substep">
-            <blockquote><strong>&ldquo;The metric by which a front-end operations engineer would be judged is <em>speed</em>.</strong>&rdquo; - Alex Sexton, Smashing Magazine</blockquote>
+            <blockquote class="slide__blockquote"><strong class="slide__emphasis">&ldquo;The metric by which a front-end operations engineer would be judged is <em>speed</em>.&rdquo;</strong></blockquote>
+            <p class="slide__subtitle">Alex Sexton, Smashing Magazine</p>
           </div>
-          <div class="substep js-substep">
+          <!-- <div class="substep js-substep">
             <ul>
               <li class="slide__item">Release (the best) code as fast as possible.</li>
               <li class="slide__item">Begin the User Experience as fast as possible.</li>
               <li class="slide__item">Enable fast feedback.</li>
             </ul>
-          </div>
+          </div> -->
 
         </div>
         <div class="user-panel">
@@ -103,6 +87,33 @@
       </div>
 
 
+      <div id="t0-over-the-wall" class="slide step" data-x="0" data-y="3500">
+        <div class="slide__content">
+          <h1 class="slide__title substep is-active js-substep">Key Concept 2</h1>
+          <div class="substep js-substep">
+          <blockquote class="slide__blockquote">
+            <strong class="slide__emphasis">
+              &ldquo;Stop throwing code over the wall!.&rdquo;
+            </strong>
+          </blockquote>
+          <p class="slide__subtitle">Every ops person ever</p>
+          </div>
+        </div>
+        <!-- <figure class="slide__content drawing">
+          <img src="images/dev.jpg" />
+          <figcaption class="drawing__caption">No more throwing code over the wall.</figcaption>
+        </figure>
+ -->
+        <div class="user-panel">
+          <div class="user-panel__inner">
+            <p>Front end developers are probably the worst culprits of throwing code over the wall. The mentality of, &ldquo;I pushed it, now it&rsquo;s an Ops problem&rdquo; is becoming a dated paradigm, one which has so many drawbacks.</p>
+            <p>As front end developers we should be levelling up and taking ownership of our code working correctly locally and in production, as well as understanding all the variables that sit between our code and the user.</p>
+            <p>Plus you don&rsquo;t have to wait around for the ops guy any more&hellip; ;)</p>
+          </div>
+        </div>
+      </div>
+
+
       <div id="t0-editor" class="step" data-x="0" data-y="2200" data-scale="1.5">
         <img src="images/imac-sublime.png" />
       </div>
@@ -119,12 +130,12 @@
 
       <div id="t1-author-code" class="step slide hidden--overview-1" data-x="0" data-y="2100" data-scale="1.5">
         <div class="slide__content">
-          <h1 class="slide__title substep is-active js-substep">Safe Code Delivery</h1>
+          <h1 class="slide__title substep is-active js-substep">Safe, Fast Delivery</h1>
           <div class="substep js-substep">
             <ul>
-              <li>Create systems to protect the production environment.</li>
-              <li>Offload risk away from any individual developer.</li>
-              <li>Give feedback as early as possible.</li>
+              <li>Protect production.</li>
+              <li>De-risk development.</li>
+              <li>Identify bottlenecks.</li>
             </ul>
           </div>
         </div>
@@ -147,11 +158,10 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Save &amp; Pre-Commit</h1>
           <div class="substep js-substep">
-            <p>Our first opportunities to run small, fast, composable tasks:</p>
             <ul>
-              <li>Remove trailing whitespace.</li>
-              <li>Ensure styleguide compliance.</li>
-              <li>Remove debuggers, local dependency references etc.</li>
+              <li>Linting and style compliance.</li>
+              <li>Remove accidental code.</li>
+              <li>This has to be <span class="highlight">fast</span>.</li>
             </ul>
           </div>
         </div>
@@ -175,15 +185,15 @@
           </div>
         </div>
       </div>
+
       <div id="t1-push" class="step slide hidden--overview-1" data-x="1950" data-y="1300">
         <div class="slide__content">
-          <h1 class="slide__title is-active substep js-substep">Pre-Push</h1>
+          <h1 class="slide__title is-active substep js-substep">Branch Builds</h1>
           <div class="substep js-substep">
-            <p>An opportunity to run slightly longer tasks:</p>
             <ul>
-              <li>Unit tests.</li>
-              <li>Visual Regression tests.</li>
-              <li>Code coverage, quality and complexity analysis.</li>
+              <li>Our first async part of the pipeline.</li>
+              <li>Run the full test suite.</li>
+              <li>Code size, quality and complexity analysis.</li>
             </ul>
           </div>
         </div>
@@ -223,10 +233,8 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Code Review</h1>
           <div class="substep js-substep">
-
-            <p>Our first asynchronous part of the pipeline.</p>
             <ul>
-              <li>Thoroughness is more important here than speed.</li>
+              <li>Thoroughness > speed.</li>
               <li>An opportunity to share knowledge.</li>
               <li>Not a personal critique.</li>
             </ul>
@@ -254,11 +262,10 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Continuous Integration</h1>
           <div class="substep js-substep">
-            <p>CI can seem complex but is actually very simple:</p>
             <ul>
-              <li>A near-production environment in a centralised location.</li>
+              <li>A centralised, near-production environment.</li>
               <li>A hook to trigger tasks.</li>
-              <li>A series of task runners that return 0 or 1.</li>
+              <li>A series of task runners.</li>
             </ul>
           </div>
         </div>
@@ -290,12 +297,9 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Deployment</h1>
           <div class="substep js-substep">
-            <p>Moving files to a production environment in a consistent and automated manner.</p>
             <ul>
+              <li>The transfer of files to a production environment in a consistent and automated manner.</li>
               <li>Continuous Deployment, Delivery or Experimentation&hellip;?</li>
-              <li>Triggered on a successful Continuous Integration result.</li>
-              <li>Choose your deployment method &amp; strategy.</li>
-              <li>Execute downstream jobs.</li>
             </ul>
           </div>
         </div>
@@ -400,7 +404,7 @@
             </ul>
           </div>
           <div class="substep js-substep">
-            <h2 class="slide__subtitle">Uh oh, now everything is cached&hellip;</h2>
+            <h2 class="slide__subtitle">Uh oh, now <span class="highlight">everything</span> is cached&hellip;</h2>
             <ul>
               <li>Cookies, Authentication, Localisation.</li>
               <li>Expose what is cached, and where, to the team.</li>
@@ -472,7 +476,7 @@
         <div class="slide__content">
           <h1 class="slide__title is-active substep js-substep">Collect Metrics</h1>
           <ul class="substep js-substep">
-            <li>How do you know what to measure?</li>
+            <li><span class="highlight">What</span> should I measure?</li>
             <li>Collect using tools like statsD, Logstash or even a 1x1.</li>
             <li>Expose them to your team.</li>
             <li>Figure out what they mean.</li>
