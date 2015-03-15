@@ -620,7 +620,7 @@ i, em {
   background-size: cover; }
 
 body {
-  color: #000000;
+  color: #fff;
   font-family: freight;
   background: #eef1f3;
   font-size: 30px;
@@ -636,7 +636,7 @@ blockquote {
   margin-bottom: 0.8em; }
 
 a {
-  color: #288AD6;
+  color: #D80000;
   text-decoration: none; }
 
 a:hover,
@@ -657,7 +657,7 @@ img {
     display: block; }
 
 .slide {
-  background: #fff; }
+  background: #322A42; }
 
 .slide--transparent {
   width: 900px;
@@ -680,7 +680,7 @@ img {
   right: 0;
   position: absolute;
   overflow: hidden;
-  background: #206FAC;
+  background: #19B5A5;
   color: white;
   font-size: 20px;
   line-height: 40px;
@@ -732,7 +732,7 @@ p, ul {
 
 .slide__title {
   font-size: 80px;
-  color: #206FAC;
+  color: #19B5A5;
   min-height: 100px;
   line-height: 1.2em;
   letter-spacing: 0.02em;
@@ -780,7 +780,7 @@ p, ul {
 .slide__subtitle {
   font-size: 20px;
   font-weight: bold;
-  color: #206FAC;
+  color: #FF6933;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 1em 0 0.9em; }
