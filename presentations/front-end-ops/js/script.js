@@ -831,7 +831,7 @@ var frontEndOps = (function(){
     substeps.forEach(function(substep, index){
       if (substep.classList.contains('is-active') && !foundNext) {
         substep.classList.remove('is-active', 'js-substep');
-        substep.classList.add('js-prev-substep')
+        substep.classList.add('js-prev-substep', 'transition-ended')
         substep.nextElementSibling.classList.add('is-active')
         foundNext = true;
       }
@@ -850,15 +850,6 @@ var frontEndOps = (function(){
 
     nextSubstep.classList.remove('js-prev-substep')
     nextSubstep.classList.add('js-substep', 'is-active')
-
-    // substeps.reverse().forEach(function(substep, index){
-    //   if (substep.classList.contains('is-active') && !foundNext) {
-    //     substep.classList.remove('is-active', 'js-substep');
-
-    //     substep.nextElementSibling.classList.add('is-active')
-    //     foundNext = true;
-    //   }
-    // });
   }
 
   document.addEventListener("keyup", function ( event ) {
