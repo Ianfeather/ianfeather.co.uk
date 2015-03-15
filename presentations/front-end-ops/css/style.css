@@ -679,6 +679,8 @@ img {
   transition: height 0.5s ease; }
   .impress-on-t0-begin .helpful-message {
     height: 40px; }
+  .presentation-mode .helpful-message {
+    display: none; }
 
 ul {
   list-style: circle;
