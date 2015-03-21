@@ -141,6 +141,9 @@ p, ul
 .substep.is-active ~ .substep
   opacity: 0
 
+.substep.is-active ~ .substep.js-hide
+  display: none
+
 .slide__blockquote
   margin-top: 100px
 
@@ -320,7 +323,8 @@ body[class*="t1"] .step[id*="t3"],
 body[class*="t2"] .step[id*="t1"],
 body[class*="t2"] .step[id*="t3"],
 #t0-author-code,
-#t4-thanks
+#t4-thanks,
+#t4-is-it-a-thing
   opacity: 0
 
 body[class*="t0"] .step[id*="t0"],
@@ -336,7 +340,8 @@ body[class*="t3"] .step[id*="t3"],
 #t0-editor,
 body[class*="t1-overview-3"] #t0-author-code,
 body[class*="author-code"] #t0-author-code,
-body[class*="thanks"] #t4-thanks
+body[class*="thanks"] #t4-thanks,
+body[class*="thing"] #t4-is-it-a-thing
   opacity: 1
 
 .impress-not-supported
@@ -384,3 +389,15 @@ body[class*="thanks"] #t4-thanks
   .impress-on-t0-overview-3 &,
   .impress-on-t1-overview-3 &
     margin-right: -300px
+
+
+.strike
+  text-decoration: line-through
+  color: $highlight
+  margin-right: 5px
+
+.green
+  color: $title-color
+
+.is-hidden
+  display: none

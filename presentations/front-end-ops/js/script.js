@@ -819,28 +819,45 @@ var frontEndOps = (function(){
     slide.classList.toggle('showing-links');
   },
 
+  showSubstepExtra = function(elem) {
+    var innerElem = elem.querySelector("[data-alternative]");
+    innerElem.querySelector(".js-strike-later").classList.add("strike");
+    innerElem.innerHTML += innerElem.dataset.alternative + " <span class='green'>✓</span>";
+  },
+
 
   moveForwardAStep = function(slide) {
     var substeps = slide.querySelectorAll('.js-substep'),
         foundNext = false;
 
+
     if (substeps.length === 1) {
-      return impress().processKeyup(event);
+      if (substeps[0].classList.contains("js-substep-extra")) {
+        substeps[0].classList.remove("js-substep-extra");
+        return showSubstepExtra(substeps[0]);
+      } else {
+        return impress().processKeyup(event);
+      }
     }
 
     substeps.forEach(function(substep, index){
       if (substep.classList.contains('is-active') && !foundNext) {
         substep.classList.remove('is-active', 'js-substep');
         substep.classList.add('js-prev-substep', 'transition-ended')
+        if (substep.classList.contains("js-hide")) {
+          substep.classList.add("is-hidden")
+        }
         substep.nextElementSibling.classList.add('is-active')
+        substep.nextElementSibling.classList.remove('is-hidden')
         foundNext = true;
       }
     });
 
-  };
+  },
 
   moveBackwardAStep = function(slide) {
     var substeps = slide.querySelectorAll('.js-prev-substep'),
+        substep = substeps[substeps.length],
         nextSubstep = substeps[substeps.length - 1],
         foundNext = false;
 
@@ -850,7 +867,14 @@ var frontEndOps = (function(){
 
     nextSubstep.classList.remove('js-prev-substep')
     nextSubstep.classList.add('js-substep', 'is-active')
-  }
+    // if (substep.classList.contains("js-hide")) {
+    //   substep.classList.add("is-hidden");
+    // }
+
+    if (nextSubstep.classList.contains("is-hidden")){
+      nextSubstep.classList.remove('is-hidden')
+    }
+  };
 
   document.addEventListener("keyup", function ( event ) {
     var keyCode = event.keyCode || event.which || event.charCode,

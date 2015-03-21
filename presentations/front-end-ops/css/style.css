@@ -761,6 +761,9 @@ p, ul {
 .substep.is-active ~ .substep {
   opacity: 0; }
 
+.substep.is-active ~ .substep.js-hide {
+  display: none; }
+
 .slide__blockquote {
   margin-top: 100px; }
 
@@ -929,7 +932,8 @@ body[class*="t1"] .step[id*="t3"],
 body[class*="t2"] .step[id*="t1"],
 body[class*="t2"] .step[id*="t3"],
 #t0-author-code,
-#t4-thanks {
+#t4-thanks,
+#t4-is-it-a-thing {
   opacity: 0; }
 
 body[class*="t0"] .step[id*="t0"],
@@ -945,7 +949,8 @@ body[class*="t3"] .step[id*="t3"],
 #t0-editor,
 body[class*="t1-overview-3"] #t0-author-code,
 body[class*="author-code"] #t0-author-code,
-body[class*="thanks"] #t4-thanks {
+body[class*="thanks"] #t4-thanks,
+body[class*="thing"] #t4-is-it-a-thing {
   opacity: 1; }
 
 .impress-not-supported .substep, .impress-not-supported #t4-thanks {
@@ -977,5 +982,16 @@ body[class*="thanks"] #t4-thanks {
 
 .impress-on-t0-overview-1 #t2-user-p_0x, .impress-on-t0-overview-2 #t2-user-p_0x, .impress-on-t0-overview-3 #t2-user-p_0x, .impress-on-t1-overview-3 #t2-user-p_0x {
   margin-right: -300px; }
+
+.strike {
+  text-decoration: line-through;
+  color: #FF6933;
+  margin-right: 5px; }
+
+.green {
+  color: #19B5A5; }
+
+.is-hidden {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
