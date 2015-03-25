@@ -12,6 +12,7 @@
       <link rel="shortcut icon" href="favicon.png" />
       <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
+
       <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-18556757-8']);
@@ -53,18 +54,10 @@
 
       <div id="t0-key-concepts" class="step slide is-overview" data-x="0" data-y="5000">
         <div class="slide__content">
-          <h1 class="slide__title substep is-active js-substep"># 1</h1>
-          <div class="substep js-substep">
-            <blockquote class="slide__blockquote"><strong class="slide__emphasis">&ldquo;The metric by which a front-end operations engineer would be judged is <em>speed</em>.&rdquo;</strong></blockquote>
-            <p class="slide__subtitle">Alex Sexton, Smashing Magazine</p>
-          </div>
-          <!-- <div class="substep js-substep">
-            <ul>
-              <li class="slide__item">Release (the best) code as fast as possible.</li>
-              <li class="slide__item">Begin the User Experience as fast as possible.</li>
-              <li class="slide__item">Enable fast feedback.</li>
-            </ul>
-          </div> -->
+
+          <h1 class="slide__title "># 1</h1>
+          <blockquote class="slide__blockquote"><strong class="slide__emphasis">&ldquo;The metric by which a front-end operations engineer would be judged is <em>speed</em>.&rdquo;</strong></blockquote>
+          <p class="slide__subtitle">Alex Sexton, Smashing Magazine</p>
 
         </div>
         <div class="user-panel">
@@ -88,21 +81,17 @@
 
       <div id="t0-over-the-wall" class="slide step" data-x="0" data-y="3500">
         <div class="slide__content">
-          <h1 class="slide__title substep is-active js-substep"># 2</h1>
-          <div class="substep js-substep">
+
+          <h1 class="slide__title"># 2</h1>
           <blockquote class="slide__blockquote">
             <strong class="slide__emphasis">
               &ldquo;Stop throwing code over the wall!.&rdquo;
             </strong>
           </blockquote>
           <p class="slide__subtitle">Every ops person ever</p>
-          </div>
+
         </div>
-        <!-- <figure class="slide__content drawing">
-          <img src="images/dev.jpg" />
-          <figcaption class="drawing__caption">No more throwing code over the wall.</figcaption>
-        </figure>
- -->
+
         <div class="user-panel">
           <div class="user-panel__inner">
             <p>Front end developers are probably the worst culprits of throwing code over the wall. The mentality of, &ldquo;I pushed it, now it&rsquo;s an Ops problem&rdquo; is becoming a dated paradigm, one which has so many drawbacks.</p>
@@ -297,8 +286,8 @@
           <h1 class="slide__title is-active substep js-substep">Deployment</h1>
           <div class="substep js-substep">
             <ul>
-              <li>The transfer of files to a production environment in a consistent and automated manner.</li>
-              <li>Continuous Deployment, Delivery or Experimentation&hellip;?</li>
+              <li>Predictable. Consistent. Automated.</li>
+              <li>Continuous Deployment vs Delivery.</li>
             </ul>
           </div>
         </div>
@@ -329,7 +318,7 @@
           <div class="substep js-substep js-substep-extra">
             <ul>
               <li>Protect the application.</li>
-              <li>Recognise bottlenecks.</li>
+              <li>Know what to prioritise.</li>
               <li data-alternative=" See a talk by Scott Jehl"><span class="js-strike-later">Understand the critical path.</span></li>
             </ul>
           </div>
@@ -348,8 +337,7 @@
           <div class="substep js-substep">
             <h2 class="slide__subtitle"></h2>
             <ul>
-              <li>Protect via Prioritisation.</li>
-              <li>Load balancing and caching.</li>
+              <li>Protection via Prioritisation.</li>
               <li>Where&rsquo;s your origin server?</li>
             </ul>
           </div>
@@ -372,7 +360,7 @@
             <ul>
               <li>Understand the protocols.</li>
               <li>Plan for failure.</li>
-              <li>Is TLS fast yet?</li>
+              <li>Be secure.</li>
             </ul>
           </div>
         </div>
@@ -394,9 +382,8 @@
           <h1 class="slide__title is-active substep js-substep">CDN</h1>
           <div class="substep js-substep">
             <ul>
-              <li>Cache everything.</li>
-              <li>Solve the problems caused by it.</li>
-              <li>Leverage all your CDN features.</li>
+              <li>Cache as much as you can.</li>
+              <li>Ensure it doesn't disrupt development.</li>
             </ul>
           </div>
         </div>
@@ -451,13 +438,23 @@
 
       <div id="t3-overview-2" class="step" data-x="0" data-y="0" data-scale="7"></div>
 
-      <div id="t3-metrics-p_9x" class="step slide" data-x="-4000" data-y="-1100" data-scale="1">
+      <div id="t3-datadog-p_10x" class="slide step" data-x="-4000" data-y="-1100">
         <div class="slide__content">
-          <h1 class="slide__title is-active substep js-substep">AB Test</h1>
+          <h1 class="slide__title is-active substep js-substep">Set up Monitoring</h1>
           <ul class="substep js-substep">
-            <li>Quick &amp; simple test deployment.</li>
+            <li>JavaScript Errors.</li>
+            <li>Real user performance.</li>
+            <li>Asset sizes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="t3-metrics-p_9x" class="step slide" data-x="-3500" data-y="-300" data-scale="1">
+        <div class="slide__content">
+          <h1 class="slide__title is-active substep js-substep">Enable AB Testing</h1>
+          <ul class="substep js-substep">
+            <li>Empower developers to run tests.</li>
             <li>Client, server or both?</li>
-            <li>Automate it into deployment.</li>
           </ul>
         </div>
         <div class="user-panel">
@@ -475,16 +472,6 @@
         </div>
       </div>
 
-      <div id="t3-datadog-p_10x" class="slide step" data-x="-3500" data-y="-300">
-        <div class="slide__content">
-          <h1 class="slide__title is-active substep js-substep">Set up Monitoring</h1>
-          <ul class="substep js-substep">
-            <li>JavaScript Errors.</li>
-            <li>Real user performance.</li>
-            <li>Asset sizes.</li>
-          </ul>
-        </div>
-      </div>
 <!--
       <div id="t3-kibana-p_10x" class="step" data-x="-2800" data-y="500">
         <img class="substep js-substep js-hide is-active" src="images/datadog.png" />
@@ -509,8 +496,7 @@
           <h1 class="slide__title is-active substep js-substep">Use the Feedback</h1>
           <div class="substep js-substep">
             <ul>
-              <li>To decide on the next features.</li>
-              <li>To improve your feedback loop.</li>
+              <li>To decide what to work on.</li>
               <li>To remove HIPPOs from the equation.</li>
             </ul>
           </div>
@@ -535,20 +521,14 @@
 
       <div id="t4-is-it-a-thing" class="step slide" data-x="0" data-y="1000">
         <div class="slide__content">
-          <h1 class="slide__title is-active substep js-substep">Next</h1>
-          <div class="substep js-substep">
-            <ul>
-              <li>Should Front End Ops be a role?</li>
-              <li>Should you get involved?</li>
-            </ul>
-          </div>
+          <blockquote class="slide__blockquote"><strong class="slide__emphasis">Should Front End Ops be a role?</blockquote>
         </div>
       </div>
 
       <div id="t4-thanks" class="step slide title-slide" data-x="0" data-y="0">
         <div class="slide__content">
           <h1 class="slide__title">Thanks!</h1>
-          <p><a href="http://www.twitter.com/ianfeather">@ianfeather</a></p>
+          <p><a class="highlight tw-link" href="http://www.twitter.com/ianfeather">@ianfeather</a></p>
         </div>
       </div>
 
