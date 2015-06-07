@@ -85,4 +85,4 @@ Similarly to github, we like to get rid of as much code as we can and we're not 
 
 <h2 id="other-css" class="blog-subtitle">Other CSS Files</h2>
 
-<a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">Our SVG icons</a> and fonts are both loaded within CSS files, but these are deferred and not grouped with the rest of the styles.
+Our <a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">SVG icons</a> and fonts are both loaded within CSS files, but these are deferred and not grouped with the rest of the styles.

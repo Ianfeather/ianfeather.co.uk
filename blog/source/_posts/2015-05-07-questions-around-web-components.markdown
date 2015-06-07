@@ -107,7 +107,7 @@ Webpack could handle concat of assets, isolation of styles, http/1 fallbacks (so
 
 <h2 id="third-party" class="blog-subtitle">Are third party components ever going to be that usable?</h2>
 
-A lot of talk about Web Components being the new jQuery plugins ecosystem, and concern over them becoming so. The hope is that the cream rises to the top and that we can promote the "best" component for each task i.e. `&lt;greatest-tabs-component&gt;` but a quick look at the react or angular ecosystems shows they still have their fair share of implementations.
+A lot of talk about Web Components being the new jQuery plugins ecosystem, and concern over them becoming so. The hope is that the cream rises to the top and that we can promote the "best" component for each task i.e. `<greatest-tabs-component>` but a quick look at the react or angular ecosystems shows they still have their fair share of implementations.
 
 Given the dependency matrix we are likely to see something more like:
 
@@ -141,4 +141,4 @@ The question is, when v1 is ready to go, are people going to be uisng and testin
 
 Angular v2 could make a big difference for adoption.
 
-This isn't meant to be over dramatic. It's more of a 'when' rather than 'if' question, but if in a year we're still talking about Github's `&lt;time&gt;` element it will be a real shame and indicator of stagnation.
+This isn't meant to be over dramatic. It's more of a 'when' rather than 'if' question, but if in a year we're still talking about Github's `<time>` element it will be a real shame and indicator of stagnation.
