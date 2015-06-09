@@ -9,6 +9,8 @@
     margin-top: 1.3em
   ol
     padding-left: 0
+    list-style-position: inside
+    line-height: 2
   figure
     margin: $small-spacing 0
   .index-view &
@@ -50,7 +52,8 @@
     +at(450)
       +font-size(50)
 
-
+code[class*="language-"]
+  font-size: 14px
 
 .blog-subtitle
   @extend %huge-type
@@ -61,6 +64,8 @@
   .blog-archives &
     @extend %margin-bottom-mid
     margin-top: $mid-spacing
+  .blog-area &
+    font-weight: bold
 
 .blog-subtitle--small
   @extend %large-type

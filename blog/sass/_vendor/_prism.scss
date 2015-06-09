@@ -12,6 +12,7 @@ $red: #FA4CBB;
 $punctuation: #fff;
 $comment: #A9AEB4;
 $blue: #3E8BF2;
+$yellow: #ECE38B;
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -102,7 +103,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: $blue;
+	color: $yellow;
 }
 
 
