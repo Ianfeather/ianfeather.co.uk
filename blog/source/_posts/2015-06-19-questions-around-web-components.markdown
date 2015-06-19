@@ -29,9 +29,7 @@ Please feel free to provide answers to all of these questions as I myself provid
 
 <h2 id="custom-elements" class="blog-subtitle">Do Custom Element names bring any benefit?</h2>
 
-Current HTML elements only have semantic meaning because they exist within a dictionary. We know what `h1` and `cite` mean because they have been deliberated and standardised. Browsers, search engines and screen readers also understand their meaning and use them to determine the intended use of a selection of elements.
-
-Custom elements belong to no such dictionary. Not yet at least. `<my-tabs>` has as much relevance as `<foo-bar>` unless renderers decide to infer meaning. The author may still add semantics by using ARIA roles but again this is a practice which is not specific to custom elements and can be used to enhance any element.
+Current HTML elements only have semantic meaning because they exist within a dictionary. We know what `h1` and `cite` mean because they have been deliberated and standardised. Browsers, search engines and screen readers also understand their meaning and use them to determine the intended use of a selection of elements. Custom elements belong to no such dictionary. Not yet at least. `<my-tabs>` has as much relevance as `<foo-bar>` unless renderers decide to infer meaning.
 
 [Alex Russell spoke on the ShopTalk show](http://shoptalkshow.com/episodes/157-alex-russell/) about how, in the long term, the use of Custom Elements across the web will allow us to know exactly which components developers need and use this to prioritise the development of native components. There is merit to that approach for sure, though perhaps the bootstrap components list could take us 90% of the way there immediately.
 
@@ -100,7 +98,7 @@ One approach would be to serve a very small subset of styles upfront to ensure t
 
 Another approach would be to bundle all the CSS from within the components and serve it in the head. Crucially, this relies on the page having to know exactly which components it will show at any one time: something we would love to avoid in an ideal world where we can arbitrarily load components into any page.
 
-This is an issue that isn't just limited to unsupported browsers. Currently, if you're trying out html imports, you'll find that you can simply place them higher up in the DOM and avoid any FOUC. This has the downside of being a blocking request and a bottleneck for the page. If html imports [don't become part of the standard](https://hacks.mozilla.org/2014/12/mozilla-and-web-components/)) or if we just want to load them asynchronously for performance, we will need to anticipate and prepare for the FOUC.
+This is an issue that isn't just limited to unsupported browsers. Currently, if you're trying out html imports, you'll find that you can simply place them higher up in the DOM and avoid any FOUC. This has the downside of being a blocking request and a bottleneck for the page. If html imports [don't become part of the standard](https://hacks.mozilla.org/2014/12/mozilla-and-web-components/) or if we just want to load them asynchronously for performance, we will need to anticipate and prepare for the FOUC.
 
 <h2 id="server-side" class="blog-subtitle">Can we render Web Components on the client <em>and</em> server?</h2>
 
@@ -170,7 +168,7 @@ Fetching CSS with JS feels much more natural. If the es6 module loader is extend
 
 <h2 id="http2" class="blog-subtitle">Is there an implicit dependency on http/2?</h2>
 
-How http/2 will change the way we structure and build our applications, particularly in relation to asset loading, is still being determined but one highly touted feature is the reduced need for bundling assets together. In theory, it will be more performant to request multiple small assets rather than one large bundle because we will make the cache more granular and not lose that much on the network. Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow.
+How http/2 will change the way we structure and build our applications, particularly in relation to asset loading, is still being determined but one highly touted feature is the reduced need for bundling assets together. In theory, it [will be more performant to request multiple small assets](https://http2.github.io/faq/) rather than one large bundle because we will make the cache more granular and not lose that much on the network. Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow.
 
 However, would the adoption of Web Components significantly slow a web which is predominately pre http/2? This is a potential scenario given the browser requireement of serving http/2 over secure connections.
 
@@ -198,7 +196,7 @@ One of the hopes for Web Components is that the cream rises to the top and that 
 
 But let's leave the problem of surfacing the best and think about the dependency issues. Back then we had none really to speak of, nowadays the dependency matrix is pretty wide and you'll ideally want to use a third-party component that matches up well with what you're using elsewhere. Of course, the closed concept of Web Components mean you absolutely could have different libraries inside and outside and it would still work, but just because you can doesn't necessarily mean you should: we should always want to avoid needlessly transferring bytes across the wire.
 
-On top of frameworks we have utility libaries, Reactive libraries like RxJS, data flow systems like flux, graphing libraries... many will claim to be "zero-dependency components" whilst inlining their own modular builds of utility libraries and adding extra weight you can't possibly extract or de-duplicate.
+On top of frameworks we have utility libraries, Reactive libraries like RxJS, data flow systems like flux, graphing libraries... many will claim to be "zero-dependency components" whilst inlining their own modular builds of utility libraries and adding extra weight you can't possibly extract or de-duplicate.
 
 Then we have to consider polyfills, es shims, browser support: finding the right 3rd party component that fits into your project is going to be extremely hard and because of that the ecosystem is going to be forced to fragment in order to support it.
 
