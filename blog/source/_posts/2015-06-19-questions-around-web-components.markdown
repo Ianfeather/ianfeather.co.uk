@@ -60,7 +60,7 @@ Non-enhanced user experiences will only see the word &ldquo;Ian&rdquo; instead o
 
 _What about styling and the Flash of Unstyled Content?_
 
-Let's assume the user has JavaScript but is on a slow connection. By adding styles to the component we have introduced a FOUC before it is loaded, how do we plan for this? How will the component actually render before it's initialised?
+Let's assume the user has JavaScript but is on a slow connection and we're loading the component asynchronously. By adding styles to the component we have introduced a FOUC before it is loaded, how do we plan for this? How will the component actually render before it's initialised?
 
 One approach would be to serve a very small subset of styles upfront to ensure that all the raw DOM looks "ok" before being enhanced. This wouldn't prevent a FOUC and reflow but it would make it slightly nicer.
 
@@ -101,9 +101,7 @@ Perhaps here we need something standardised and declarative like [shadowroot](ht
 
 HTML imports don't currently support `<link>` elements so more commonly we've seen examples of `<style>` used within the Shadow Dom. Does this force us to assume other dependencies have already been satisfied? With CSS, dependencies have always been somewhat implicit and in the world of components, where we should have true interopability, is this going to highlight an issue we've always sidestepped?
 
-What are we talking about when we talk about CSS dependencies? Essentially anything that you would often rely upon as automatically being present: Resets or normalize, Grid systems, Typographic styles, Utility classes etc.
-
-Should this be [The End of Global CSS](https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284)? We need a solution on how to compose CSS rules as well as being explicit about dependencies. This area of CSS development is ripe for investigation and experimentation.
+What are we talking about when we talk about CSS dependencies? Essentially anything that you would often rely upon as automatically being present: resets or normalize, grid systems, typographic styles, utility classes etc. Should this be [The End of Global CSS](https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284)? This area of CSS development is ripe for investigation and experimentation.
 
 We can again turn to JS to look for a solution to both fetching and authoring. Authoring [CSS in JS](https://speakerdeck.com/vjeux/react-css-in-js) is becoming much commonplace recently, with some really exciting experiments happening, but is unlikely to become the methodology for the masses.
 
@@ -114,18 +112,18 @@ We can again turn to JS to look for a solution to both fetching and authoring. A
 
 How http/2 will change the way we structure and build our applications, particularly in relation to asset loading, is still being determined but one highly touted feature is the reduced need for bundling assets together. In theory, it [will be more performant to request multiple small assets](https://http2.github.io/faq/) rather than one large bundle because we will make the cache more granular and not lose that much on the network.
 
-Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow. Without a further build step there would be an increase in the number of requests though, so would the adoption of Web Components significantly slow a web which is predominately pre http/2?
+Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow. Of course we still have to cater for non-http/2 users and without concatenation there would be an increase in the number of requests. Would the adoption of Web Components, right now, significantly slow a web which is predominately pre http/2?
 
-Currently [Vulcanise](https://www.polymer-project.org/0.5/articles/concatenating-web-components.html) exists to help with this by bundling your imports and their dependencies and I'm sure support for bundling Web Component assets will arrive in your preferred build tool in the future too. Personally I look forward to a workflow that allows me the flexibility to arbitrarily load components into the page and for them to just work, without considering the assets for the system as a whole. For now, and potentially forever, that's certainly not realistic.
+Currently [Vulcanise](https://www.polymer-project.org/0.5/articles/concatenating-web-components.html) exists to help with this by bundling your imports and their dependencies and I'm sure support for bundling Web Component assets will arrive in your preferred build tool in the future. Personally I look forward to a workflow that allows me the flexibility to arbitrarily load components into the page and for them to just work, without considering the assets for the system as a whole. For now, and potentially forever, that's certainly not realistic.
 
 
 <h2 id="third-party" class="blog-subtitle">Are third party components ever going to be that usable?</h2>
 
-There have been a lot of articles and talks that have compared the future Web Components ecosystem to the current jQuery plugins ecosystem. jQuery plugins thrived because they were plug and play, unfortunately there were a thousand+ plug and play implementations of jQuery.tabs and this is more or less the major complaint it receives.
+There have been a lot of articles and talks that have compared the future Web Components ecosystem to the current jQuery plugins ecosystem. jQuery plugins thrived because they were plug and play, and they struggled because there were a thousand+ plug and play implementations of jQuery.tabs.
 
 One of the hopes for Web Components is that the cream rises to the top and that we can promote the "best" components. This is clearly not a simple task and expecting it to happen purely by drawing a line in the sand over the jQuery era will not be enough. A quick look at the react or angular ecosystems shows they still have their fair share of implementations.
 
-These plugins had one big benefit though: jQuery was their one and only dependency. They also had no transitive dependencies where A > B > C, because, well, B was jQuery which did everything itself. Transitive dependencies is where things get tricky as they need to be resolved across components. These dependencies could be anything from Angular to RxJS or lodash to polyfills. It's likely we will also see our fair share of "zero-dependency components" attempting to sidestep the problem by inlining their own modular builds of utility libraries and adding extra weight you can't possibly extract or de-duplicate.
+These plugins had one big benefit though: jQuery was their one and only dependency. They also had no transitive dependencies where A depended on B which depended on C, because, well, B was jQuery which did everything itself. Transitive dependencies is where things get tricky as they need to be resolved across components. These dependencies could be anything from Angular to RxJS or lodash to polyfills. It's likely we will also see our fair share of "zero-dependency components" attempting to sidestep the problem by inlining their own modular builds of utility libraries and adding extra weight you can't possibly extract or de-duplicate.
 
 Of course, the closed concept of Web Components mean you absolutely could have different libraries inside and outside and it would still work, but just because you can doesn't necessarily mean you should: we should always want to avoid needlessly transferring bytes across the wire.
 
