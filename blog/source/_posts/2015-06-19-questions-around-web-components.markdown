@@ -8,7 +8,7 @@ categories:
 
 Components allow us to build simpler applications by composing independent parts into a greater system. Good component design means you should only need to focus on one component at a time, holding less information in your active mind in order to complete a task. This gives you more mental capacity to focus on the task at hand and ultimately make better decisions.
 
-The future standard of componentisation is Web Components and I’ve been trying to get my head around them for a while: how they marry up with current challenges and innovations in component design and where they fit going forward. Web Components promise to satisfy our demands to build composable systems but in order to get there we inevitably have to work through a period of instability where complexity actually increases. Even though I have far from a clear picture on where Web Components are going (Wilson Page wrote [a great article](https://hacks.mozilla.org/2015/06/the-state-of-web-components/) on where they are right now) I think there’s a benefit to getting these questions down to find out how others see these problems, whether they’re problems at all, or if this is even just the tip of the iceberg.
+The future standard of componentisation is Web Components and I’ve been trying to get my head around them for a while: how they marry up with current challenges and innovations in component design and where they fit going forward. Even though I have far from a clear picture on where Web Components are going (Wilson Page wrote [a great article](https://hacks.mozilla.org/2015/06/the-state-of-web-components/) on where they are right now) I think there’s a benefit to getting these questions down to find out how others see these problems, whether they’re problems at all, or if this is even just the tip of the iceberg.
 
 I’m not going to go into the basics of what makes up the Web Component spec, there are plenty of [such](https://css-tricks.com/modular-future-web-components/) [guides](http://cbateman.com/blog/a-no-nonsense-guide-to-web-components-part-1-the-specs) already written. Instead what I’d like to cover is some very practical questions:
 
@@ -21,8 +21,6 @@ I’m not going to go into the basics of what makes up the Web Component spec, t
   <li><a href="#third party">Are third party components ever going to be that usable?</a></li>
   <li><a href="#tipping-point">What is going to be the tipping point for their adoption?</a></li>
 </ol>
-
-I found myself drifting into the world of CSS quite often as I went through these points, partly because the JS ecosystem feels much more defined these days whereas CSS is still being left behind. There are also many more questions I have that I didn't get to and each of which could be an article themselves: in particular testing Web Components seems like an overlooked topic.
 
 
 <h2 id="custom-elements" class="blog-subtitle">Do Custom Element names bring any benefit?</h2>
@@ -150,6 +148,10 @@ This isn't meant to be over dramatic, hopefully it's more of a 'when' rather tha
 
 <h2 class="blog-subtitle">Conclusion</h2>
 
-You could argue this article is a little unfair to Web Components as it sounds like I expect them to be the answer to all these problems. I don't. Many of them are entirely outside their scope. I do feel like they offer a focal point though, an opportunity for reflection on how the rest of the web ecosystem is ready to support them, and a few missing pieces.
+You could argue this article is a little unfair to Web Components as it sounds like I expect them to be the answer to all these problems. I don't. Many of them are entirely outside their scope.
 
-The requirement for Web Components to be independent and portable is ultimately what brings these discussions to the forefront and will be key to their success. The benefits of Web Components: true scoping for CSS, the ability to share code in a framework agnostic manner, their composability, are all features that developers have needed for a long time and which will enhance the web experience if done properly. It feels like a coming of age time for the web but their are outstanding problems which require resolutions in order for the web to move forward cleanly.
+I found myself drifting into the world of CSS and dependencies quite often as they seemed the most pressing to me. There are also many more questions I have that I didn't write about and I'm sure more questions that those reading this will have. It's important these are exposed.
+
+The requirement for Web Components to be independent and portable is ultimately what brings these discussions to the forefront. Their benefits are real: true scoping for CSS, the ability to share code in a framework agnostic manner, their composability, are all features that developers have needed for a long time.
+
+Clearly the Web Components spec does not exist within a vacuum. It does present us with a focal point though, an opportunity for reflection on how the rest of the web ecosystem is ready to support it, and a list of outstanding problems which require resolutions to allow us to build standards-compilant, truly composable systems.
