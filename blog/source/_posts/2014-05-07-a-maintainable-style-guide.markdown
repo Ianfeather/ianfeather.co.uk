@@ -3,7 +3,7 @@ layout: post
 title: "A Maintainable Style Guide"
 date: 2014-05-15 09:52
 comments: true
-categories:
+categories: blog
 ---
 
 Anyone who has attempted to maintain a UI Style Guide over a long period of time will attest that it is a very difficult process. They are generally prioritised below the maintenance of your applications themselves and as such are likely the first candidates to fall behind and the last to be brought out of tech debt.

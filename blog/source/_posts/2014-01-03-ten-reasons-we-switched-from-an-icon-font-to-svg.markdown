@@ -3,7 +3,7 @@ layout: post
 title: "Ten reasons we switched from an icon font to SVG"
 date: 2014-01-03 23:52
 comments: true
-categories:
+categories: blog
 ---
 
 We use *a lot* of icons on [lonelyplanet.com](http://www.lonelyplanet.com/france/paris) and recently went through the task of transferring them from an icon font to SVG files. I wanted to share why we did this along with some of the drawbacks to SVG and how we got around them.

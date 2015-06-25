@@ -3,7 +3,7 @@ layout: post
 title: "What we would change about Rizzo"
 date: 2015-01-20 11:30
 comments: true
-categories:
+categories: blog
 ---
 
 I&apos;ve heard recently that a few [different](http://www.buzzfeed.com/erakor/i-am-all-about-that-sass#.kbW7EKW39) [companies](https://gdstechnology.blog.gov.uk/2014/12/11/govuk-living-style-guide/) have created a version of Rizzo to build on the work we have done at Lonely Planet. It&apos;s extremely flattering to hear about our ideas helping other organisations. It also makes me a little nervous because if someone were to copy Rizzo as it exists now they would inherit some of the decisions which ultimately we would change in hindsight (and plan on doing in the future). This article outlines some of those decisions and how we would approach them differently.

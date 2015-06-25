@@ -25,7 +25,7 @@ echo -e "${blue}Compile our stylesheet${none}"
 sass -t compressed blog/sass/screen.sass:blog/stylesheets/screen.css
 
 echo ""
-echo -e "${blue}Insert the sass into the head"
+echo -e "${blue}Insert the compiled css into the head"
 cat blog/stylesheets/screen.css > blog/source/_includes/styles.html
 
 echo ""

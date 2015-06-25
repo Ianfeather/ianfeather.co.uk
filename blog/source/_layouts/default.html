@@ -14,23 +14,43 @@
 
           <aside class="sidebar">
             <section>
-              <h1 class="blog-subtitle">Recent Posts</h1>
+              <h1><a class="blog-subtitle" href="{{ root_url }}/posts">Recent Posts</a></h1>
               <ul id="js-recent-posts">
                 {% for post in site.posts limit: site.recent_posts %}
-                  <li class="post">
-                    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-                  </li>
+                  {% if post.categories contains 'blog' %}
+                    <li class="post">
+                      <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
                 {% endfor %}
-                <li class="view-all-posts"><a href="{{ root_url }}/blog/archives">View all</a></li>
               </ul>
             </section>
-            
+
           </aside>
 
           <aside class="sidebar">
             <section>
-              <h1 class="blog-subtitle">Recent Presentations</h1>
+              <h1><a class="blog-subtitle" href="{{ root_url }}/fewer-words">Fewer words</a></h1>
               <ul id="js-recent-posts">
+                {% for post in site.posts limit: site.recent_posts %}
+                  {% if post.categories contains 'fewer-words' %}
+                    <li class="post">
+                      <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </section>
+
+          </aside>
+
+          <aside class="sidebar">
+            <section>
+              <h1><a class="blog-subtitle" href="{{ root_url }}/presentations">Recent Presentations</a></h1>
+              <ul id="js-recent-posts">
+                <li class="post">
+                  <a href="{{ root_url }}/a-maintainable-style-guide/#building-a-component-api">Reducing Complexity with a Component API</a>
+                </li>
                 <li class="post">
                   <a href="{{ root_url }}/presentations/front-end-ops">Front End Ops</a>
                 </li>
@@ -39,12 +59,12 @@
                 </li>
               </ul>
             </section>
-            
+
           </aside>
 
       </div>
 
-    
+
 
     </section>
     <!-- <section class="back">test</section> -->

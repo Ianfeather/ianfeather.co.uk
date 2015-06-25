@@ -3,12 +3,12 @@ layout: post
 title: "Should the nav element be sectioning content?"
 date: 2013-05-01 08:52
 comments: true
-categories: 
+categories: blog
 ---
 
 Recently we've been nurturing the document outlines at Lonely Planet to create a simpler snapshot of the page for both accessibility and SEO reasons. One thing I was surprised about is how the <em>nav</em> element creates a new section in the document outline.
-  
-Sectioning content requires a heading or it will appear in the document outline as "untitled". 
+
+Sectioning content requires a heading or it will appear in the document outline as "untitled".
 
 <div class="blog-grid">
   <div class="column">

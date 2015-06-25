@@ -3,7 +3,7 @@ layout: post
 title: "Hangover Hack Result"
 date: 2012-03-24 15:17
 comments: true
-categories: 
+categories: blog
 ---
 <ul>
 <li><a class="btn btn-external btn-photo" href="http://ianfeather.co.uk/playground/image-play/">Use the app</a></li>
@@ -29,7 +29,7 @@ Once I had the gallery mode working on search I got distracted by the idea of us
 
 ## What I learned?
 
-It's fun to just mess about with code like no one is watching. That was the real lesson. 
+It's fun to just mess about with code like no one is watching. That was the real lesson.
 
 ## What improvements would I make?
 

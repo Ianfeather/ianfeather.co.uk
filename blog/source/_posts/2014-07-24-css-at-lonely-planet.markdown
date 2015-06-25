@@ -3,7 +3,7 @@ layout: post
 title: "CSS at Lonely Planet"
 date: 2014-07-24 10:30
 comments: true
-categories:
+categories: blog
 ---
 
 Inspired by <a href="https://twitter.com/mdo">Mark Otto</a>&apos;s post <a href="http://markdotto.com/2014/07/23/githubs-css/">Github's CSS</a> I thought I would quickly jot down how Lonely Planet's CSS is structured. I thought it was interesting to read some of the parallels and it's good to share how we work.

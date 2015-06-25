@@ -4,7 +4,7 @@ title: "Configure requirejs to serve two files"
 written: "on the Victoria line"
 date: 2013-04-30 09:35
 comments: true
-categories: 
+categories: blog
 ---
 
 

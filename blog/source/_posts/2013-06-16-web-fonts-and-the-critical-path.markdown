@@ -4,7 +4,7 @@ title: "Web Fonts and the Critical Path"
 date: 2013-06-06 08:52
 written: "on a plane to Velocity Conf"
 comments: true
-categories:
+categories: blog
 ---
 
 This blog corresponds to my May 2013 talk [@frontendlondon](http://twitter.com/frontendlondon). The slides for that talk can be found on [slideshare](http://www.slideshare.net/ianfeather/fel-presentation).

@@ -5,7 +5,7 @@ subtitle: "A study into performance implications"
 written: "for the <a href='http://devops.lonelyplanet.com/oosass'>Lonely Planet DevOps blog</a>"
 date: 2012-7-30 13:51
 comments: true
-categories:
+categories: blog
 ---
 
 <div class="edit">

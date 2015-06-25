@@ -4,7 +4,7 @@ title: "Hangover Hack"
 written: "with misplaced hubris"
 date: 2012-03-17 15:16
 comments: true
-categories: 
+categories: blog
 ---
 I'm hungover, on crutches and my girlfriend is at work. I have loads of client work to deal with and by rights that is what today should involve but instead I'm going to do something different, something I rarely do.
 

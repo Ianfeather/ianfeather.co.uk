@@ -4,7 +4,7 @@ title: "Tools and Cultural Shifts of 2012"
 subtitle: "A link-ridden rundown of the last year"
 date: 2013-01-01 12:59
 comments: true
-categories: devops, web development
+categories: blog
 ---
 
 <p class="blog-intro">Our acceptance of competent 3rd party code and adoption of tools seems to have been the biggest shift in Front End Development over the past 12 months. The plague, and fear, of jQuery plugins have been replaced by the adoption of libraries like [requireJS](http://requirejs.org/), [backbone](http://backbonejs.org/) and [underscore](http://underscorejs.org/). The take-up of pre-processors like [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) and [Coffeescript](http://coffeescript.org/) have been staggering (and wrought by confusion and competition). The amount of new tools that have come out of the woodwork and required your *immediate attention* has been overwhelming.</p>
@@ -19,14 +19,14 @@ But it hasn't just been the tools that have taken prescience, new channels of fo
 
 If I'm being super critical, my knowledge around performance pre 2012 was limited to caching jQuery selectors and following the [YSlow](http://developer.yahoo.com/yslow/) guidelines. If I were to give myself a break though these guidelines are more than enough for an average Joe website. Getting to understand, implement and refine the key concepts behind Lonely Planet's concept of ['Screamingly Fast'](http://www.slideshare.net/mbjenn/performance-and-metrics-at-lonely-planet-14589911) has been a real eye opener and shaving off the milliseconds has become a new form of addiction.
 
-Performance has been something we live and breathe at LP and we discuss, demo and practise it constantly. We've also got a long way to go to get to where we need to be. Our monitoring is good (mostly due to [Fozzie](https://github.com/lonelyplanet/fozzie)) but still has a long way to go on the front end. Our reporting and alerting needs to be vastly improved and these are important challenges for 2013. 
+Performance has been something we live and breathe at LP and we discuss, demo and practise it constantly. We've also got a long way to go to get to where we need to be. Our monitoring is good (mostly due to [Fozzie](https://github.com/lonelyplanet/fozzie)) but still has a long way to go on the front end. Our reporting and alerting needs to be vastly improved and these are important challenges for 2013.
 
 ## Preprocessors and Rails
 
-The fact that I hadn't written a line of Sass prior to 2012 amazes me. The same applies to both Haml and CoffeeScript only to lesser degrees. 
+The fact that I hadn't written a line of Sass prior to 2012 amazes me. The same applies to both Haml and CoffeeScript only to lesser degrees.
 
-I've had my ups and downs with CoffeeScript. At first it was fascinating because it was something new to learn, then infuriating because I couldn't write valid CoffeeScript for JavaScript I could have written. Next up came the understanding and the enjoyment it could give, the ease and speed at which you could write and the simplicity of stripping out the verbose syntax. Then more infuriation, as I began to get sloppy with real JavaScript and forgot to reintroduce the verbose syntax. 
-Now, fortunately, I am in somewhat of a take it or leave it position though if I have a choice I tend to write CoffeeScript. 
+I've had my ups and downs with CoffeeScript. At first it was fascinating because it was something new to learn, then infuriating because I couldn't write valid CoffeeScript for JavaScript I could have written. Next up came the understanding and the enjoyment it could give, the ease and speed at which you could write and the simplicity of stripping out the verbose syntax. Then more infuriation, as I began to get sloppy with real JavaScript and forgot to reintroduce the verbose syntax.
+Now, fortunately, I am in somewhat of a take it or leave it position though if I have a choice I tend to write CoffeeScript.
 
 Sass is a God send and something that frustrates me if I don't have access to (thankfully a rare occurrence). Crafting a CSS architecture using Sass has been a learning curve though and it's one that I, and I suspect everyone else, is still on.
 
@@ -38,7 +38,7 @@ There are other aspects of rails that I've enjoyed learning. Understanding the [
 
 Previous to 2012 I'd worked in an agile environment where we deployed to production at the end of each sprint (1 or 2 weeks). This was after a deploy to a staging environment and a stint of QA. I wasn't involved in the build process and my involvement ended after my code was tested and proven to be working.
 
-For our current project we have deployed to production just over 2000 times in the past 7 months and I've been involved throughout. That's quite a difference, not only from a cultural perspective but also from an architectural one. We don't have any QAs on the project and we've never rolled back a deploy. We've broken things, sure, but we've put ourselves in a position to quickly fix and iterate on them. 
+For our current project we have deployed to production just over 2000 times in the past 7 months and I've been involved throughout. That's quite a difference, not only from a cultural perspective but also from an architectural one. We don't have any QAs on the project and we've never rolled back a deploy. We've broken things, sure, but we've put ourselves in a position to quickly fix and iterate on them.
 
 It's fair to say I was late to the party on this. John Allspaw's groundbreaking [10 deploys a day](http://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr) talk was way back in 2009 and many companies have been practising this technique since then. I'm glad to be at the party though :)
 
@@ -52,7 +52,7 @@ The other, non technical, side of Continuous Experimentation and AB testing has 
 
 Tests are those things that back end devs write, right? Bang goes that attitude in 2012 and it's surprising we got away with it for so long on the Front.
 
-On our current project we have ~1000 unit and integration steps. This provides a lot of comfort when you're making changes that will go live without QA and provides me with a certain amount of anxiety when I realise our coverage is slipping. This is a huge culture shift in itself but even more so that on the front end we are now using Behaviour and Test Driven Development techniques that have long escaped us. 
+On our current project we have ~1000 unit and integration steps. This provides a lot of comfort when you're making changes that will go live without QA and provides me with a certain amount of anxiety when I realise our coverage is slipping. This is a huge culture shift in itself but even more so that on the front end we are now using Behaviour and Test Driven Development techniques that have long escaped us.
 
 At first the inconvenience of course outweighed the 'best practice' but it only takes one bug to slip through for that attitude to change. BDD for me has been an attitude shift in that it allows me to effectively write the blueprint for my code before building and ensures it will be focused and decoupled.
 
@@ -66,7 +66,7 @@ I haven't worked with any of the fancy new JS frameworks like [Backbone](http://
 
 ## What's next for 2013?
 
-Who knows? It's going to be an interesting one. I don't expect it to be quite as intense as the last one in regards to the amount of new technologies but really I have no idea. It's guaranteed to be an exciting one. 
+Who knows? It's going to be an interesting one. I don't expect it to be quite as intense as the last one in regards to the amount of new technologies but really I have no idea. It's guaranteed to be an exciting one.
 
 I'm looking forward to doing ['Seven Languages in Seven Weeks'](http://pragprog.com/book/btlang/seven-languages-in-seven-weeks) with the guys at work and I've had an inkling for some time to have a play with [ClojureScript](https://github.com/clojure/clojurescript). I also have a huge list of things to learn which I have been eager to get round to for a while, things like: [FlexBox](http://www.w3.org/TR/css3-flexbox/), [Grunt](http://gruntjs.com/), [X-Tag](https://github.com/mozilla/x-tag), [Web-RTC](http://www.webrtc.org/)&hellip;
 

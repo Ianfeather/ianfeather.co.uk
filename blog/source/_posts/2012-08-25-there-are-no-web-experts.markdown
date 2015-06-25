@@ -3,6 +3,7 @@ layout: post
 title: "There are no Web Experts"
 date: 2011-07-18 15:12
 comments: true
+categories: blog
 ---
 <p class="blog-intro">In our ever changing industry we have at least one truth: there are no experts. Sure, in our midst are industry leaders, consultants, even the odd guru, but it must be remembered that no one has all the answers. For every good link, there are ten bad ones. For every insightful tweet there are a hundred misleading ones (not to mention a million mentioning iPads). And in the time between [alistapart](http://www.alistapart.com) articles, there are maybe a thousand new individuals entering our industry who are learning from antiquated sources.</p>
 

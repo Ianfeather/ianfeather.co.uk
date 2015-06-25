@@ -4,7 +4,7 @@ title: "A Cheat Sheet for the Terminal-Averse"
 written: "after CLI enlightenment"
 date: 2012-02-14 15:16
 comments: true
-categories: 
+categories: blog
 ---
 
 Did you know there's a cheat sheet you can build into Terminal? It's one that allows you to run complex git commands and change directories just by hitting a couple of keys. The best part is they're keys that you define for yourself. If you're a designer/front end developer who is wary and resistant to the growing impetus of the command line then you're in luck.

@@ -4,7 +4,7 @@ title: "A High Level Guide to Front End Ops"
 date: 2013-11-29 010:52
 written: "on the tube"
 comments: true
-categories: 
+categories: blog
 ---
 
 I chose to speak [@frontendlondon](http://twitter.com/frontendlondon) on this subject but, given the small audience, I wanted to create a guide that would work online in isolation from the talk. As such I created this [interactive overview](http://www.ianfeather.co.uk/presentations/front-end-ops) exposing some of the core concepts that we associate with Front End Ops.

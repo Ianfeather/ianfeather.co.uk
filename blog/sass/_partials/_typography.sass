@@ -1,16 +1,13 @@
 html
-  font: 1em/1.5 Palatino, Georgia, serif
+  font: 1em/1.5 "Avenir", "Gill Sans MT", "Gill Sans", "Calibri", sans-serif
 
 body
+  +font-size(18)
   min-height: 100%
   color: $base_font_color
   word-wrap: break-word
-  @extend %extra-large-type
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  .wf-loading &,
-  .wf-inactive &
-    +font-size(18)
 p
   @extend %margin-bottom-small
   +hyphens()

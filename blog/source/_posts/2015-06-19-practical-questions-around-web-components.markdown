@@ -3,7 +3,7 @@ layout: post
 title: "Practical Questions around Web Components"
 date: 2015-06-19 11:30
 comments: true
-categories:
+categories: blog
 ---
 
 Components allow us to build simpler applications by composing independent parts into a greater system. Good component design means you should only need to focus on one component at a time, holding less information in your active mind in order to complete a task. This gives you more mental capacity to focus on the task at hand and ultimately make better decisions.

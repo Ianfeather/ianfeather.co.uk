@@ -3,7 +3,7 @@ layout: post
 title: "Compare two videos side by side using ffmpeg"
 date: 2014-01-02 23:52
 comments: true
-categories: 
+categories: blog
 ---
 
 If you need to create a comparison of two other videos you can do so easily with ffmpeg.
