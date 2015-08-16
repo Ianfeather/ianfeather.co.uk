@@ -31,7 +31,7 @@ cat blog/stylesheets/screen.css > blog/source/_includes/styles.html
 echo ""
 echo -e "${blue}Compile the blog with jekyll${none}"
 cd blog
-jekyll build
+jekyll build --trace
 cd ..
 
 echo ""

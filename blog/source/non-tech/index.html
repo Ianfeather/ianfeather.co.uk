@@ -1,0 +1,15 @@
+---
+layout: page
+footer: false
+---
+
+<div class="blog-archives blog-index non-tech">
+
+  {% for post in site.posts reverse %}
+    {% if post.categories contains 'non-tech' %}
+      <article class="blog-archive-entry">
+        {% include non_tech_post.html %}
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

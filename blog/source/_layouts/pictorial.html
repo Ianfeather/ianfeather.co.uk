@@ -5,10 +5,9 @@
 
     <section class="main-content" role="main">
       <div id="content" class="content-inner">
-        <header role="banner" class="main-header">{% include header.html %}</header>
-
-        {{ content | expand_urls: root_url }}
-        {% include sidebar.html %}
+        <article class="blog-area blog-post" role="article">
+          {% include pictorial.html %}
+        </article>
       </div>
     </section>
     <footer class="main-footer" role="contentinfo">{% include footer.html %}</footer>
