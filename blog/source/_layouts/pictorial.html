@@ -3,6 +3,7 @@
 
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
 
+  <div class="body">
     <section class="main-content" role="main">
       <div id="content" class="content-inner">
         <article class="blog-area blog-post" role="article">
@@ -10,8 +11,12 @@
         </article>
       </div>
     </section>
-    <footer class="main-footer" role="contentinfo">{% include footer.html %}</footer>
-
+  </div>
+  <footer class="main-footer" role="contentinfo">
+    <div class="body">
+      {% include footer.html %}
+    </div>
+  </footer>
 
 </body>
 
