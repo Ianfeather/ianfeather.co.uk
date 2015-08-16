@@ -1,0 +1,90 @@
+.pictorial
+  width: 100%
+  p
+    max-width: 800px
+
+.full-screen-image
+  margin-top: 30px
+  margin-bottom: 30px
+
+.pictorial-image
+  background-size: cover
+  background-position: center
+  height: 100%
+  height: 110vh
+
+.full-screen-image,
+.half-screen-image--left
+  margin-left: -$small-spacing
+  +at(900)
+    margin-left: -$mid-spacing
+  +at(1000)
+    margin-left: -$large-spacing
+
+.half-screen-image--right
+  margin-right: -$small-spacing
+  +at(900)
+    margin-right: -$mid-spacing
+  +at(1000)
+    margin-right: -$large-spacing
+
+.pictorial-image
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  .half-screen-image > &
+    width: 100vw
+    +at(600)
+      width: 50vw
+
+  .full-screen-image > &
+    width: 100vw
+
+.half-screen-image
+  & + p, & + p + p
+    max-width: none
+
+  & + p + p + p
+    clear: both
+
+.half-screen-image--left
+  margin-bottom: 30px
+  +at(600)
+    margin-right: 30px
+    float: left
+
+.half-screen-image--right
+  margin-bottom: 30px
+  +at(600)
+    margin-left: 30px
+    float: right
+
+
+.image-with-fg-text
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 150px
+    +image-overlay-gradient($color-start: #111, $color-end: #111, $stop: 100%)
+
+  &.full-screen-image
+    &:before
+      padding-left: $small-spacing
+      +at(900)
+        padding-left: $mid-spacing
+      +at(1000)
+        padding-left: $large-spacing
+
+  &.half-screen-image
+    &:before
+      padding-left: $small-spacing
+      +at(600)
+        padding-left: 0
+
+  figcaption
+    color: white
+    margin-bottom: 20px
+    z-index: 1

@@ -8,7 +8,7 @@
   font-size: $sizeValue + px
   font-size: ($sizeValue / $base_font_size) + rem
 
-@mixin columns($column-count: 2) 
+@mixin columns($column-count: 2)
   -webkit-columns: $column-count
   -moz-columns:    $column-count
   -ms-columns:     $column-count
@@ -51,15 +51,15 @@
 
 @mixin selection($bg, $color: inherit, $text-shadow: none)
   *
-    &::-moz-selection 
-      background: $bg
-      color: $color 
-      text-shadow: $text-shadow
-    &::-webkit-selection 
+    &::-moz-selection
       background: $bg
       color: $color
       text-shadow: $text-shadow
-    &::selection 
+    &::-webkit-selection
+      background: $bg
+      color: $color
+      text-shadow: $text-shadow
+    &::selection
       background: $bg
       color: $color
       text-shadow: $text-shadow
@@ -69,4 +69,5 @@
   $text-color: if($text-color >= 150, $dark, $light)
   @return $text-color
 
-
+@mixin image-overlay-gradient( $color-start: gray, $opacity-start: 0.5, $color-end: #FFF, $opacity-end: 0, $start: 0, $stop: 35% )
+  background: linear-gradient(to top, rgba($color-start, $opacity-start) $start, rgba($color-end, $opacity-end) $stop)
