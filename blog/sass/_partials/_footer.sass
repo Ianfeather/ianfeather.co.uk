@@ -11,8 +11,15 @@
     flex-wrap: nowrap
 
 .footer
+  padding: $small-spacing
+  +at(900)
+    padding: $small-spacing $mid-spacing
+  +at(1000)
+    padding: $small-spacing $large-spacing
+
   .sidebar
-    padding: 0 5px
+    +at(550)
+      padding: 0 10px
     li
       margin-bottom: 5px
 
