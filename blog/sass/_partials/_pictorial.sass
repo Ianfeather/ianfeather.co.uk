@@ -4,6 +4,11 @@
   p, .constrain-width
     max-width: 800px
 
+  h2, h3
+    margin-top: 1.3em
+  h3
+    margin-bottom: 10px
+
 .full-screen-image
   margin-top: 30px
   margin-bottom: 30px
@@ -111,7 +116,7 @@
     @else
       // Set the min-width to the width below the current image size
       @media only screen and (min-width: nth($sizes, $index - 1) + px)
-        background-image: url("#{'#{$path}-#{nth($sizes, $index)}.jpg'}")
+        background-image: url("#{'#{$path}-#{nth($sizes, $index)}.#{$extension}'}")
 
 .image-brockwell-lido
   +responsive-image('/images/photos/brockwell')
@@ -121,3 +126,28 @@
 
 .image-olympic-park
   +responsive-image('/images/photos/olympic-park')
+
+.image-south-downs
+  +responsive-image('/images/photos/south-downs')
+
+.image-greenwich
+  +responsive-image('/images/photos/greenwich')
+
+.image-chamonix-cloud
+  +responsive-image('/images/photos/chamonix-cloud')
+
+.image-registration
+  +responsive-image('/images/photos/registration')
+
+.image-occ-profile
+  +responsive-image('/images/photos/occ-profile')
+  margin-top: 40px
+  width: 100%
+  padding-top: 90%
+  background-size: contain
+  background-repeat: no-repeat
+  max-width: 800px
+  +at(600)
+    padding-top: 35%
+  +at(1000)
+    padding-top: 300px

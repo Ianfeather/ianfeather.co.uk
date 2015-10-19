@@ -8,6 +8,9 @@
       <div id="content" class="content-inner">
         <article class="blog-area pictorial" role="article">
           {% include pictorial.html %}
+          {% if site.disqus_short_name and page.comments == true %}
+            {% include post/disqus_thread.html %}
+          {% endif %}
         </article>
       </div>
     </section>
