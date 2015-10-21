@@ -8,9 +8,12 @@ categories: non-tech
 permalink: /non-tech/running-the-utmb-occ-before-the-race/
 ---
 
-The Ultra Trail de Mont Blanc offers five different races over a memorable week in August. This year I decided to do the OCC: the shortest of the five (a measly 54k and 10,000ft of ascent) and the only one that you can do without any qualifying points. It begins in Orsières in Switzerland and finishes in Chamonix Town, nestled at the foot of Mt. Blanc. It was the first Ultra I had attempted and an incredible experience throughout.
+The Ultra Trail du Mont Blanc offers five different races over a memorable week in August. This year I decided to do the OCC: the shortest of the five (a measly 54k and 10,000ft of ascent) and the only one that you can do without any qualifying points. It begins in Orsières in Switzerland and finishes in Chamonix Town, nestled at the foot of Mt. Blanc. It was the first Ultra I had attempted and an incredible experience throughout.
 
 I was preoccupied with this race for about six months and during that time I had so many questions I couldn’t quite find answers for, hence this attempt to provide them for future runners and maybe even remind myself if I decide to do it again.
+
+<img src="/images/photos/occ-profile-1600.png" alt="The profile of the occ" />
+
 
 <h2 id="admin" class="blog-subtitle">Admin</h2>
 

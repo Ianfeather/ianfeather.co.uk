@@ -116,7 +116,7 @@
     @else
       // Set the min-width to the width below the current image size
       @media only screen and (min-width: nth($sizes, $index - 1) + px)
-        background-image: url("#{'#{$path}-#{nth($sizes, $index)}.jpg'}")
+        background-image: url("#{'#{$path}-#{nth($sizes, $index)}.#{$extension}'}")
 
 .image-brockwell-lido
   +responsive-image('/images/photos/brockwell')
@@ -138,3 +138,6 @@
 
 .image-registration
   +responsive-image('/images/photos/registration')
+
+.image-occ-profile
+  +responsive-image('/images/photos/occ-profile', 'png')
