@@ -67,9 +67,9 @@ If you push through, and you will, you get to enjoy that post race beer with fri
 
 <h2 id="its-yours-if-you-want-it" class="blog-subtitle">It's yours if you want it...</h2>
 
-A lot of people laughed when I told them what I was planning during the summer. I played it up massively, partly because I'm not sure I believed it myself. Going from never having run further than 10k to racing in an Ultra was ambitious to the point of stupidity. I still remember a friend's quip in the pub:
+A lot of people laughed when I told them what I was planning during the summer. With good reason. I played it up massively, in part because I'm not sure I believed it myself. Going from never having run further than 10k to racing in an Ultra was ambitious to the point of stupidity. I still remember a friend's quip in the pub:
 
-> "You know you don't _have_ to run, right?"
+> "You know you don't _have_ to do this, right?"
 
 And they were right, and I didn't have to. No one does. But I still did and millions of people do it too, and millions more join them each year. They sign up to their next big challenge and scare themselves into a training program. They lace them up even though the rain is pouring and the hangover is about to kick in because they're focused on a goal they have arbitrarily set themselves. It's madness. They dream up even bigger challenges for the future and they eternally wonder where their ceiling is. It's always higher.
 
