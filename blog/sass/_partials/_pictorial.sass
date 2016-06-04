@@ -9,62 +9,43 @@
   h3
     margin-bottom: 10px
 
-.full-screen-image
-  margin-top: 30px
-  margin-bottom: 30px
+.full-screen-image,
+.half-screen-image,
+.two-third-screen-image
+  margin-top: 50px
+  margin-bottom: 50px
 
 .pictorial-image
   background-size: cover
   background-position: center
-  height: 100%
-  height: 110vh
+
 
 .full-screen-image,
-.half-screen-image--left
+.half-screen-image,
+.two-third-screen-image
   margin-left: -$small-spacing
   +at(900)
     margin-left: -$mid-spacing
   +at(1000)
     margin-left: -$large-spacing
 
-.half-screen-image--right
-  margin-right: -$small-spacing
-  +at(900)
-    margin-right: -$mid-spacing
-  +at(1000)
-    margin-right: -$large-spacing
-
 .pictorial-image
   display: flex
   align-items: flex-end
   justify-content: center
-  .half-screen-image > &
-    width: 100vw
-    +at(600)
-      width: 50vw
+  width: 100vw
 
   .full-screen-image > &
-    width: 100vw
+    height: 100%
+    height: 110vh
 
-.half-screen-image
-  & + p, & + p + p
-    max-width: none
+  .two-third-screen-image > &
+    height: 67%
+    height: 67vh
 
-  & + p + p + p
-    clear: both
-
-.half-screen-image--left
-  margin-bottom: 30px
-  +at(600)
-    margin-right: 30px
-    float: left
-
-.half-screen-image--right
-  margin-bottom: 30px
-  +at(600)
-    margin-left: 30px
-    float: right
-
+  .half-screen-image > &
+    height: 50%
+    height: 50vh
 
 .image-with-fg-text
   position: relative
@@ -76,19 +57,14 @@
     height: 150px
     +image-overlay-gradient($color-start: #111, $color-end: #111, $stop: 100%)
 
-  &.full-screen-image
+  &.full-screen-image,
+  &.half-screen-image
     &:before
       padding-left: $small-spacing
       +at(900)
         padding-left: $mid-spacing
       +at(1000)
         padding-left: $large-spacing
-
-  &.half-screen-image
-    &:before
-      padding-left: $small-spacing
-      +at(600)
-        padding-left: 0
 
   figcaption
     color: white
@@ -138,6 +114,30 @@
 
 .image-registration
   +responsive-image('/images/photos/registration')
+
+.image-occ-start
+  +responsive-image('/images/photos/occ-start')
+
+.image-occ-champex
+  +responsive-image('/images/photos/occ-champex')
+
+.image-occ-valleys
+  +responsive-image('/images/photos/occ-valleys')
+
+.image-occ-giete
+  +responsive-image('/images/photos/occ-giete')
+
+.image-occ-start-hut
+  +responsive-image('/images/photos/occ-start-hut')
+
+.image-occ-vallorcine
+  +responsive-image('/images/photos/occ-vallorcine')
+
+.image-occ-finish
+  +responsive-image('/images/photos/occ-finish')
+
+.image-occ-jill
+  +responsive-image('/images/photos/occ-jill')
 
 .image-occ-profile
   +responsive-image('/images/photos/occ-profile')
