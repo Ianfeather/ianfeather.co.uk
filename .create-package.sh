@@ -5,7 +5,7 @@ rm -rf _package-to-deploy
 mkdir _package-to-deploy
 
 echo -e "Copy across global files"
-cp -r global/ _package-to-deploy/
+cp -r global/* _package-to-deploy/
 
 echo -e "Combine JS"
 cat source/javascripts/ianf.js source/javascripts/prism.js > source/javascripts/ianf.min.js
@@ -23,7 +23,9 @@ echo -e "Copy across the stylesheet for older pages"
 cp -r stylesheets site/
 
 echo -e "Copy across the blog package"
-cp -r site/ ./_package-to-deploy/
+cp -r site/* ./_package-to-deploy/
+
+ls -la _package-to-deploy/
 
 # echo -e "Compile presentation stylesheet"
 # sass -t compressed presentations/front-end-ops/sass/style.sass:presentations/front-end-ops/css/style.css
@@ -34,5 +36,5 @@ cp -r site/ ./_package-to-deploy/
 # echo -e "Copy across the test-cases package"
 # cp -r testcases _package-to-deploy/
 
-echo -e "Clean up JS"
-rm source/javascripts/ianf.min.js
+# echo -e "Clean up JS"
+# rm source/javascripts/ianf.min.js
