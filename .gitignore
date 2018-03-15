@@ -1,8 +1,8 @@
 .DS_Store
 _package-to-deploy/
-blog/site
-blog/.sass-cache/
+site
+.sass-cache/
 .sass-cache/
 npm-debug.log
-blog/source/videos/
-blog/source/javascripts/ianf.min.js
+source/videos/
+source/javascripts/ianf.min.js
