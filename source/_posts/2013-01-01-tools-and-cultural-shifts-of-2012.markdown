@@ -7,7 +7,7 @@ comments: true
 categories: blog
 ---
 
-<p class="blog-intro">Our acceptance of competent 3rd party code and adoption of tools seems to have been the biggest shift in Front End Development over the past 12 months. The plague, and fear, of jQuery plugins have been replaced by the adoption of libraries like [requireJS](http://requirejs.org/), [backbone](http://backbonejs.org/) and [underscore](http://underscorejs.org/). The take-up of pre-processors like [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) and [Coffeescript](http://coffeescript.org/) have been staggering (and wrought by confusion and competition). The amount of new tools that have come out of the woodwork and required your *immediate attention* has been overwhelming.</p>
+<p class="blog-intro">Our acceptance of competent 3rd party code and adoption of tools seems to have been the biggest shift in Front End Development over the past 12 months. The plague, and fear, of jQuery plugins have been replaced by the adoption of libraries like <a href="http://requirejs.org/">requireJS</a>, <a href="http://backbonejs.org/">backbone</a> and <a href="http://underscorejs.org/">underscore</a>. The take-up of pre-processors like <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a> and <a href="http://coffeescript.org/">Coffeescript</a> have been staggering (and wrought by confusion and competition). The amount of new tools that have come out of the woodwork and required your *immediate attention* has been overwhelming.</p>
 
 <blockquote class="pull-quote">For our current project we have deployed to production just over 2000 times in the past 7 months.</blockquote>
 
