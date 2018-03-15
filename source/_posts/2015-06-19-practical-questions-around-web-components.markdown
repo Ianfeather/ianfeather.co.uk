@@ -77,6 +77,7 @@ Obviously we can send `<user-greeting>` over the wire, it's just a string. But w
 <pre class="language-markup"><code>&lt;user-greeting&gt;Ian&lt;/user-greeting&gt;</code></pre>
 
 they would instead receive:
+
 <pre class="language-markup"><code>&lt;div id="user-greeting"&gt;
   &lt;style&gt;
     div { padding: 30px; color: red; }

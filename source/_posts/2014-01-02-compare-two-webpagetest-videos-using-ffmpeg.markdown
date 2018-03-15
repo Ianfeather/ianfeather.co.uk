@@ -22,6 +22,7 @@ You could almost certainly place them side by side using a video editor but it c
 </code></pre>
 
 That&apos;s all there is to it. The finished video will look like this:
+
 <div class="video-embed">
   <iframe width="560" height="315" src="//www.youtube.com/embed/NoFEswBIcQo" frameborder="0"> </iframe>
 </div>
