@@ -30,7 +30,7 @@ As developers we rarely exist in a silo so communication is one of the most impo
 
 ### Obnoxious Aggression
 
-These are the type of PR comments that stick in our minds, go viral on twitter, and are typically deemed as being from ‘assholes’. A real one that sticks in my mind:
+These are the type of PR comments that stick in our minds, go viral on twitter, and are typically deemed as being from ‘assholes’. A real one that sticks in my mind was a single comment on a large pull request:
 
 <blockquote>Lodash templates blow.</blockquote>
 
@@ -66,5 +66,3 @@ Some people might be ok receiving feedback that borders on obnoxious aggression 
 #### Understand your own personality and act accordingly
 My natural tendency is to be over polite and hold back if I don’t know the author that well. Because of that, if I doubt myself I typically err on the side of saying something. You might want to consider erring on the side of holding back If your personality is the opposite.
 
-### Now go read the book...
-It’s far better written than this and you’ll start applying the techniques to all aspects of your life. I get no commission despite having it to most people I’ve met! It’s recently been released on paperback and is probably available in all your favourite book shops.
