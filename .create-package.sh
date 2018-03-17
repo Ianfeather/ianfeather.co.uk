@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo -e "Remove the current package"
-rm -rf _package-to-deploy
 mkdir _package-to-deploy
 
 echo -e "Copy across global files"
@@ -24,17 +23,3 @@ cp -r stylesheets site/
 
 echo -e "Copy across the blog package"
 cp -r site/* ./_package-to-deploy/
-
-ls -la _package-to-deploy/
-
-# echo -e "Compile presentation stylesheet"
-# sass -t compressed presentations/front-end-ops/sass/style.sass:presentations/front-end-ops/css/style.css
-
-# echo -e "Copy across the presentations package"
-# cp -r presentations _package-to-deploy/
-
-# echo -e "Copy across the test-cases package"
-# cp -r testcases _package-to-deploy/
-
-# echo -e "Clean up JS"
-# rm source/javascripts/ianf.min.js
