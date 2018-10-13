@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Truths in Web Development"
+date: 2018-10-08 10:30
+comments: true
+categories: blog
+---
+
+Just some simple statements that I have found to be true. Mostly for my benefit and updated over time.
+
+- Absolutes are rare. Treat them with skepticism.
+
+- It's easy to build a fast site. It's hard to keep a site fast.
+
+- There are two contributors to developer happiness: creating an elegant solution and creating user happiness. You need to provide opportunity for at least one.
+
+- Tests that are consistently flakey will be commented out. Those comments will last for a long time.
+
+- Prioritise fixing a broken window culture over everything.
+
+- Users of tools want, but rarely need, total flexibility.
+
+- You have a trust budget with your library/tool users. This budget is finite, is hard to grow and easy to lose. You build the budget by with stability and simple upgrade paths. Fixes to your own mistakes rarely build it, regardless of how responsive you are.
+
+- Every time you feel inefficient think about how you can tighten the feedback loop.
+
+- Don't overthink. Sometimes you need to take an action in order to cause others to react. (Ozark)
+
+- You don't take Job titles with you between jobs, you take the skills you learned along the way so focus on your personal growth. This one is easier to say when you're higher up and harder to hear when you're getting started.
+
+- You don't always have to know the role you want or seek it out. Often you can't even avoid it. The role will find you. If you're interested in solving certain types of problems you'll find yourself gravitating towards them. (Snakes)
+
+- Shyness is often perceived as rudeness.
+
+- Be kind rather than just being nice.
