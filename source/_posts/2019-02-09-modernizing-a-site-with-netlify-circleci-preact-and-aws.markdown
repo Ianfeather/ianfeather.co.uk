@@ -21,7 +21,7 @@ I threw it together a couple of years ago when learning to use AWS lambda and th
 
 Last summer I wanted to work on the site with a couple of friends but the logic to build and deploy it was impossible to share and explain. It needed a rebuild and doing so gave me an opportunity to lean more heavily into some of the modern tooling that’s now available. These are the steps I took along the way.
 
-## 1. Move the static site to Netlify
+### 1. Move the static site to Netlify
 
 If you haven’t heard of Netlify it’s a platform for serving static sites. There are a lot of optimisations going on under the hood to make it efficient at doing this but what really makes it stand out is how user friendly it is. Within minutes you can be up and running with a full continuous integration and deployment pipeline for your site. That means no more copy and pasting CLI commands!
 
@@ -29,7 +29,7 @@ It took about an hour from opening an account to having something set up, and mo
 
 I was able to configure deployments and give team members access rights so they could make changes and see them reflected on the site within seconds - way better than what I had before!
 
-## 2. Move the UI code to Preact-CLI
+### 2. Move the UI code to Preact-CLI
 
 The good part about my previous implementation was it required zero network requests and was very lightweight. The bad part was everything else.
 
@@ -39,7 +39,7 @@ One thing I definitely didn’t want to manage was an elaborate build process. A
 
 The only thing I opted out of here was service workers. It’s something I wanted to have total control of - partly because their power scares me and partly because it was a good opportunity to learn how they work myself. I added this functionality much later on.
 
-## 3. Move the lambda to a netlify function
+### 3. Move the lambda to a netlify function
 
 Netlify can also [host and deploy lambda functions](https://www.netlify.com/docs/functions/) for you so this was an obvious choice for me because I could manage everything in one place. I decided to split the previous lambda function in two and have the part hosted on netlify only speak to a database rather than the third party API (due to rate limit reasons). I’d get the scores into the database another way later.
 
@@ -49,7 +49,7 @@ Netlify has a nice UI where you can add environment variables so that your secre
 
 Eventually I realised that adding my credentials as  *AWS_ACCESS_KEY_ID* and *AWS_SECRET_ACCESS_KEY* actually caused Netlify’s own credentials to be overwritten. Yeahhh :/ I prefixed them with *MY_*  and everything started to work nicely again.
 
-## 4. Set up CircleCI for the import workflow
+### 4. Set up CircleCI for the import workflow
 
 That was the “Site” work fully done: it worked well and was easy to manage. I then had to build the other side of the architecture (the import workflow) responsible for importing the scores.
 
@@ -59,24 +59,24 @@ It didn’t make any sense to use Netlify to manage deployment of this serverles
 
 I created an account and a [CircleCI config file](https://github.com/Ianfeather/worthawatch-import/blob/master/.circleci/config.yml), and within 30mins of trial and error I had a workflow to deploy both master and branch builds to stage and prod environments.
 
-## 5. Set up Secret Management using AWS Parameter Store
+### 5. Set up Secret Management using AWS Parameter Store
 I needed a better way to manage API tokens now that the build wasn’t happening on my laptop. This turned out to be incredibly easy in the end because AWS has a service for providing just this: the Parameter Store.
 
 You can set secrets via the CLI, or via the AWS Console, and then fetch them using a really simple promise API with the [aws-param-store](https://www.npmjs.com/package/aws-param-store) npm package.
 
-## 6. Retry requests when Rate Limited
+### 6. Retry requests when Rate Limited
 I knew I was likely to be rate limited often so I wanted to be able to retry the request until it succeeded. This approach was possible because the requests were asynchronous to any actual user action.
 
 I was tempted to write this logic myself but ultimately there was no need as this [fetch-retried](https://www.npmjs.com/package/@ambassify/fetch-retried) npm package did just the trick. It backs off exponentially between retries until the request has been fulfilled.
 
-## 7. Use AWS SES to remind myself when the API Token expires
+### 7. Use AWS SES to remind myself when the API Token expires
 At this point we had a fully working system. The last remaining itch I wanted to scratch was token expiration. The API I was working with didn’t have a way to automate token renewals which meant that each month I had to remember to go to the UI and generate a new one.
 
 I decided that one thing I could do was send myself an email reminder just before it was about to expire. Accomplishing this with SES was again fairly straightforward just by following a few online guides.
 
 I created a new lambda which ran daily and calculated the remaining days left on the token. If it was close to expiring I sent an email using the SES library in the [AWS-SDK](https://www.npmjs.com/package/aws-sdk) npm package [(my code)](https://github.com/Ianfeather/worthawatch-import/blob/e82b7efa74be418837e0786b008b43c70b616a7b/lib/imports/email.js). As everything was running in AWS I just had to grant my lambda function access to SES by [extending the IAM role and updating my serverless.yml file](https://github.com/Ianfeather/worthawatch-import/blob/aa44e8077477aa3354445ecf091a9f4d6de7b502/serverless.yml#L28-L32).
 
-## And that’s it!
+### And that’s it!
 
 I essentially copy and pasted my way to a pretty robust architecture! I had rarely touched any of these tools before and was able to navigate them fairly easily by reading tutorials and blog posts. I was constantly impressed by how far along the tooling has come though, most of it was very user intuitive, and how quickly you can get a system up and running.
 
