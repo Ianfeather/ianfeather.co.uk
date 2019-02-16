@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Destructuring, rest properties and object shorthand"
+subtitle: "How you can use these features to write more maintainable code"
 date: 2016-01-11 12:30
 comments: true
 categories: blog

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What even is Vanilla JS these days?"
+subtitle: "Without a framework are we just writing our own framework?"
 date: 2015-11-17 11:30
 comments: true
 categories: blog

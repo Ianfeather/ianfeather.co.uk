@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Removing legacy globals with ES6 Proxies"
+subtitle: "You actually can get rid of your legacy window objects"
 date: 2017-07-27 21:30
 comments: true
 categories: blog

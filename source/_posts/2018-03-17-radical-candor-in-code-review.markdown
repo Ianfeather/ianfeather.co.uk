@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Radical Candor in Code Review"
+subtitle: Applying leadership lessons to give more useful feedback
 date: 2018-03-17 10:30
 comments: true
 categories: blog
