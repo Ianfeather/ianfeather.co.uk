@@ -17,11 +17,11 @@ It’s not guaranteed that an organisation will value these proposals, but they'
 
 Crafting a good proposal, getting consensus and seeing it realised can be both satisfying and impactful. On the other hand, being upset at the status quo whilst looking back at your failed proposals to address the problem is frustrating and makes you feel resigned to a lack of desire for change. I’ve had my share of both. Here are the mistakes I’ve made and the lessons I’ve learned along the way:
 
-### Make sure the context is included _within_ the proposal
+### Make sure the context is included **within** the proposal
 
-You’ll know if you’ve failed to do this when you share it with someone for the first time. Your message to them should be as simple as _“Hey, I’d love your thoughts on this \[link to doc\].”_
+You’ll know if you’ve failed to do this when you share it with someone for the first time. Your message to them should be as simple as _**“Hey, I’d love your thoughts on this \[link to doc\].”**_
 
-A few times I’ve caught myself constructing a message like _“Hey, X asked me to put together some thoughts on Y. It’s still WIP right now. The main reason we’re doing this now is because of the deadline later in the year. Let me know what you think.”_
+A few times I’ve caught myself constructing a message like _**“Hey, X asked me to put together some thoughts on Y. It’s still WIP right now. The main reason we’re doing this now is because of the deadline later in the year. Let me know what you think.”**_
 
 Needing to include this context in the message is a clear signal that your document is missing context and needs revisiting. The reason why this is so important is because the proposal is almost certainly going to be passed onto others who don’t have this additional context and this could entirely change the way they perceive it. Put that context in the first paragraph!
 
