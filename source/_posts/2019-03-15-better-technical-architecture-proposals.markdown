@@ -17,7 +17,7 @@ It’s not guaranteed that an organisation will value these proposals, but they'
 
 Crafting a good proposal, getting consensus and seeing it realised can be both satisfying and impactful. On the other hand, being upset at the status quo whilst looking back at your failed proposals to address the problem is frustrating and makes you feel resigned to a lack of desire for change. I’ve had my share of both. Here are the mistakes I’ve made and the lessons I’ve learned along the way:
 
-### Make sure the context is included **within** the proposal
+### Make sure the context is included _within_ the proposal
 
 You’ll know if you’ve failed to do this when you share it with someone for the first time. Your message to them should be as simple as _**“Hey, I’d love your thoughts on this \[link to doc\].”**_
 
