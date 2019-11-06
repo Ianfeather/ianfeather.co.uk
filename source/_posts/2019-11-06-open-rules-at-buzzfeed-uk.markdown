@@ -28,9 +28,9 @@ Here’s a link to the full [Job Description](https://boards.greenhouse.io/buzzf
 ## Principal Engineer (Infrastructure)
 _**From the Job Description**: BuzzFeed’s Core Infrastructure Group is looking for a highly experienced engineer to help take the infrastructure that powers our sites and products to the next level. You will Influence the direction of the core infra group, ensuring we continue to solve the most important challenges to BuzzFeed’s infrastructure._
 
-This is a really cool opportunity for someone to step straight into a leadership role and influence the direction of our infrastructure group. It’s also a rare role: we only have a handful of Principal Engineers at BuzzFeed and typically promote into the position. If you’ve formed strong opinions about how organisations should deploy, run and observe software, and want to put them into practice at scale, then this could be ideal for you!
+This is a really exciting opportunity for someone to step straight into a leadership role and influence the direction of our infrastructure group. It’s also a rare role: we only have a handful of Principal Engineers at BuzzFeed and typically promote into the position. If you’ve formed strong opinions about how organisations should deploy, run and observe software, and want to put them into practice at scale, then this could be ideal for you!
 
-Real talk, our infrastructure is in a pretty good place right now. We want someone who can raise the bar. *We want someone who can come in and spot the opportunities that we haven’t seen.*
+Real talk, our infrastructure is in a pretty good place right now. We want someone who can raise the bar. The position is opening following one of our leads moving internally to stand up a new team, and we *want someone who can come in and spot the opportunities that we haven’t seen.*
 
 You’d get to have broad impact and think strategically but you’d also still be getting pretty hands on with code. Hopefully that appeals to you. In fact, getting hands on with code would be important because two of our engineers in the UK work in the infrastructure group and would lean on you for mentorship in this area.
 
