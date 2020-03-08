@@ -1,24 +1,24 @@
 .footer-columns
   display: flex
   flex-direction: column
-  +at(550)
+  @media only screen and (min-width : 550px)
     flex-direction: row
     flex-wrap: wrap
     .sidebar
       width: 50%
 
-  +at(900)
+  @media only screen and (min-width : 900px)
     flex-wrap: nowrap
 
 .footer
-  padding: $small-spacing
-  +at(900)
-    padding: $small-spacing $mid-spacing
-  +at(1000)
-    padding: $small-spacing $large-spacing
+  padding: var(--small-spacing)
+  @media only screen and (min-width : 900px)
+    padding: var(--small-spacing) var(--mid-spacing)
+  @media only screen and (min-width : 1000px)
+    padding: var(--small-spacing) var(--large-spacing)
 
   .sidebar
-    +at(550)
+    @media only screen and (min-width : 550px)
       padding: 0 10px
     li
       margin-bottom: 5px

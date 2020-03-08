@@ -7,40 +7,38 @@ figure
   margin: 0
 
 .main-header
-  @extend %margin-bottom-mid
+  margin-bottom: var(--mid-spacing)
 
 .mark
-  border-bottom: 1px dashed $maroon
+  border-bottom: 1px dashed var(--maroon)
   .blog-subtitle
     margin-bottom: 2rem
   .footer &
     border: none
 
 nav ul, .sidebar ul
-  @extend %no-list-style
-  @extend %no-margin-or-padding
+  list-style: none
+  margin: 0
+  padding: 0
 
 %navigation-item
   border-radius: 100px
-  @extend %margin-bottom-small
-  border: 2px solid $very-light-blue
+  margin-bottom: var(--small-spacing)
+  border: 2px solid #CCDFF1
   &:hover
-    border: 2px solid $red
+    border: 2px solid var(--red)
 
 .nav
   font-size: 1em
-  @extend %margin-bottom-mid
+  margin-bottom: var(--mid-spacing)
 
 .nav-item
-  @extend %regular-type
   @extend %navigation-item
+  font-size: 16px
   width: 80%
-  // padding: 10px
-  +style-placeholder
-    color: $main-blue
 
 .contact-links
-  @extend %margin-bottom-small
+  margin-bottom: var(--small-spacing)
 
 .ext-sprite
   background-size: 34px
@@ -48,27 +46,38 @@ nav ul, .sidebar ul
 .ext-twitter
   margin-right: 20px
 
+.svg .ext-twitter, .svg .ext-github
+  display: inline-block
+  border: 0
+  text-indent: -999em
+  overflow: hidden
+  background-color: transparent
+  background-repeat: no-repeat
+  text-align: left
+  direction: ltr
+  *line-height: 0
+
 .svg .ext-twitter
   @extend %navigation-item
-  @extend %image-replacement
-  @extend %round-link
+  width: 40px
+  height: 40px
   background-position: 0 -26px
 
 
 .svg .ext-github
   @extend %navigation-item
-  @extend %image-replacement
-  @extend %round-link
+  width: 40px
+  height: 40px
   background-position: 0 4px
 
 // Sidebar
 
 .view-all-posts
-  margin-top: $small-spacing
+  margin-top: var(--small-spacing)
 
 // Footer
 
 .main-footer
-  margin-top: $large-spacing
-  border-top: 1px dashed $maroon
-  padding-top: $small-spacing
+  margin-top: var(--large-spacing)
+  border-top: 1px dashed var(--maroon)
+  padding-top: var(--small-spacing)

@@ -2,33 +2,34 @@ html
   font: 1em/1.5 "Avenir", "Gill Sans MT", "Gill Sans", "Calibri", sans-serif
 
 body
-  +font-size(18)
+  font-size: 18px
   min-height: 100%
-  color: $base_font_color
+  color: #444
   word-wrap: break-word
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 p
-  @extend %margin-bottom-small
-  +hyphens()
+  margin-bottom: var(--small-spacing)
+  hyphens: auto
   margin-top: 0
 
   code
-    color: $maroon
+    color: var(--maroon)
     font-weight: bold
 
 a
-  @extend %blue-text
+  color: var(--main-blue)
   cursor: pointer
   text-decoration: none
+  transition: all 0.5s ease
   &:hover
-    +transition()
-    @extend %red-text
+    color: var(--red)
     text-decoration: none
 
 h1, h2, h3, h4, h5, h6
-  @extend %blue-text
-  @extend %no-margin-or-padding
+  color: var(--main-blue)
+  margin: 0
+  padding: 0
   font-weight: normal
   line-height: 1.2
 
@@ -36,12 +37,12 @@ blockquote
   font-style: italic
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: $maroon
+  color: var(--maroon)
   margin: 0
   margin-bottom: 1rem
   font-weight: bold
   padding-left: 20px
-  border-left: 2px solid $maroon
+  border-left: 2px solid var(--maroon)
 
 pre, code
   padding: 0
@@ -56,3 +57,11 @@ em
 
 strong
   font-weight: bold
+
+
+.mono
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace
+.sans
+  font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif !default
+.serif
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif !default

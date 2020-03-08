@@ -1,11 +1,11 @@
 .blog-post
-  @extend %margin-bottom-mid
-  padding-bottom: $small-spacing
+  margin-bottom: var(--mid-spacing)
+  padding-bottom: var(--small-spacing)
   min-height: 400px
   .blog-index &
-    border-bottom: 1px dashed $light-blue
+    border-bottom: 1px dashed var(--light-blue)
   h2, h3, h4
-    @extend %margin-bottom-small
+    margin-bottom: var(--small-spacing)
     margin-top: 1.3em
     font-weight: bold
   h4
@@ -15,7 +15,7 @@
     list-style-position: inside
     line-height: 2
   figure
-    margin: $small-spacing 0
+    margin: var(--small-spacing) 0
   .index-view &
     min-height: 0
   a
@@ -24,7 +24,7 @@
 .blog-grid
   .column
     width: 100%
-    +at(900)
+    @media only screen and (min-width : 900px)
       float: left
       width: 50%
   img
@@ -32,12 +32,12 @@
     border: 1px solid #c6daed
 
 .blog-intro
-  +at(900)
-    +columns(2)
+  @media only screen and (min-width : 900px)
+    columns: 2
 
 .blog-title
   font-family: "Rockwell", "futura", "calibri", "arial", sans-serif
-  +font-size(50)
+  font-size: 50px
   margin-bottom: 0
   line-height: 1.1
   font-weight: normal
@@ -46,41 +46,41 @@
     margin-bottom: 10px
 
   a
-    @extend %blue-text
+    color: var(--main-blue)
     font-weight: normal
 
 code[class*="language-"]
   font-size: 14px
 
 .bio
-  @extend %huge-type
-  @extend %margin-bottom-small
-  color: $maroon
+  font-size: 24px
+  margin-bottom: var(--small-spacing)
+  color: var(--maroon)
 
 .blog-subtitle
-  @extend %huge-type
-  @extend %margin-bottom-small
+  font-size: 24px
+  margin-bottom: var(--small-spacing)
   font-family: "Rockwell", "futura", "calibri", "arial", sans-serif
-  color: $maroon
+  color: var(--maroon)
   margin-top: 0
   line-height: 1.5
   font-weight: normal !important
 
   .blog-archives &
-    @extend %margin-bottom-mid
-    margin-top: $mid-spacing
+    margin-bottom: var(--mid-spacing)
+    margin-top: var(--mid-spacing)
 
   .sidebar &
     display: block
     margin-bottom: 10px
 
 .blog-subtitle--small
-  @extend %large-type
-  @extend %margin-bottom-small
-  color: $maroon
+  font-size: 20px
+  margin-bottom: var(--small-spacing)
+  color: var(--maroon)
 
 .blog-headings
-  @extend %margin-bottom-mid
+  margin-bottom: var(--mid-spacing)
   .blog-subtitle
     margin-top: 0.75em
   .fewer-words &
@@ -91,19 +91,19 @@ code[class*="language-"]
   font-weight: bold
 
 .post-date
-  @extend %large-type
-  color: $subdued
-  @extend %margin-bottom-small
+  font-size: 20px
+  color: #bebebe
+  margin-bottom: var(--small-spacing)
 
 .blog-archive-entry
-  @extend %margin-bottom-small
+  margin-bottom: var(--small-spacing)
 
 .image--right
   margin: 20px auto
   display: block
-  +at(900)
+  @media only screen and (min-width : 900px)
     margin: 0 0 20px 40px
-  +at(1000)
+  @media only screen and (min-width : 1000px)
     margin: 0 0 20px 60px
 
 .image--left
@@ -124,9 +124,9 @@ code[class*="language-"]
     height: 100%
 
 .image--opera-mini
-  +at(320)
+  @media only screen and (min-width : 320px)
     max-width: 300px
-  +at(900)
+  @media only screen and (min-width : 900px)
     max-width: 200px
 
 .comments-area
@@ -135,12 +135,27 @@ code[class*="language-"]
 .section-intro
   font-style: italic
   opacity: 0.8
-  color: $maroon
+  color: var(--maroon)
   margin-bottom: 80px
   padding-bottom: 40px
   border-bottom: 1px dashed
 
 .non-tech-index
   margin-bottom: 50px
-  +at(900)
+  @media only screen and (min-width : 900px)
     min-height: 1000px
+
+.inner-content-grid
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  zoom: 1
+  margin-left: -var(--small-spacing)
+
+  .col--half
+    padding-left: var(--small-spacing)
+    @media only screen and (min-width : 900px)
+      float: left
+      width: 50%
