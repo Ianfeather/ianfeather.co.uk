@@ -1,0 +1,11 @@
+---
+layout: default
+single: true
+---
+
+<article class="blog-area double-column blog-post" role="article">
+  {% include article.html %}
+  {% if site.disqus_short_name and post.comments != false and page.comments == true %}
+    {% include post/disqus_thread.html %}
+  {% endif %}
+</article>
