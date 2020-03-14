@@ -5,6 +5,7 @@ date: 2015-06-26
 comments: true
 categories: fewer-words
 tags: fewer_words
+permalink: /and-the-hippos-were-boiled-in-their-tanks/
 ---
 
 You know them. You hear them around your office, often locked away in meeting rooms but occasionally let loose to roam around behind your backs: eager to be heard and expert at unleashing their unknowing but paralytic tension.
