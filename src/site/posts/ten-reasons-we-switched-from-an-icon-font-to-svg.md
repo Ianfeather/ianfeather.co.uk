@@ -88,7 +88,7 @@ This problem is removed with SVG as you are not limited to generated content and
 
 Admittedly this may be a result of how we created and managed our icon glyphs but we always found them awkward to position exactly how we wanted (and in a consistent fashion cross browser). We resorted to line height hacks and absolute/relative positioning to get them just right and it was difficult to come up with an abstraction that worked consistently.
 
-With SVG we've found the placement much more willing. We use background-size: cover and simply resize the element to ensure consistency across browsers.
+With SVG we've found the placement much more willing. We use background-size: cover and resize the element to ensure consistency across browsers.
 
 
 ## 8. Multi-colour icons

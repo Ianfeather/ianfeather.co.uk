@@ -32,7 +32,7 @@ With web fonts, browsers are forced to make a decision from two distinct options
 
 <blockquote>&hellip;user agents may render text as it would be rendered if downloadable font resources are not available or they may render text transparently with fallback fonts to avoid a flash of text using a fallback font.</blockquote>
 
-<blockquote>In cases where the font download fails user agents must display text, simply leaving transparent text is considered non-conformant behavior.</blockquote>
+<blockquote>In cases where the font download fails user agents must display text: leaving transparent text is considered non-conformant behavior.</blockquote>
 
 As you would imagine, from a wide open spec like this, implementation is very varied:
 
@@ -63,7 +63,7 @@ Webkit have been working on the timeout issue and how best to calculate where th
 [https://bugs.webkit.org/show_bug.cgi?id=25207](https://bugs.webkit.org/show_bug.cgi?id=25207) ~ 2009
 [https://code.google.com/p/chromium/issues/detail?id=235303](https://code.google.com/p/chromium/issues/detail?id=235303) ~ 2013
 
-This may say more about the challenge than it does about priorities. There simply isn't a correct answer that will satisfy all users: invisible text is considered a feature and a bug to many.
+This may say more about the challenge than it does about priorities. There  isn't a correct answer that will satisfy all users: invisible text is considered a feature and a bug to many.
 
 ## Alright I get it, but I still want to have fonts on my site.
 
@@ -129,7 +129,7 @@ If you're deploying new revisions to your css regularly you're going to be const
 2. Slower perceived speed<br />
 The big downside to the inline approach is you block the render of the entire chrome, not just the type you have styled. The user will see nothing but a white screen until the single asset has downloaded at which point the complete page will be rendered. Depending upon the latency of your users this approach can still end up painting to the screen faster than other approaches. You should probably avoid this technique if you are using web fonts in just a few places on your site.
 
-The most important part of using this approach is ensuring that you don't serve the woff to browsers that can't render it. If your users are browsing your site on old version of Internet Explorer then the chances are they're not too happy about it already; don't punish them further by forcing them to download 30k + of assets they can't use. You can handle this by simply using IE conditionals.
+The most important part of using this approach is ensuring that you don't serve the woff to browsers that can't render it. If your users are browsing your site on old version of Internet Explorer then the chances are they're not too happy about it already; don't punish them further by forcing them to download 30k + of assets they can't use. You can handle this by using IE conditionals.
 
 <pre class="language-html"><code>&lt;!--[if (gt IE 8) | (IEMobile)]>&lt;!--&gt;
   &lt;link href="common_core_with_base64.css" media="all" rel="stylesheet" type="text/css" /&gt;

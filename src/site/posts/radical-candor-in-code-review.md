@@ -38,7 +38,7 @@ It’s crass, it’s unconstructive. It was followed by the commenter rewriting 
 
 ### Manipulative Insincerity
 
-This can transpire in lengthy PRs where someone only adds a single LGTM comment. Unless it’s been discussed offline it’s likely that the reviewer simply doesn’t care enough to invest their time in thoroughly reviewing the code. In this case their approval is both hollow and disrespectful. If you actually do come across a long PR with no faults whatsoever you should take the opportunity to offer some more constructive, positive feedback.
+This can transpire in lengthy PRs where someone only adds a single LGTM comment. Unless it’s been discussed offline it’s likely that the reviewer doesn’t care enough to invest their time in thoroughly reviewing the code. In this case their approval is both hollow and disrespectful. If you actually do come across a long PR with no faults whatsoever you should take the opportunity to offer some more constructive, positive feedback.
 
 In its worst form this can also be represented by a lack of a comment. The reviewer sees something they know is risky but they keep quiet, perhaps thinking that the author will learn their lesson when it causes them problems later on.
 
@@ -52,7 +52,7 @@ This can also be an issue when re-reviewing code: if the author has improved the
 
 #### Give positive feedback
 
-Take time to acknowledge the good parts and comment if you learned something. This is something we often overlook because we become trained to simply spot defects.
+Take time to acknowledge the good parts and comment if you learned something. This is something we often overlook because we become trained to just spot defects.
 
 #### Take time to guide the person, not just the code
 This is about explaining the “why”. What was it you experienced/read/told that gave you the different perspective? Share those resources.

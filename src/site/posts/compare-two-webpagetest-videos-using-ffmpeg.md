@@ -9,7 +9,7 @@ If you need to create a comparison of two other videos you can do so easily with
 
 Recently I needed to compare two WebPagetest videos but couldn't find the original test results. Fortunately I had the videos stored locally so I just needed a way to recreate their video comparison feature offline.
 
-You could almost certainly place them side by side using a video editor but it can also be done very quickly and simply using ffmpeg (~5s to generate the below video).
+You could almost certainly place them side by side using a video editor but it can also be done very quickly using ffmpeg (~5s to generate the below video).
 
 <pre class="language-bash"><code>
   # Firstly install ffmpeg (using brew or from binary)

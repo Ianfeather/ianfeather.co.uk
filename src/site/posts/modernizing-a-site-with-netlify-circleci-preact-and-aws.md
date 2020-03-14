@@ -87,4 +87,4 @@ The code has simplified a little bit since the initial build (I eventually switc
 - [https://github.com/Ianfeather/worthawatch-site](https://github.com/Ianfeather/worthawatch-site)
 - [https://github.com/Ianfeather/worthawatch-import](https://github.com/Ianfeather/worthawatch-import)
 
-And of course, if you need to know which NBA games were worth watching (spoiler-free!) you can do so at [https://www.worthawatch.today](https://www.worthawatch.today) :)
+And, if you need to know which NBA games were worth watching (spoiler-free!), you can do so at [https://www.worthawatch.today](https://www.worthawatch.today) :)

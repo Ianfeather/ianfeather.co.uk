@@ -65,13 +65,13 @@ One approach would be to serve a very small subset of styles upfront to ensure t
 
 Another approach would be to bundle all the CSS from within the components and serve it in the head. Crucially, this relies on the page having to know exactly which components it will show at any one time: something we would love to avoid in an ideal world where we can arbitrarily load components into any page.
 
-This is an issue that isn't just limited to unsupported browsers. Currently, if you're trying out html imports, you'll find that you can simply place them higher up in the DOM and avoid any FOUC. This has the downside of being a blocking request and a bottleneck for the page. If html imports [don't become part of the standard](https://hacks.mozilla.org/2014/12/mozilla-and-web-components/) or if we just want to load them asynchronously for performance, we will need to anticipate and prepare for the FOUC.
+This is an issue that isn't just limited to unsupported browsers. Currently, if you're trying out html imports, you'll find that you can place them higher up in the DOM and avoid any FOUC. This has the downside of being a blocking request and a bottleneck for the page. If html imports [don't become part of the standard](https://hacks.mozilla.org/2014/12/mozilla-and-web-components/) or if we just want to load them asynchronously for performance, we will need to anticipate and prepare for the FOUC.
 
 <h2 id="server-side" class="blog-subtitle">Can we render Web Components on the client <em>and</em> server?</h2>
 
 Just as we want to make our component imports non-blocking to speed up page-load we may also want to render the initial page on the server. This approach was originally taken by [airbnb](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/), popularised by techniques with React and more recently adopted by Ember in [Fastboot](http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html). Can we do the same with Web Components? Is this even a goal for the Web Components project?
 
-Obviously we can send `<user-greeting>` over the wire, it's just a string. But we can't really call that a Web Component as such, at least not a fully formed one. What about the inner content? If possible we want to render all of the component so that instead of the client receiving:
+Now, we can send `<user-greeting>` over the wire, it's just a string. But we can't really call that a Web Component as such, at least not a fully formed one. What about the inner content? If possible we want to render all of the component so that instead of the client receiving:
 
 <pre class="language-markup"><code>&lt;user-greeting&gt;Ian&lt;/user-greeting&gt;</code></pre>
 
@@ -112,7 +112,7 @@ We can again turn to JS to look for a solution to both fetching and authoring. A
 
 How http/2 will change the way we structure and build our applications, particularly in relation to asset loading, is still being determined but one highly touted feature is the reduced need for bundling assets together. In theory, it [will be more performant to request multiple small assets](https://http2.github.io/faq/) rather than one large bundle because we will make the cache more granular and not lose that much on the network.
 
-Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow. Of course we still have to cater for non-http/2 users and without concatenation there would be an increase in the number of requests. Would the adoption of Web Components, right now, significantly slow a web which is predominately pre http/2?
+Web Components embrace the philosophy of independent modules and together with http/2 you can immediately imagine a nice no-bundle workflow. Now, we still have to cater for non-http/2 users and without concatenation there would be an increase in the number of requests. Would the adoption of Web Components, right now, significantly slow a web which is predominately pre http/2?
 
 Currently [Vulcanise](https://www.polymer-project.org/0.5/articles/concatenating-web-components.html) exists to help with this by bundling your imports and their dependencies and I'm sure support for bundling Web Component assets will arrive in your preferred build tool in the future. Personally I look forward to a workflow that allows me the flexibility to arbitrarily load components into the page and for them to just work, without considering the assets for the system as a whole. For now, and potentially forever, that's certainly not realistic.
 
@@ -121,11 +121,11 @@ Currently [Vulcanise](https://www.polymer-project.org/0.5/articles/concatenating
 
 There have been a lot of articles and talks that have compared the future Web Components ecosystem to the current jQuery plugins ecosystem. jQuery plugins thrived because they were plug and play, and they struggled because there were a thousand+ plug and play implementations of jQuery.tabs.
 
-One of the hopes for Web Components is that the cream rises to the top and that we can promote the "best" components. This is clearly not a simple task and expecting it to happen purely by drawing a line in the sand over the jQuery era will not be enough. A quick look at the react or angular ecosystems shows they still have their fair share of implementations.
+One of the hopes for Web Components is that the cream rises to the top and that we can promote the "best" components. This is not a simple task and expecting it to happen purely by drawing a line in the sand over the jQuery era will not be enough. A quick look at the react or angular ecosystems shows they still have their fair share of implementations.
 
 These plugins had one big benefit though: jQuery was their one and only dependency. They also had no transitive dependencies where A depended on B which depended on C, because, well, B was jQuery which did everything itself. Transitive dependencies is where things get tricky as they need to be resolved across components. These dependencies could be anything from Angular to RxJS or lodash to polyfills. It's likely we will also see our fair share of "zero-dependency components" attempting to sidestep the problem by inlining their own modular builds of utility libraries and adding extra weight you can't possibly extract or de-duplicate.
 
-Of course, the closed concept of Web Components mean you absolutely could have different libraries inside and outside and it would still work, but just because you can doesn't necessarily mean you should: we should always want to avoid needlessly transferring bytes across the wire.
+The closed concept of Web Components mean you absolutely could have different libraries inside and outside and it would still work, but just because you can doesn't necessarily mean you should: we should always want to avoid needlessly transferring bytes across the wire.
 
 Finding the right 3rd party component whose dependencies matches yours is going to be extremely hard and because of that the ecosystem is going to be forced to fragment in order to support it. Right now it definitely feels like Web Components have more strength as an architecture strategy for reuse within a single project than as a catalogue of plug and play third party components.
 
@@ -152,4 +152,4 @@ I found myself drifting into the world of CSS and dependencies quite often as th
 
 The requirement for Web Components to be independent and portable is ultimately what brings these discussions to the forefront. Their benefits are real: true scoping for CSS, the ability to share code in a framework agnostic manner, their composability, are all features that developers have needed for a long time.
 
-Clearly the Web Components spec does not exist within a vacuum. It does present us with a focal point though, an opportunity for reflection on how the rest of the web ecosystem is ready to support it, and a list of outstanding problems which require resolutions to allow us to build standards-compilant, truly composable systems.
+The Web Components spec does not exist within a vacuum. It does present us with a focal point though, an opportunity for reflection on how the rest of the web ecosystem is ready to support it, and a list of outstanding problems which require resolutions to allow us to build standards-compilant, truly composable systems.

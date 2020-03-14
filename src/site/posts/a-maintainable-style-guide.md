@@ -67,7 +67,7 @@ Here we have a couple of buttons referenced in the CSS which are rendered in the
 
 The problem here is that the template we render in the Style Guide isn't the template we use in our applications. At best it is a direct copy; more likely it is a slimmed down, and perhaps out of date, copy.
 
-As soon as you introduce template duplication like this you have twice as much to maintain. Inevitably, for a project spanning even just a short time, one of them is going to falling behind.
+As soon as you introduce template duplication like this you have twice as much to maintain. Inevitably, for a project spanning even a short time, one of them is going to falling behind.
 
 Now this is easy to overlook when you're talking about single element components like buttons where the effort is fairly minimal to maintain but in reality a lot of components are more complex: requiring multiple elements, classes and often Javascript. We should be striving for a solution which sticks as close as possible to production.
 
@@ -81,15 +81,15 @@ There is also the problem of the output. Typically you would feature the compone
   <figcaption class="fig-caption">(taken from the excellent <a href="https://ux.mailchimp.com/patterns/">Mailchimp Style Guide</a>)</figcaption>
 </figure>
 
-The idea here is that a developer can simply copy and paste this markup into their application and very quickly and easily build up their page from component parts.
+The idea here is that a developer can copy and paste this markup into their application and very quickly and easily build up their page from component parts.
 
 Whilst this is an excellent goal, the problem in this case is the distribution of templates. Even if we presume that the rendered markup is absolutely up to date, once they copy that code they are essentially cutting a version which needs to be maintained indefinitely. When they copied the markup for a working component it had an implicit link to a snapshot of the CSS at that point. If you then update the template or refactor the CSS, you need to update all versions of the template scattered around your site.
 
 This posed a huge problem for us because authors of components had no idea of where they were being used. They may not even have heard of the application that is now using it. That increases the risk of releasing a breaking which makes it more likely that future developers will avoid updating and reusing the component at all.
 
-This is a huge cause for Technical Debt build up at Lonely Planet. As the entire infrastructure is too large to completely hold inside your head, authors were being forced to build defensively. As there was no mechanism for encouraging risk-free reuse of components, they simply weren't being reused and we instead ended up with duplicated components and bloated code.
+This is a huge cause for Technical Debt build up at Lonely Planet. As the entire infrastructure is too large to completely hold inside your head, authors were being forced to build defensively. As there was no mechanism for encouraging risk-free reuse of components they weren't being reused and we instead ended up with duplicated components and bloated code.
 
-I don't believe this is an issue scoped only to Lonely Planet or even limited to just large websites. Reducing the distribution of templates promotes easier, risk-free refactoring regardless of the size of complexity of a website.
+I don't believe this is an issue scoped only to Lonely Planet or even limited to large websites. Reducing the distribution of templates promotes easier, risk-free refactoring regardless of the size of complexity of a website.
 
 
 <h2 id="how-should-style-guides-work" class="blog-subtitle">How should Style Guides work?</h2>
@@ -133,7 +133,7 @@ Having a single version of the component, accessible via an API, worked perfectl
 </code>
 </pre>
 
-The developer can modify and extend the component by manipulating the input data. For example, if we wanted to add autocomplete functionality to this search form we would usually do so by adding classes and maybe initialise a JS component somewhere. Within the scope of the Component API we can simply pass in a new boolean and it will add what is necessary:
+The developer can modify and extend the component by manipulating the input data. For example, if we wanted to add autocomplete functionality to this search form we would usually do so by adding classes and maybe initialise a JS component somewhere. Within the scope of the Component API we can pass in a new boolean and it will add what is necessary:
 
 <pre class="language-custom"><code>
   // Input
@@ -199,9 +199,9 @@ This adds an extra layer of complexity for these applications as they then have 
 
 ### The Style Guide
 
-Once you have a component architecture your Style Guide can simply be another application. Ours is a tiny Ruby app, but you could use absolutely any technology including a simple static site generator.
+Once you have a component architecture your Style Guide can be another application. Ours is a tiny Ruby app, but you could use absolutely any technology including a simple static site generator.
 
-The Style Guide simply loads up some data for a particular type of component and then iterates through it: rendering the component and the component description each time. Note it's calling styleguide_component which ultimately calls ui_component the same as any other application would.
+All the Style Guide does is load up some data for a particular type of component and then iterate through it: rendering the component and the component description each time. Note it's calling styleguide_component which ultimately calls ui_component the same as any other application would.
 
 <pre class="language-ruby"><code>
 -# Load the data

@@ -132,7 +132,7 @@ During the descent from Flégère I had had no idea if I would be able to hit th
 
 I spotted my parents on the finish line, gave them a wave, heard my name and number being called, crossed the line and stopped dead, hands on my knees, heart pounding and lungs sucking like crazy. I had done it! I couldn't quite believe it but I knew it was true. I got hugs from all the family. What a great support team! I needed them so badly, doing it alone would have been so much harder. I wanted to thank them but I didn't have the air in my lungs to speak and even if I would have I had by now almost entirely lost my voice.
 
-My heart was still going at a pace I didn't know was possible. My eyes were bordered by huge bags and my pupils were simply dots in a sea of blue and red-flecked white. I couldn't take it all in. The hard work was done and the pain was seeping from my legs and my lungs. I was devoid of energy and was fighting back tears: overcome by that feeling of having nothing left to offer but being so overwhelmed by floods of emotion that your eyes become the only point of release.
+My heart was still going at a pace I didn't know was possible. My eyes were bordered by huge bags and my pupils were but dots in a sea of blue and red-flecked white. I couldn't take it all in. The hard work was done and the pain was seeping from my legs and my lungs. I was devoid of energy and was fighting back tears: overcome by that feeling of having nothing left to offer but being so overwhelmed by floods of emotion that your eyes become the only point of release.
 
 <figure class="full-screen-image image-with-fg-text">
   <div class='pictorial-image image-occ-jill' alt="Looking wired and elated with my Sister">

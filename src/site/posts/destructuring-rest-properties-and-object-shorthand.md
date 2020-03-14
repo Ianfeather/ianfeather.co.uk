@@ -6,7 +6,7 @@ comments: true
 categories: blog
 ---
 
-Destructuring and rest/spread parameters for Arrays is part of the es6 specification. Support for their use with Objects is, at the time of writing, a [stage 2 proposal for future inclusion](https://github.com/sebmarkbage/ecmascript-rest-spread). Of course, you can use it today via a transpiler like Babel.
+Destructuring and rest/spread parameters for Arrays is part of the es6 specification. Support for their use with Objects is, at the time of writing, a [stage 2 proposal for future inclusion](https://github.com/sebmarkbage/ecmascript-rest-spread). You can also use it today via a transpiler like Babel.
 
 Object Shorthand is already part of the es6 specification and with a combination of these three features you can start to use some patterns which can lead to more reliable, less error prone code.
 

@@ -31,7 +31,7 @@ module.exports = function(config) {
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 
   config.addLinter("inclusive-language", function(content, inputPath, outputPath) {
-    let words = "simply,obviously,basically,of course,clearly,just,everyone knows,however,easy".split(",");
+    let words = "simply,obviously,basically,everyone knows".split(",");
     if( inputPath.endsWith(".md") ) {
       for( let word of words) {
         let regexp = new RegExp("\\b(" + word + ")\\b", "gi");
