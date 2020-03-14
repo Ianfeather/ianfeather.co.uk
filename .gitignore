@@ -1,8 +1,14 @@
+# dependencies installed by npm
+/node_modules
+
+# build artefacts
+/dist
+/src/site/_includes/css
+
+# secrets and errors
+.env
+
+# macOS related files
 .DS_Store
-_package-to-deploy/
-site
-.sass-cache/
-.sass-cache/
-npm-debug.log
-source/videos/
-source/javascripts/ianf.min.js
+.AppleDouble
+.LSOverride

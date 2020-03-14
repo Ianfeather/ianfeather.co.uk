@@ -1,0 +1,40 @@
+<aside class="sidebar single-column">
+  <section>
+    <h3><a class="blog-subtitle" href="{{ page.rootUrl }}/archive">Recent Posts</a></h3>
+    <ul id="js-recent-posts">
+    {%- for page in collections.sidebarRecent | reverse -%}
+      <li>
+        <a href="{{ page.url }}">{{ page.data.title }}</a>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </section>
+</aside>
+<aside class="sidebar single-column">
+  <section>
+    <h3><a class="blog-subtitle" href="{{ page.rootUrl }}/non-tech">Non-Tech Posts</a></h3>
+    <ul id="js-recent-posts">
+    {%- for page in collections.sidebarNonTech | reverse -%}
+      <li>
+        <a href="{{ page.url }}">{{ page.data.title }}</a>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </section>
+</aside>
+<aside class="sidebar single-column">
+  <section>
+    <h3><a class="blog-subtitle" href="{{ page.rootUrl }}/fewer-words">Fewer Words</a></h3>
+    <ul id="js-recent-posts">
+    {%- for page in collections.sidebarFewer | reverse -%}
+      <li>
+        <a href="{{ page.url }}">{{ page.data.title }}</a>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </section>
+</aside>
+<aside class="sidebar single-column">
+  <h3><a class="blog-subtitle" href="https://speakerdeck.com/ianfeather">Presentations</a></h3>
+</aside>
+

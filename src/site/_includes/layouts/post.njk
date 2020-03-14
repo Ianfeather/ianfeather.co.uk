@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+bodyClass: posts
+showSidebar: true
+templateEngineOverride: njk
+permalink: /{{ title | slug }}/
+---
+
+<article class="blog-area double-column blog-post">
+  {%- include "post-header.njk" -%}
+  {{ content | safe }}
+
+  {% if site.disqus_short_name and comments != false %}
+    {% include "disqus_thread.html" %}
+  {% endif %}
+</article>
