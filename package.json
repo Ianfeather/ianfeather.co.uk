@@ -1,17 +1,17 @@
 {
-  "name": "EleventyOne",
-  "version": "3.0.0",
+  "name": "ianfeather.co.uk",
+  "version": "0.1.0",
   "description": "A project bootstrap for Eleventy sites. With pipelines for PostCSS, JavaScript, and serverless functions",
-  "author": "Phil Hawksworth",
+  "author": "Ian Feather",
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
-    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventyone"
+    "url": "https://github.com/ianfeather/ianfeather.co.uk"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
