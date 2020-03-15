@@ -1,0 +1,22 @@
+:root {
+  --small-spacing: 1rem;
+  --mid-spacing: 3rem;
+  --large-spacing: 5rem;
+  --main-blue: #5696d1;
+  --light-blue: #90bee9;
+  --red: #ff5d5d;
+  --maroon: #832056;
+}
+
+@import "_partials/_utilities/grid";
+@import "_partials/_utilities/helpers";
+@import "_partials/typography";
+@import "_partials/layout";
+@import "_partials/blog";
+@import "_partials/edit";
+@import "_partials/elements";
+@import "_partials/pictorial";
+@import "_partials/footer";
+@import "_partials/tables";
+@import "_partials/print";
+@import "_vendor/_prism";

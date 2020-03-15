@@ -1,0 +1,14 @@
+<header>
+  <hgroup class="blog-headings">
+    <h1 class="blog-title">{{ title }}</h1>
+    {% if subtitle %}
+      <h2 class="blog-subtitle">{{ subtitle | safe }}</h2>
+    {% endif %}
+  </hgroup>
+  <p class="post-date">Posted on <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+    {% if site.disqus_short_name and comments != false %}
+      | <a id="js-comment-link" href="{% if index %}{{ site.rootUrl }}{{ page.url }}{% endif %}#disqus_thread">Comments</a>
+    {% endif %}
+  </p>
+
+</header>

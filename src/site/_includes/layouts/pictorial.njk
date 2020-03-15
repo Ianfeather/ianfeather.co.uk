@@ -1,0 +1,42 @@
+---
+pageClass: posts
+templateEngineOverride: njk
+permalink: /non-tech/{{ title | slug }}/
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    {% include "head.njk" %}
+  </head>
+  <body {% if bodyClass %}class="body {{ bodyClass }}"{% endif %}>
+
+    <div id="content" class="content-inner grid-wrapper">
+      <div class="body">
+        <section class="main-content" role="main">
+          <article class="blog-area double-column pictorial" role="article">
+            <a href="/" class="home-link">&lt; Back to Home</a>
+            {%- include "post-header.njk" -%}
+            <div>{{ content | safe }}</div>
+            {% if site.disqus_short_name and comments != false %}
+              {% include "disqus_thread.html" %}
+            {% endif %}
+          </article>
+        </section>
+      </div>
+      {% include "google_analytics.html" %}
+    </div>
+
+    {% set js %}
+      {% include "js/core.js" %}
+    {% endset %}
+    <script>{{ js | jsmin | safe }}</script>
+
+  </body>
+</html>
+
+
+
+
+

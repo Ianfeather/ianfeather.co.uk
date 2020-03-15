@@ -1,0 +1,51 @@
+table {
+  margin-bottom: var(--small-spacing);
+  width: 100%;
+}
+table tr {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+@media only screen and (max-width: 580px) {
+  table .table-header {
+    display: none;
+  }
+  table tr {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    margin-bottom: var(--small-spacing);
+    padding-bottom: var(--small-spacing);
+  }
+  table .val {
+    display: table-row;
+    text-align: left !important;
+    margin-bottom: 10px;
+  }
+  table .val:before {
+    display: table-cell;
+    padding-right: 1rem;
+    content: attr(data-label) ":";
+    color: var(--maroon);
+    min-width: 80px;
+  }
+}
+
+th {
+  font-weight: bold;
+  color: var(--maroon);
+}
+.table--left th {
+  text-align: left;
+}
+
+.val {
+  text-align: center;
+}
+.table--left .val {
+  text-align: left;
+}
+
+.cell--inner {
+  width: 85%;
+}
