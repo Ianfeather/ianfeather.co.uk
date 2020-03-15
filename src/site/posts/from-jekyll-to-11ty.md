@@ -43,7 +43,7 @@ templateEngineOverride: njk, md
 
 <img src="/images/pre-output.jpg" />
 
-To fix this, I removed the `md` directive from the `templateEngineOverride`. It then rendered fine.
+To fix this, I removed the `md` directive from the `templateEngineOverride`. I'm not sure if this is the truly correct solution but after this it rendered just fine.
 
 ### Listing recent posts in the sidebar of a post page
 11ty has good support for [pagination](https://www.11ty.dev/docs/pagination/) but there were two things I couldn't initially figure out:
