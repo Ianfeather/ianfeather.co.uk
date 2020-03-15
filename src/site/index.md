@@ -11,7 +11,7 @@ pagination:
 ---
 
 
-## Most Recent technical writing
+## Recent technical writing
 
 <div class="index-section">
   <ul>
