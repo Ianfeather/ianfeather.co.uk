@@ -2,19 +2,20 @@
   margin-top: 30px;
   width: 100%;
 }
-.pictorial p, .pictorial .constrain-width {
+
+.pictorial p, .pictorial ul, .pictorial .constrain-width {
   max-width: 800px;
 }
+
 .pictorial h2, .pictorial h3 {
   margin-top: 1.3em;
 }
+
 .pictorial h3 {
   margin-bottom: 10px;
 }
 
-.full-screen-image,
-.half-screen-image,
-.two-third-screen-image {
+.full-screen-image, .half-screen-image, .two-third-screen-image {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -24,22 +25,18 @@
   background-position: center;
 }
 
-.full-screen-image,
-.half-screen-image,
-.two-third-screen-image {
+.full-screen-image, .half-screen-image, .two-third-screen-image {
   margin-left: calc(-1 *var(--small-spacing));
 }
+
 @media only screen and (min-width: 900px) {
-  .full-screen-image,
-  .half-screen-image,
-  .two-third-screen-image {
+  .full-screen-image, .half-screen-image, .two-third-screen-image {
     margin-left: calc(-1 * var(--mid-spacing));
   }
 }
+
 @media only screen and (min-width: 1000px) {
-  .full-screen-image,
-  .half-screen-image,
-  .two-third-screen-image {
+  .full-screen-image, .half-screen-image, .two-third-screen-image {
     margin-left: calc(-1 * var(--large-spacing));
   }
 }
@@ -50,15 +47,18 @@
   justify-content: center;
   width: 100vw;
 }
-.full-screen-image > .pictorial-image {
+
+.full-screen-image>.pictorial-image {
   height: 100%;
   height: 110vh;
 }
-.two-third-screen-image > .pictorial-image {
+
+.two-third-screen-image>.pictorial-image {
   height: 67%;
   height: 67vh;
 }
-.half-screen-image > .pictorial-image {
+
+.half-screen-image>.pictorial-image {
   height: 50%;
   height: 50vh;
 }
@@ -66,6 +66,7 @@
 .image-with-fg-text {
   position: relative;
 }
+
 .image-with-fg-text:before {
   content: "";
   position: absolute;
@@ -74,19 +75,23 @@
   height: 150px;
   background: linear-gradient(to top, rgba(17, 17, 17, 0.5) 0, rgba(17, 17, 17, 0) 100%);
 }
+
 .image-with-fg-text.full-screen-image:before, .image-with-fg-text.half-screen-image:before {
   padding-left: var(--small-spacing);
 }
+
 @media only screen and (min-width: 900px) {
   .image-with-fg-text.full-screen-image:before, .image-with-fg-text.half-screen-image:before {
     padding-left: var(--mid-spacing);
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-with-fg-text.full-screen-image:before, .image-with-fg-text.half-screen-image:before {
     padding-left: var(--large-spacing);
   }
 }
+
 .image-with-fg-text figcaption {
   color: white;
   margin-bottom: 20px;
@@ -96,16 +101,19 @@
 .image-brockwell-lido {
   background-image: url("/images/photos/brockwell-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-brockwell-lido {
     background-image: url("/images/photos/brockwell-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-brockwell-lido {
     background-image: url("/images/photos/brockwell-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-brockwell-lido {
     background-image: url("/images/photos/brockwell-1600.jpg");
@@ -115,16 +123,19 @@
 .image-salford {
   background-image: url("/images/photos/salford-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-salford {
     background-image: url("/images/photos/salford-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-salford {
     background-image: url("/images/photos/salford-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-salford {
     background-image: url("/images/photos/salford-1600.jpg");
@@ -134,16 +145,19 @@
 .image-olympic-park {
   background-image: url("/images/photos/olympic-park-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-olympic-park {
     background-image: url("/images/photos/olympic-park-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-olympic-park {
     background-image: url("/images/photos/olympic-park-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-olympic-park {
     background-image: url("/images/photos/olympic-park-1600.jpg");
@@ -153,16 +167,19 @@
 .image-south-downs {
   background-image: url("/images/photos/south-downs-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-south-downs {
     background-image: url("/images/photos/south-downs-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-south-downs {
     background-image: url("/images/photos/south-downs-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-south-downs {
     background-image: url("/images/photos/south-downs-1600.jpg");
@@ -172,16 +189,19 @@
 .image-greenwich {
   background-image: url("/images/photos/greenwich-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-greenwich {
     background-image: url("/images/photos/greenwich-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-greenwich {
     background-image: url("/images/photos/greenwich-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-greenwich {
     background-image: url("/images/photos/greenwich-1600.jpg");
@@ -191,16 +211,19 @@
 .image-chamonix-cloud {
   background-image: url("/images/photos/chamonix-cloud-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-chamonix-cloud {
     background-image: url("/images/photos/chamonix-cloud-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-chamonix-cloud {
     background-image: url("/images/photos/chamonix-cloud-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-chamonix-cloud {
     background-image: url("/images/photos/chamonix-cloud-1600.jpg");
@@ -210,16 +233,19 @@
 .image-registration {
   background-image: url("/images/photos/registration-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-registration {
     background-image: url("/images/photos/registration-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-registration {
     background-image: url("/images/photos/registration-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-registration {
     background-image: url("/images/photos/registration-1600.jpg");
@@ -229,16 +255,19 @@
 .image-occ-start {
   background-image: url("/images/photos/occ-start-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-start {
     background-image: url("/images/photos/occ-start-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-start {
     background-image: url("/images/photos/occ-start-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-start {
     background-image: url("/images/photos/occ-start-1600.jpg");
@@ -248,16 +277,19 @@
 .image-occ-champex {
   background-image: url("/images/photos/occ-champex-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-champex {
     background-image: url("/images/photos/occ-champex-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-champex {
     background-image: url("/images/photos/occ-champex-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-champex {
     background-image: url("/images/photos/occ-champex-1600.jpg");
@@ -267,16 +299,19 @@
 .image-occ-valleys {
   background-image: url("/images/photos/occ-valleys-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-valleys {
     background-image: url("/images/photos/occ-valleys-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-valleys {
     background-image: url("/images/photos/occ-valleys-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-valleys {
     background-image: url("/images/photos/occ-valleys-1600.jpg");
@@ -286,16 +321,19 @@
 .image-occ-giete {
   background-image: url("/images/photos/occ-giete-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-giete {
     background-image: url("/images/photos/occ-giete-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-giete {
     background-image: url("/images/photos/occ-giete-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-giete {
     background-image: url("/images/photos/occ-giete-1600.jpg");
@@ -305,16 +343,19 @@
 .image-occ-start-hut {
   background-image: url("/images/photos/occ-start-hut-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-start-hut {
     background-image: url("/images/photos/occ-start-hut-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-start-hut {
     background-image: url("/images/photos/occ-start-hut-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-start-hut {
     background-image: url("/images/photos/occ-start-hut-1600.jpg");
@@ -324,16 +365,19 @@
 .image-occ-vallorcine {
   background-image: url("/images/photos/occ-vallorcine-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-vallorcine {
     background-image: url("/images/photos/occ-vallorcine-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-vallorcine {
     background-image: url("/images/photos/occ-vallorcine-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-vallorcine {
     background-image: url("/images/photos/occ-vallorcine-1600.jpg");
@@ -343,16 +387,19 @@
 .image-occ-finish {
   background-image: url("/images/photos/occ-finish-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-finish {
     background-image: url("/images/photos/occ-finish-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-finish {
     background-image: url("/images/photos/occ-finish-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-finish {
     background-image: url("/images/photos/occ-finish-1600.jpg");
@@ -362,16 +409,19 @@
 .image-occ-jill {
   background-image: url("/images/photos/occ-jill-600.jpg");
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-jill {
     background-image: url("/images/photos/occ-jill-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-jill {
     background-image: url("/images/photos/occ-jill-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-jill {
     background-image: url("/images/photos/occ-jill-1600.jpg");
@@ -387,28 +437,39 @@
   background-repeat: no-repeat;
   max-width: 800px;
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   .image-occ-profile {
     background-image: url("/images/photos/occ-profile-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-profile {
     background-image: url("/images/photos/occ-profile-1000.jpg");
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-profile {
     background-image: url("/images/photos/occ-profile-1600.jpg");
   }
 }
+
 @media only screen and (min-width: 600px) {
   .image-occ-profile {
     padding-top: 35%;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .image-occ-profile {
     padding-top: 300px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+    .image-madagascar-map {
+      max-width: 75%;
+    }
+  }
