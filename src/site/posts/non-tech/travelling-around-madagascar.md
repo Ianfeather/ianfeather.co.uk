@@ -101,7 +101,7 @@ We stayed at the [Anakao Ocean Lodge](https://www.anakaooceanlodge.com/en/).
 After our trip so far and the amazing places we'd stayed, we were a little disappointed and didn't think it was quite worth the money. You pay european prices and it feels extremely resort/touristy. That said, it is a nice place to just relax. The ocean lodge organize a speedboat to collect you from Tulear but it visits many hotels down the beachline so you certainly have options if you want to have beach time without the price tag.
 
 #### Day 18: Fly back to Antananarivo.
-The hotel we had stayed in originally was closed so we stayed at the Hotel Sakamanga. It was a fine hotel with a nice restaurant. I preferred the other one personally but this one was very popular and had a lot of rooms.
+The hotel we had stayed in originally was full so we stayed at the Hotel Sakamanga. It was a fine hotel with a nice restaurant. I preferred the other one personally but this one was very popular and had a lot of rooms.
 
 #### Day 19: Flight home :(
 
@@ -126,12 +126,12 @@ The usuals: Lonely Planet, booking.com etc. We found that booking.com occasional
 At every hotel there are driver rooms where they stay. It's either paid for by the driver, the agent or the hotel provides it. We never asked. But there's no expectation for you to explicitly cover this cost.
 
 ### How to find a driver
-We didn't find any great ways to figure this out. There were some email address at the back of the Lonely Planet that we messaged. We ended up with a few similar quotes and no real way of knowing which we should go with.
+We didn't find any great ways to figure this out. There were some email addresses at the back of the Lonely Planet that we messaged. We ended up with a few similar quotes and no real way of knowing which we should go with.
 
 In the end we booked with a company who subcontracted us to a driver called Jack because they were busy. This seems very common because all the drivers know each other really well. In the end it worked out great for us but it would have been nice to know this would happen up front.
 
-If I was going again, there's no doubt I would speak directly to Jack and organise through him. If I had friends going to Madagascar I would make sure they went with him! He speaks perfect French and Malagasy and very good English. I can't recommend him enough for you trip and to speak to ahead of your time in Madagascar. You can reach him via:
-  - By email ([jackfiniaina@gmail.com](mailto:jackfiniaina@gmail.com))
+If I was going again, there's no doubt I would speak directly to Jack and organise through him. If I had friends going to Madagascar I would make sure they went with him! He speaks perfect French and Malagasy and very good English. I can't recommend him enough for your trip and to speak to ahead of your time in Madagascar. You can reach him via:
+  - Email: [jackfiniaina@gmail.com](mailto:jackfiniaina@gmail.com)
   - The [Mada Jack's Car Facebook Page](https://www.facebook.com/finiaina.andriamifehimanjaka)
   - Or call him on +26134 48 687 48 / +26133 09 723 23.
 
@@ -169,9 +169,9 @@ We took three plane journeys:
 ## Money
 Euros are the best currency to take with you. You can change them for local currency at the airport in Tana. You give them three notes and they give you back three hundred! You walk out looking so conspicuous but we never had any problems with safety there.
 
-All the hotels we stayed at were happy to be paid in Euros which really helped us know how much to convert - still worth checking with them though. They'll give you change in Malagasy which was good for us. Your hotel will probably be able to change money for you or find you someone in town who can.
+All the hotels we stayed at were happy to be paid in Euros which really helped us know how much to convert - still worth checking with them though. They'll give you change in Malagasy Ariary which was good for us as it meant not having to change money to use in the towns. Your hotel will probably be able to change money for you or find you someone in town who can.
 
-Overall, Madagasar is a very affordable place to travel once you're there. We were on our honeymoon so had a littl more to spend than usual but even then meals were typically about £10 and accommodation under £100.
+Overall, Madagascar is a very affordable place to travel once you're there. We were on our honeymoon so had a little more to spend than usual but even then meals were typically about £10 and accommodation under £100.
 
 ## Safety
 We felt that Tana was fairly safe but were told it was actually dangerous by many people that we met and trusted. After dark you should get your hotel to sort you out with a taxi rather than walking - which the porters will happily do for a small tip.
@@ -192,6 +192,9 @@ The journey is brutal - about 12 hours each way on terrible "roads". Some people
 
 ### Internet
 There's no mobile data but WiFi is available in most hotels and some bars which is fine for email and social media - though you're not going to be streaming. You can contact hotels via email and they get back to you pretty fast.
+
+### Time in Tana
+Due to our itinerary we ended up in Tana a few times. I would recommend spending a maximum of 2 days there if you can, it's a nice enough place but there isn't a huge amount to do and your time elsewhere in the country will be so much more valuable to you.
 
 
 ## And the most important tip!
