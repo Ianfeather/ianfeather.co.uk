@@ -41,7 +41,7 @@ I can't remember which device I was testing on but I saw one of our tick icons r
 
 Font face support and detection is historically quite tricky to get right. I'm sure you've all seen this image of font awesome rendering on opera mini:
 
-<img src="http://filamentgroup.com/images/grunticon_workflow_operamini2.png" class="wv--float-right image--right image--opera-mini" />
+<img src="https://filamentgroup.com/images/grunticon_workflow_operamini2.png" class="wv--float-right image--right image--opera-mini" />
 
 I won't go over the intricacies of this problem as Opera Mini support and many other platforms have been covered very well in [this article](http://blog.kaelig.fr/post/33373448491/testing-font-face-support-on-mobile-and-tablet) by [@kaelig](http://www.twitter.com/kaelig). I think what is really important though, beyond Opera Mini, is that this highlights a blind spot that we're not able to control. We can't test on every device so we should use techniques that are more likely to render consistently.
 
