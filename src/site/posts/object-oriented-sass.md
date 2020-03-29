@@ -84,10 +84,6 @@ The CSS file size is key to the critical path but I also wanted to ensure that u
 
 I created two pages, each with 1200 buttons, one using chained classes and one using extended classes. I then profiled them using Opera’s CSS Profiler. Unfortunately the results were absolutely identical so this test was inconclusive. Perhaps a larger test file with more variance would be required to create a true test.
 
-The Profiled results for both pages:
-
-<img src="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2012-07-30/gqljjyuevtomeeyHxwFoHctuaqjfAHBqCcuqEcufskGgoioubHnEzukhoqqe/opera-profile.jpg.scaled699.jpg" alt="Opera profile view" />
-
 ## Conclusions
 
 Whilst our test showed there was no huge performance benefit for this approach, it also failed to show a downside for it. This, for me, is a validation of the approach and allows us to look at the more intangible benefits we outlined earlier.
