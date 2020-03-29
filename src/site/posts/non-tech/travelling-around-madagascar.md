@@ -1,7 +1,8 @@
 ---
 layout: layouts/pictorial.njk
 title: "Travelling around Madagascar"
-subtitle: "How to find a driver, book flights and plan ahead"
+subtitle: "How to find a driver, book flights and plan ahead. Take sweets and pens!"
+bodyClass: madagascar
 date: 2020-03-28
 comments: true
 tags: non_tech
@@ -15,50 +16,94 @@ In the end it worked out brilliantly but I'd have loved a little more informatio
 
 ## Our Route
 
-We went for 2.5 weeks and our rough itinerary was:
+We went for 2.5 weeks and we knew we wanted to see Tsingy, Isalo and as many Lemurs as possible. Our itinerary ended up like this:
 
 <picture>
   <source media="(min-width: 600px)" srcset="/images/photos/madagascar-map-1000.jpg 1000w">
 
   <source media="(min-width: 1000px)" srcset="/images/photos/madagascar-map-1600.jpg 1600w">
 
-  <img class="image-madagascar-map" src="/images/photos/madagascar-map-600.jpg" alt="A map showing our route around madagascar: Antananarivo, Morondava, Tsingy, Antananarivo, Ambositra, Ambalavao, Anja Park, Isalo, Tulear, Antananarivo">
+  <img class="image-madagascar" src="/images/photos/madagascar-map-600.jpg" alt="A map showing our route around madagascar: Antananarivo, Morondava, Tsingy, Antananarivo, Ambositra, Ambalavao, Anja Park, Isalo, Tulear, Antananarivo">
 </picture>
 
+#### Day 1-2: Antananarivo
+We stayed at the [Citizen Hotel](https://www.citizen-guesthouse.com/). Lovely place with great views over the lake.
 
+#### Day 3: Fly to Morondava
+We flew with [Tsaradia Airlines](https://tsaradia.com/en/index.html) (more info on flights further down) and stayed in Morondava at [Chez Maggie](https://www.chezmaggie.com/).
 
-- Antananarivo
-- Morondava
-- Tsingy
-- Antananarivo
-- Ambositra
-- Ambalavao
-- Anja Park
-- Isalo
-- Tulear
-- Antananarivo
+Chez Maggie is a great spot by the beach serving the freshest sea food. They were able to organize a taxi to pick us up at Morondava airport and take us to the hotel.
 
-We knew this was going to be tough to fit in especially as we'd heard in advance that getting around was slow going. What wasn't clear to us was how we could get around. Were buses an option? Were flights as highly unreliable as we had read? If we booked a driver should we get one for the entire trip - and how do we find a good driver anyway?
+Chez Maggie is also run in part by Gary of [Remote River Expeditions](https://www.remoterivers.com/en/docs/home.php), an experienced tour runner who we contacted ahead of time to organize our trip to Tsingy and the magical Avenue des Baobabs.
 
-To try to get a sense of this I spoke to a few old friends at Lonely Planet to get and also scoured Trip Advisor for information. Ultimately, there's no tip quite like one from Madagascar so getting in touch with someone there is always going to be useful - particularly as routes might change due to weather or safety concerns. The following are useful avenues for information:
+<picture>
+  <source media="(min-width: 600px)" srcset="/images/photos/baobabs-1000.jpg 1000w">
 
-- *Your hotel in Antananarivo*. Hotels typically got back to us within 24 hrs and with Tana being almost everyone's first stop they have a lot of information and advice they can share.
-- *Gary (West Coast)*. Gary runs a hotel in Morondava. He specialises in off-track river tours on the West Coast but also organises tours to Tsingy, the Avenue des Baobabs and can book you a trip almost anywere in Madagascar. We originally found him via his comments on Trip Advisor about the safety of the road to Tsingy.
-- *Mada Jack*. Our driver for 10 days. Speaks good english, knows everyone and was a joy to travel with. I can't recommend him enough. You can reach him via email, facebook or call him on ..
+  <source media="(min-width: 1000px)" srcset="/images/photos/baobabs-1600.jpg 1600w">
 
-### Our full itinerary
-- Day 1: Land Antananarivo (Stay at hotel...)
-- Day 3: Fly to Morondava with Air..., Stay at ..., Meet Gary and the driver he's organised, see the avenue des baobabs. The hotel organised a taxi to collect us from the airport.
-- Day 4: Drive to Tsingy (long!) stay at ..... The hotel tries to be a bit fancier than it is maybe, i think it's one of the better ones, but you almost can't not stay there because the view is just out of this world
-- Days 5-7: Tsingy and then drive back
-- Day 8: Fly back to Tana. Meet Jack. Drive to Ambositra. Stayed at...
-- Day 9: Drive to Ambalavao. Stay at...
-- Day 10: Drive to Isalo via Anja Park (the best place we saw lemurs by far - you can get very close to wild Lemurs)
-- Day 11-12: Stay in Isalo. We stayed at ... which was our favourite hotel and spot along the way. You felt like you were staying somewhere truly special.
-- Day 13: Drive to Tulear. Stay at... This place has truly amazing architecture and just 3 rooms which are so different. Expensive but worth it.
-- Day 14 - 17: Stay at... Not worth the money in our opinion. You pay european prices and it feels extremely resort/touristy. That said, it was a nice place to just relax. They organize the boat for you but if you decide to stay somewhere else down the beach the hotel should be able to help you book it for you.
-Day 18: Back to Antananarivo. Stay at... Fine hotel with a nice restaurant. I preferred the other one personally but this one was very popular.
-Day 19: Flight home.
+  <img class="image-madagascar" src="/images/photos/baobabs-600.jpg" alt="The Avenue of the Baobabs at sunset">
+</picture>
+
+#### Day 4: Drive to Tsingy
+The journey is tough, there's no getting away from it: it takes around 9 hours to drive the 200km.
+
+We stayed at the [Soleil des Tsingy](https://www.lonelyplanet.com/madagascar/hotels/le-soleil-des-tsingy/a/lod/00261fb3-da10-4c57-ab8b-8b80e85879ff/355357) hotel. It tries to be quite fancy but the rooms are nice and you almost can't not stay there because the view is just out of this world.
+
+<figure>
+  <picture>
+    <source media="(min-width: 600px)" srcset="/images/photos/canopy-1000.jpg 1000w">
+    <source media="(min-width: 1000px)" srcset="/images/photos/canopy-1600.jpg 1600w">
+    <img class="image-madagascar" src="/images/photos/canopy-600.jpg">
+  </picture>
+  <figcaption>The view from the hotel</figcaption>
+</figure>
+
+#### Days 5-7: Exploring Tsingy
+2 days of climbing the tsingy followed by another bumpy journey back to Morondava.
+
+#### Day 8: Fly back to Tana, drive to Antsirabe
+We met our driver, Jack, (more on him later) and drove to Antsirabe. We stayed at the [Couleur Cafe](https://www.booking.com/hotel/mg/couleur-cafe.en-gb.html?aid=356980;label=gog235jc-1DCAsokQFCDGNvdWxldXItY2FmZUgzWANoUIgBAZgBCbgBB8gBDNgBA-gBAYgCAagCA7gC1r3_8wXAAgE;sid=39948b1e155b110c1a86ac776b0d9f93;dist=0&keep_landing=1&sb_price_type=total&type=total&) hotel. Not much to say about it really as we arrived late and left early but the room was fine.
+
+#### Day 9: Drive to Ambalavao.
+The scenery on this road is incredible, it changes so drastically every hour. The long journey just disappears.
+
+In Ambalavao we stayed at [Betsileo Country Lodge](https://betsileocountrylodge.com/). Really friendly hosts here with a nice bar and more incredible views.
+
+<picture>
+  <source media="(min-width: 600px)" srcset="/images/photos/landscape-1000.jpg 1000w">
+
+  <source media="(min-width: 1000px)" srcset="/images/photos/landscape-1600.jpg 1600w">
+
+  <img class="image-madagascar" src="/images/photos/landscape-600.jpg" alt="Landscape view of the road to ambalavao">
+</picture>
+
+#### Day 10: Drive to Isalo via Anja Park
+Anja Park was our best place for seeing lemurs by far - you can get very close to wild Lemurs.
+
+<picture>
+  <source media="(min-width: 600px)" srcset="/images/photos/maki-1000.jpg 1000w">
+
+  <source media="(min-width: 1000px)" srcset="/images/photos/maki-1600.jpg 1600w">
+
+  <img class="image-madagascar" src="/images/photos/maki-600.jpg" alt="A ringtailed lemur on a rock">
+</picture>
+
+In Isalo we stayed at the [Isalo Rock Lodge](https://www.isalorocklodge.com/). Isalo is one of the most magical places I think I've ever been to, and the hotel fits in. You felt like you were staying in a truly special environment.
+
+#### Day 11-12: Stay in Isalo.
+Stunning hikes and plenty of relaxation. This is a great place to spend a few days out of the car.
+
+#### Day 13: Drive to Tulear.
+We only stayed in Tulear for one night before heading down to Anakao but we got to stay in the beautiful [Bakuba Lodge](https://www.bakuba-lodge.com/). This place has truly amazing architecture and just 3 rooms which are so different. Expensive but worth it.
+
+#### Day 14 - 17: Anakao
+We stayed at the [Anakao Ocean Lodge](https://www.anakaooceanlodge.com/en/).
+After our trip so far and the amazing places we'd stayed, we were a little disappointed and didn't think it was quite worth the money. You pay european prices and it feels extremely resort/touristy. That said, it is a nice place to just relax. The ocean lodge organize a speedboat to collect you from Tulear but it visits many hotels down the beachline so you certainly have options if you want to have beach time without the price tag.
+
+#### Day 18: Fly back to Antananarivo.
+The hotel we had stayed in originally was closed so we stayed at the Hotel Sakamanga. It was a fine hotel with a nice restaurant. I preferred the other one personally but this one was very popular and had a lot of rooms.
+
+#### Day 19: Flight home :(
 
 
 ## FAQ about getting a driver. Or questions I frequently asked.
@@ -75,44 +120,58 @@ They're not. A lot of the time you're going to be following similar tourist rout
 They definitely can, and they probably know some good deals, but we opted to handle that ourselves and that seemed to be the default. Chat to your driver ahead of time if you want them to do it for you.
 
 ### How to find good hotels along the way
-The usuals: Lonely Planet, booking.com etc. We found that booking.com occasionally said the hotel was full but if we emailed them they still had rooms so sometimes it's better to speak directly. Internet isn't great in Madagascar but it's fine for sending emails back and forth and people were fairly quick to respond.
+The usuals: Lonely Planet, booking.com etc. We found that booking.com occasionally said the hotel was full but if we emailed them they still had rooms so sometimes it's better to speak directly. Internet isn't great in Madagascar but it's fine for sending emails back and forth and people were fairly quick to respond. You can always ask your driver for recommendations too as they've seen them all.
 
 ### Where does the driver stay
 At every hotel there are driver rooms where they stay. It's either paid for by the driver, the agent or the hotel provides it. We never asked. But there's no expectation for you to explicitly cover this cost.
 
 ### How to find a driver
-We didn't find any great ways to figure this out. There were some email address at the back of the Lonely Planet that we sent a message to, we also went to https://www.madagascarbycar.com/ and emailed them. We ended up with a few similar quotes and no real way of knowing which we should go with.
+We didn't find any great ways to figure this out. There were some email address at the back of the Lonely Planet that we messaged. We ended up with a few similar quotes and no real way of knowing which we should go with.
 
-In the end we booked with Stan of MadagascarByCar. When we got to the airport to meet him it turned out he wouldn't be driving us as he was booked on another trip. This was a little disconcerting because we chose him based off the reviews we read. He subcontracted us to a driver called Jack instead. This seems very common because all the drivers know each other really well. In the end it worked out great for us but it would have been nice to know up front.
+In the end we booked with a company who subcontracted us to a driver called Jack because they were busy. This seems very common because all the drivers know each other really well. In the end it worked out great for us but it would have been nice to know this would happen up front.
 
-If I was going again, there's no doubt I would speak directly to Jack and organise through him. He speaks perfect French and Malagasy and very good English.
+If I was going again, there's no doubt I would speak directly to Jack and organise through him. If I had friends going to Madagascar I would make sure they went with him! He speaks perfect French and Malagasy and very good English. I can't recommend him enough for you trip and to speak to ahead of your time in Madagascar. You can reach him via:
+  - By email ([jackfiniaina@gmail.com](mailto:jackfiniaina@gmail.com))
+  - The [Mada Jack's Car Facebook Page](https://www.facebook.com/finiaina.andriamifehimanjaka)
+  - Or call him on +26134 48 687 48 / +26133 09 723 23.
 
-I'd definitely recommend you get in touch with him either via his Facebook Page, email at jackfiniaina@gmail.com or give him a call on +26134 48 687 48 / +26133 09 723 23. He's extremely friendly and capable.
-
-Our driver on the west coast was organised via [Remote River Tours](https://www.remoterivers.com/en/docs/home.php) and they were also good.
+<figure>
+  <picture>
+    <source media="(min-width: 600px)" srcset="/images/photos/jack-1000.jpg 1000w">
+    <source media="(min-width: 1000px)" srcset="/images/photos/jack-1600.jpg 1600w">
+    <img class="image-madagascar" src="/images/photos/jack-600.jpg" alt="A map showing our route around madagascar: Antananarivo, Morondava, Tsingy, Antananarivo, Ambositra, Ambalavao, Anja Park, Isalo, Tulear, Antananarivo">
+  </picture>
+  <figcaption>Jack and Anna on the Road</figcaption>
+</figure>
 
 ### Do you need a 4x4?
-We'd read that we needed a 4x4 and had asked this up front but to be honest, your driver will figure this out for you. If you're doing a full loop of Madagascar he'll make sure you're in a 4x4 with a snorkel because that's what you need. If you do a trip like we did you'll be in a slightly cruiser 4x4. Trust them on this, they don't want to get stuck any more than you!
+We'd read that we needed a 4x4 and had asked this up front but to be honest, your driver will figure this out for you. If you're doing a full loop of Madagascar he'll make sure you're in a 4x4 with a snorkel because that's what you need. If you do a trip like we did you'll be in a slightly cruiser 4x4. Trust them on this, they don't want to get stuck any more than you do!
 
 
 ### Can you just rent a car yourself?
-I think in theory it's possible but the driving is pretty specialised. The cities are chaotic, the overtaking on the highways uses a language of horns and certain sections definitely require 4x4 skills (such as driving through rivers, driving on to makeshift ferries etc.). So, maybe it's possible, but having been through it we were definitely happy that we weren't doing the driving.
+I think in theory it's possible but the driving is pretty specialised. The cities are chaotic, the overtaking on the highways requires a local language of honking, and certain sections definitely require 4x4 skills (such as driving through rivers, driving on to makeshift ferries etc.).
+
+So, maybe it's possible, but having been through it we were definitely happy that we weren't doing the driving.
 
 
 ## Flights
-We'd heard they were unreliable but either we got lucky or they've gotten better. We had no problems. In fact one time the plane left an hour early because everyone had arrived! The views are spectacular.
+We'd heard they were unreliable but either we got lucky or they've gotten better. We had no problems. In fact one time the plane left an hour early because all the passengers had arrived! The views from the plane are spectacular.
+
+We flew with [Tsaradia Airlines](https://tsaradia.com/en/index.html). It used to be the case that you couldn't book these flights from outside of Madagascar but this wasn't true when we booked. You can pay for these flights in Euros online.
 
 The only real constraint here was that the planes don't travel each route daily. We ended up having to organise our trip around this constraint a little bit so it's something to bear in mind.
 
 We took three plane journeys:
-- tulear to tana - €130 pp
-- tana to morondava - €130 pp
-- morondava to tana - €119 pp
+- Antananarivo to Morondava - €130 pp
+- Morondava to Antananarivo - €119 pp
+- Tulear to Antananarivo - €130 pp
 
 ## Money
 Euros are the best currency to take with you. You can change them for local currency at the airport in Tana. You give them three notes and they give you back three hundred! You walk out looking so conspicuous but we never had any problems with safety there.
 
 All the hotels we stayed at were happy to be paid in Euros which really helped us know how much to convert - still worth checking with them though. They'll give you change in Malagasy which was good for us. Your hotel will probably be able to change money for you or find you someone in town who can.
+
+Overall, Madagasar is a very affordable place to travel once you're there. We were on our honeymoon so had a littl more to spend than usual but even then meals were typically about £10 and accommodation under £100.
 
 ## Safety
 We felt that Tana was fairly safe but were told it was actually dangerous by many people that we met and trusted. After dark you should get your hotel to sort you out with a taxi rather than walking - which the porters will happily do for a small tip.
@@ -128,8 +187,21 @@ I really wish someone had told us this beforehand! We did the entire west coast 
 ### Take photos of the kids, and use Snapchat
 Without any treats we resorted to taking pictures of the kids and showing them their faces. They got a huge kick of it. Using Snapchat to show themselves with Hat, Sunglasses and beards was such a crowdpleaser and so fun for us.
 
-## You need 3 nights / 2 full days in Tsingy
+### You need 3 nights / 2 full days in Tsingy
 The journey is brutal - about 12 hours each way on terrible "roads". Some people spent a day after the trip just recovering and to do that trip twice just for a single day would be really tough.
 
-## Internet
+### Internet
 There's no mobile data but WiFi is available in most hotels and some bars which is fine for email and social media - though you're not going to be streaming. You can contact hotels via email and they get back to you pretty fast.
+
+
+## And the most important tip!
+
+Just go. Seriously, if you can afford to fly to Madagascar you'll never regret it. As I type this we're in self-isolation due to the Corona virus and I worry about what this will be doing to all the amazing people we met there who rely so much on tourism. If you want a special trip in 2021 or beyond, Madagascar won't let you down.
+
+<picture>
+  <source media="(min-width: 600px)" srcset="/images/photos/montage-1000.jpg 1000w">
+
+  <source media="(min-width: 1000px)" srcset="/images/photos/montage-1600.jpg 1600w">
+
+  <img class="image-madagascar" src="/images/photos/montage-600.jpg" alt="A montage of photos of madagascar">
+</picture>

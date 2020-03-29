@@ -13,9 +13,9 @@ body {
 
 p {
   margin-bottom: var(--small-spacing);
-  hyphens: auto;
   margin-top: 0;
 }
+
 p code {
   color: var(--maroon);
   font-weight: bold;
@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   transition: all 0.5s ease;
 }
+
 a:hover {
   color: var(--red);
   text-decoration: none;
@@ -80,4 +81,12 @@ strong {
 
 .serif {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+}
+
+body.madagascar h4 {
+  font-weight: bold;
+}
+
+body.madagascar h2 {
+  margin-bottom: 10px;
 }
