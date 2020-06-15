@@ -24,7 +24,7 @@ pagination:
     </li>
   {%- endfor -%}
   </ul>
-  <a class="index-see-more" href="/archive">View the full archive ></a>
+  <a class="index-see-more" href="/posts">View the full archive ></a>
 </div>
 
 
